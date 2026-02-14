@@ -1,0 +1,129 @@
+name: Release
+run-name: "Release ${{inputs.version}} (mode: ${{inputs.mode}})"
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "What to do"
+        type: choice
+        required: true
+        default: dry-run
+        options:
+          - dry-run
+          - release
+      version:
+        description: "Version to release (without the leading 'v'), e.g. 1.2.3. Required when mode=release."
+        type: string
+        required: false
+      branch:
+        description: "Branch that must contain the commit to release (default: main)."
+        type: string
+        required: false
+        default: main
+
+permissions:
+  contents: write
+
+env:
+  GORELEASER_VERSION: "~> v2" # Keep in sync with .goreleaser.yml
+
+jobs:
+  goreleaser:
+    name: Publish GitHub Release
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.branch || github.ref }}
+
+      - name: Ensure workflow_dispatch runs from branch tip
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'release' }}
+        env:
+          BRANCH: ${{ inputs.branch }}
+        run: |
+          git fetch origin "$BRANCH" --depth=1
+          CURRENT_SHA="$(git rev-parse HEAD)"
+          BRANCH_SHA="$(git rev-parse "origin/${BRANCH}")"
+          if [ "$CURRENT_SHA" != "$BRANCH_SHA" ]; then
+            echo "Refusing to run: checked out commit ($CURRENT_SHA) is not the tip of origin/${BRANCH} ($BRANCH_SHA)." >&2
+            echo "Re-run the workflow from the ${BRANCH} branch tip (or adjust inputs.branch intentionally)." >&2
+            exit 1
+          fi
+
+      - name: Configure git user (workflow_dispatch release)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'release' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Create and push tag (workflow_dispatch release)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'release' }}
+        env:
+          VERSION: ${{ inputs.version }}
+        run: |
+          if [ -z "$VERSION" ]; then
+            echo "inputs.version is required when mode=release (example: 1.2.3)" >&2
+            exit 1
+          fi
+          TAG="v${VERSION}"
+          # Basic sanity check: vMAJOR.MINOR.PATCH
+          if ! echo "$TAG" | grep -Eq '^v[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "Invalid version '$VERSION'. Expected MAJOR.MINOR.PATCH (example: 1.2.3)" >&2
+            exit 1
+          fi
+          # Fail fast if tag already exists remotely
+          if git ls-remote --exit-code --tags origin "$TAG" >/dev/null 2>&1; then
+            echo "Tag '$TAG' already exists on origin. Aborting." >&2
+            exit 1
+          fi
+          git tag -a "$TAG" -m "Release $TAG"
+          git push origin "$TAG"
+          # Make sure the local clone sees the new tag before running GoReleaser.
+          git fetch --force --tags origin
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Install syft (SBOM generator)
+        uses: anchore/sbom-action/download-syft@v0
+
+      - name: Generate SBOM (CycloneDX JSON)
+        run: |
+          mkdir -p dist
+          syft dir:. -o cyclonedx-json=dist/sbom.cdx.json
+
+      # For workflow_dispatch, default is a dry-run (does not publish).
+      - name: Run GoReleaser (dry-run)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'dry-run' }}
+        uses: goreleaser/goreleaser-action@v6
+        with:
+          distribution: goreleaser
+          version: ${{ env.GORELEASER_VERSION }}
+          args: release --snapshot --clean
+
+      # On tags, or if requested manually, publish the GitHub Release.
+      - name: Run GoReleaser (publish)
+        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'release') }}
+        uses: goreleaser/goreleaser-action@v6
+        with:
+          distribution: goreleaser
+          version: ${{ env.GORELEASER_VERSION }}
+          args: release --clean
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Attach the SBOM as a release asset when publishing.
+      - name: Upload SBOM to GitHub Release
+        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'release') }}
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/sbom.cdx.json
+          tag_name: ${{ github.event_name == 'workflow_dispatch' && format('v{0}', inputs.version) || github.ref_name }}

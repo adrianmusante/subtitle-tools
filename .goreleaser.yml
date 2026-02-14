@@ -1,0 +1,37 @@
+# GoReleaser config for subtitle-tools
+# Docs: https://goreleaser.com/
+
+version: 2
+
+project_name: subtitle-tools
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - id: subtitle-tools
+    main: ./cmd/subtitle-tools
+    binary: subtitle-tools
+    env:
+      - CGO_ENABLED=0
+    ldflags:
+      - -s -w
+      - -X github.com/adrianmusante/subtitle-tools/internal/cli.version={{.Version}}
+      - -X github.com/adrianmusante/subtitle-tools/internal/cli.commit={{.Commit}}
+
+archives:
+  - formats: [tar.gz]
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+
+checksum:
+  name_template: "checksums.txt"
+
+changelog:
+  use: github-native
+
+release:
+  prerelease: auto
