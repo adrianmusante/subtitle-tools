@@ -1,7 +1,6 @@
 package translate
 
 import (
-	"slices"
 	"strings"
 )
 
@@ -14,14 +13,15 @@ const (
 	LanguageSpanishNeutral = "Spanish (Neutral)"
 )
 
-var spanishLatinAliases = []string{
-	"ea",
-	"es-419",
-	"es-ea",
-	"es-la",
-	"es-mx",
-	"es-*",
-	"spl",
+var exactLanguageLabels = map[string]string{
+	"en":    LanguageEnglish,
+	"en-us": LanguageEnglishUS,
+	"en-gb": LanguageEnglishUK,
+	"es":    LanguageSpanishNeutral,
+	"spa":   LanguageSpanishNeutral,
+	"es-es": LanguageSpanishSpain,
+	"ea":    LanguageSpanishLatin,
+	"spl":   LanguageSpanishLatin,
 }
 
 // normalizeTargetLanguage takes user input (often BCP-47-ish tags like "es", "es-MX",
@@ -57,28 +57,17 @@ func normalizeTargetLanguage(input string) (tag string, label string) {
 	tag = strings.Join(parts, "-")
 	lower := strings.ToLower(tag)
 
-	if (strings.HasPrefix(lower, "es-") && lower != "es-es") ||
-		slices.Contains(spanishLatinAliases, lower) {
+	if label, ok := exactLanguageLabels[lower]; ok {
+		return tag, label
+	}
+	if strings.HasPrefix(lower, "en-") {
+		return tag, LanguageEnglish
+	}
+	if strings.HasPrefix(lower, "es-") {
 		return tag, LanguageSpanishLatin
 	}
 
-	// Minimal mapping table. Keep this small and explicit.
-	switch lower {
-	case "en":
-		return tag, LanguageEnglish
-	case "en-us":
-		return tag, LanguageEnglishUS
-	case "en-gb":
-		return tag, LanguageEnglishUK
-	case "es":
-		return tag, LanguageSpanishNeutral
-	case "spa":
-		return tag, LanguageSpanishNeutral
-	case "es-es":
-		return tag, LanguageSpanishSpain
-	default:
-		return tag, tag
-	}
+	return tag, tag
 }
 
 func normalizeTargetLanguageLabel(input string) (label string) {
