@@ -99,6 +99,7 @@ Flags:
 | `--retry-max-attempts`       | `SUBTITLE_TOOLS_TRANSLATE_RETRY_MAX_ATTEMPTS`       | Max attempts per request for retryable errors                            | int    | `5`      |
 | `--retry-parse-max-attempts` | `SUBTITLE_TOOLS_TRANSLATE_RETRY_PARSE_MAX_ATTEMPTS` | Max attempts per batch when model output is invalid/unparseable          | int    | `2`      |
 | `--rps`                      | `SUBTITLE_TOOLS_TRANSLATE_RPS`                      | Max requests per second (0 disables rate limiting)                       | float  | `4`      |
+| `--source-language`          |                                                     | Source language. If omitted, it’s auto-detected. (e.g. es, es-MX, fr)    | string |          |
 | `--target-language`          |                                                     | Target language (e.g. es, es-MX, fr)                                     | string | required |
 | `--url`                      | `SUBTITLE_TOOLS_TRANSLATE_URL`                      | Base URL for the API endpoint (inferred from --model if omitted)         | string |          |
 | `-w, --workdir`              | `SUBTITLE_TOOLS_WORKDIR`                            | Working directory base; unique subdirectory per run                      | string |          |

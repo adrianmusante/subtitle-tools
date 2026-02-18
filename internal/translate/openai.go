@@ -49,7 +49,7 @@ func (c *OpenAIClient) apiKeys() []string {
 	// If no comma is present, still returns a 1-item slice.
 	raw := strings.TrimSpace(c.APIKey)
 	if raw == "" {
-		return nil
+		return []string{}
 	}
 	parts := strings.Split(raw, ",")
 	keys := make([]string, 0, len(parts))
@@ -83,21 +83,15 @@ func (c *OpenAIClient) advanceAPIKeyRR() {
 	atomic.AddUint32(&c.apiKeyRR, 1)
 }
 
-func (c *OpenAIClient) TranslateBatch(ctx context.Context, targetLanguage string, payload string) (string, error) {
+func (c *OpenAIClient) TranslateBatch(ctx context.Context, sourceLanguage string, targetLanguage string, payload string) (string, error) {
 	if c.Model == "" {
 		return "", errors.New("model is required")
-	}
-	if strings.TrimSpace(c.APIKey) == "" {
-		return "", errors.New("api key is required")
 	}
 	if targetLanguage == "" {
 		return "", errors.New("target language is required")
 	}
 
 	keys := c.apiKeys()
-	if len(keys) == 0 {
-		return "", errors.New("api key is required")
-	}
 
 	hc := c.HTTPClient
 	if hc == nil {
@@ -113,7 +107,7 @@ func (c *OpenAIClient) TranslateBatch(ctx context.Context, targetLanguage string
 		return "", err
 	}
 
-	messages := buildPrompt(targetLanguage, payload)
+	messages := buildPrompt(sourceLanguage, targetLanguage, payload)
 
 	reqBody := chatCompletionsRequest{
 		Model:       c.Model,
@@ -192,11 +186,17 @@ func resolveBaseURLForModel(model string, explicitBaseURL string) (string, error
 	}
 }
 
-func buildPrompt(targetLanguage string, input string) []ChatMessage {
-	promptLabel := normalizeTargetLanguageLabel(targetLanguage)
+func buildPrompt(sourceLanguage string, targetLanguage string, input string) []ChatMessage {
+	sourcePromptLabel := normalizeTargetLanguageLabel(sourceLanguage)
+	targetPromptLabel := normalizeTargetLanguageLabel(targetLanguage)
 
 	system := ChatMessage{Role: "system", Content: "You are a translation engine. Output must follow the requested format exactly. Do not add commentary."}
-	user := ChatMessage{Role: "user", Content: "Translate the following subtitles to: `" + promptLabel + "`\n\n" +
+	userContent := "Translate the following subtitles"
+	if sourcePromptLabel != "" {
+		userContent += " from `" + sourcePromptLabel + "`"
+	}
+	userContent += " to: `" + targetPromptLabel + "`\n"
+	userContent += "\n" +
 		"Rules:\n" +
 		"- Output MUST contain the same number of items as the input.\n" +
 		"- Preserve idx values exactly and do not reorder.\n" +
@@ -212,7 +212,8 @@ func buildPrompt(targetLanguage string, input string) []ChatMessage {
 		"{\"idx\":1,\"text\":\"Hola\\nmundo\"}\n" +
 		"{\"idx\":2,\"text\":\"¿Cómo estás?\"}\n" +
 		"\n" +
-		"Input:\n" + input + "\n"}
+		"Input:\n\n" + input + "\n"
+	user := ChatMessage{Role: "user", Content: userContent}
 
 	return []ChatMessage{system, user}
 }

@@ -21,6 +21,7 @@ type Options struct {
 	OutputPath     string
 	DryRun         bool
 	WorkDir        string
+	SourceLanguage string
 	TargetLanguage string
 	APIKey         string
 	Model          string
@@ -63,6 +64,7 @@ func Run(ctx context.Context, opts Options) (Result, error) {
 
 	slog.Info("reading subtitles for translation",
 		"input_path", opts.InputPath,
+		"source_language", normalizeTargetLanguageLabel(opts.SourceLanguage),
 		"target_language", normalizeTargetLanguageLabel(opts.TargetLanguage))
 
 	subs, err := readSubtitles(opts.InputPath)
@@ -108,9 +110,6 @@ func validateAndDefaultOptions(opts Options) (Options, error) {
 	}
 	if opts.TargetLanguage == "" {
 		return Options{}, errors.New("target language is required")
-	}
-	if opts.APIKey == "" {
-		return Options{}, errors.New("api key is required")
 	}
 	if opts.Model == "" {
 		return Options{}, errors.New("model is required")
@@ -196,7 +195,7 @@ func translateBatches(
 		for b := range jobs {
 			n := remaining.Add(-1)
 			slog.Info("Processing batch...", "batch_size", len(b.idxs), "remaining_batches", n)
-			if err := runOneBatch(ctx, limiter, client, opts.TargetLanguage, b, parseRetry, &translatedMu, translatedTexts); err != nil {
+			if err := runOneBatch(ctx, limiter, client, opts.SourceLanguage, opts.TargetLanguage, b, parseRetry, &translatedMu, translatedTexts); err != nil {
 				reportWorkerErrorAndCancel(cancel, errCh, err)
 				return
 			}
@@ -274,6 +273,7 @@ func runOneBatch(
 	ctx context.Context,
 	limiter *rate.Limiter,
 	client *OpenAIClient,
+	sourceLanguage string,
 	targetLanguage string,
 	b batch,
 	parseRetry RetryOptions,
@@ -313,12 +313,12 @@ func runOneBatch(
 			return ctx.Err()
 		}
 
-		resp, err := client.TranslateBatch(ctx, targetLanguage, payload)
+		resp, err := client.TranslateBatch(ctx, sourceLanguage, targetLanguage, payload)
 		if err != nil {
 			return err
 		}
 
-		slog.Debug("received translation response", "response", resp, "batch_size", len(b.idxs), "attempt", attempt)
+		slog.Debug("received translation response", "request", payload, "response", resp, "batch_size", len(b.idxs), "attempt", attempt)
 
 		parsed, err := ParseTranslatedLines(resp)
 		if err != nil {
