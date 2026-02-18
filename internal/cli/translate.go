@@ -80,6 +80,7 @@ var translateCmd = &cobra.Command{
 			return fmt.Errorf("invalid --output path %s: %w", outputPath, err)
 		}
 
+		sourceLang, _ := cmd.Flags().GetString("source-language")
 		targetLang, _ := cmd.Flags().GetString("target-language")
 		apiKey, _ := cmd.Flags().GetString("api-key")
 		model, _ := cmd.Flags().GetString("model")
@@ -117,6 +118,7 @@ var translateCmd = &cobra.Command{
 			OutputPath:            outputPath,
 			DryRun:                dryRun,
 			WorkDir:               runWorkdir,
+			SourceLanguage:        sourceLang,
 			TargetLanguage:        targetLang,
 			APIKey:                apiKey,
 			Model:                 model,
@@ -144,6 +146,7 @@ var translateCmd = &cobra.Command{
 
 func init() {
 	_ = translateCmd.Flags().StringP("output", "o", "", "Output file path (required; must not already exist)")
+	_ = translateCmd.Flags().String("source-language", "", "Source language (optional; helps disambiguate the input)")
 	_ = translateCmd.Flags().String("target-language", "", "Target language (e.g. es, es-MX, fr)")
 	_ = translateCmd.Flags().String("api-key", "", "API key. A comma-separated list of keys can be provided to distribute requests across multiple keys")
 	_ = translateCmd.Flags().String("model", "", "Model to use (e.g. gpt-5, gemini-flash-latest)")

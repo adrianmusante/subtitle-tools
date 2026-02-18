@@ -65,7 +65,7 @@ type ParsedLine struct {
 func ParseTranslatedLines(out string) ([]ParsedLine, error) {
 	out = strings.ReplaceAll(out, "\r\n", "\n")
 	out = stripCodeFences(out)
-	out = strings.TrimSpace(out)
+	out = trimText(out)
 	if out == "" {
 		return nil, errors.New("empty translation output")
 	}
@@ -259,6 +259,10 @@ func extractJSONObjectSegmentsWithOffsets(s string) []jsonSegment {
 	return res
 }
 
+func trimText(text string) string {
+	return strings.Trim(text, "\n ")
+}
+
 func abbreviate(s string, max int) string {
 	s = strings.TrimSpace(s)
 	if max <= 0 || len(s) <= max {
@@ -271,7 +275,7 @@ func abbreviate(s string, max int) string {
 }
 
 func stripCodeFences(s string) string {
-	s = strings.TrimSpace(s)
+	s = trimText(s)
 	if s == "" {
 		return s
 	}

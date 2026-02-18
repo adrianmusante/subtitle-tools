@@ -224,10 +224,6 @@ func mergeSubtitles(inputPath string, opts Options, namer run.TempNamer) (string
 	if inputPath == "" {
 		return "", errors.New("empty file path")
 	}
-	if opts.WorkDir == "" {
-		return "", errors.New("empty workdir")
-	}
-
 	outputTmpPath := namer.Step("merge")
 
 	f, err := os.Open(inputPath)

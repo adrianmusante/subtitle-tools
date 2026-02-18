@@ -93,7 +93,7 @@ func TestOpenAIClient_429RotatesAPIKey(t *testing.T) {
 		},
 	}
 
-	out, err := (&c).TranslateBatch(t.Context(), "es", `{"idx":1,"text":"Hello"}`)
+	out, err := (&c).TranslateBatch(t.Context(), "en", "es", `{"idx":1,"text":"Hello"}`)
 	if err != nil {
 		t.Fatalf("TranslateBatch: %v", err)
 	}
