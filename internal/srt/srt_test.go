@@ -42,6 +42,10 @@ func TestCleanText_TrimSpace(t *testing.T) {
 		{name: "newlines", in: "\nhello\n", out: "hello"},
 		{name: "mixed_whitespace", in: " \t\nhello\r\n\t ", out: "hello"},
 		{name: "internal_whitespace_preserved", in: "  he\tllo\nworld  ", out: "he\tllo\nworld"},
+		{name: "trim_each_line", in: "  hello  \n  world  ", out: "hello\nworld"},
+		{name: "blank_lines_removed", in: "hello\n\n\nworld", out: "hello\nworld"},
+		{name: "whitespace_only_lines_removed", in: "hello\n \t \nworld", out: "hello\nworld"},
+		{name: "crlf_lines_trimmed", in: "  hello  \r\n  world  \r\n", out: "hello\nworld"},
 		{name: "empty", in: "", out: ""},
 	}
 
