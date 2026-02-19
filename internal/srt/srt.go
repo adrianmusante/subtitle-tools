@@ -43,7 +43,7 @@ func formatDuration(duration time.Duration) string {
 	return fmt.Sprintf(`%02d:%02d:%02d,%03d`, hour, minute, second, millisecond)
 }
 
-func CleanText(text string) string { return strings.Trim(text, "\n ") }
+func CleanText(text string) string { return strings.TrimSpace(text) }
 
 func ReadOne(scanner *bufio.Scanner) (*Subtitle, error) {
 	if !scanner.Scan() {

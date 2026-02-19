@@ -30,3 +30,26 @@ func TestReindex(t *testing.T) {
 		t.Fatalf("unexpected indexes after reindex: %d, %d, %d", subs[0].Idx, subs[1].Idx, subs[2].Idx)
 	}
 }
+
+func TestCleanText_TrimSpace(t *testing.T) {
+	cases := []struct {
+		name string
+		in   string
+		out  string
+	}{
+		{name: "leading_trailing_spaces", in: "  hello  ", out: "hello"},
+		{name: "tabs", in: "\thello\t", out: "hello"},
+		{name: "newlines", in: "\nhello\n", out: "hello"},
+		{name: "mixed_whitespace", in: " \t\nhello\r\n\t ", out: "hello"},
+		{name: "internal_whitespace_preserved", in: "  he\tllo\nworld  ", out: "he\tllo\nworld"},
+		{name: "empty", in: "", out: ""},
+	}
+
+	for _, tc := range cases {
+		t.Run(tc.name, func(t *testing.T) {
+			if got := CleanText(tc.in); got != tc.out {
+				t.Fatalf("unexpected CleanText result: %q", got)
+			}
+		})
+	}
+}
