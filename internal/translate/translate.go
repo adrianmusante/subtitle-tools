@@ -26,6 +26,7 @@ type Options struct {
 	APIKey         string
 	Model          string
 	BaseURL        string
+	RequestTimeout time.Duration
 
 	// batching
 	MaxBatchChars int // soft limit for payload size
@@ -51,6 +52,7 @@ type Result struct {
 	Batches     int
 }
 
+const DefaultRequestTimeout = 150 * time.Second
 const DefaultMaxBatchChars = 7_000
 const DefaultMaxWorkers = 2
 const DefaultRequestPerSecond = 4
@@ -74,7 +76,11 @@ func Run(ctx context.Context, opts Options) (Result, error) {
 
 	retryOptions := DefaultRetryOptions()
 	retryOptions.MaxAttempts = opts.RetryMaxAttempts
-	client := OpenAIClient{BaseURL: opts.BaseURL, APIKey: opts.APIKey, Model: opts.Model, RetryOptions: retryOptions}
+	client := OpenAIClient{
+		BaseURL: opts.BaseURL, APIKey: opts.APIKey, Model: opts.Model,
+		Timeout:      opts.RequestTimeout,
+		RetryOptions: retryOptions,
+	}
 
 	batches, err := buildBatches(subs, opts.MaxBatchChars)
 	if err != nil {
@@ -125,6 +131,9 @@ func validateAndDefaultOptions(opts Options) (Options, error) {
 	}
 	if opts.RetryParseMaxAttempts <= 0 {
 		opts.RetryParseMaxAttempts = 1 // at least one attempt
+	}
+	if opts.RequestTimeout < 0 {
+		opts.RequestTimeout = 0 // disable timeout if negative
 	}
 	if opts.OutputPath == "" {
 		return Options{}, errors.New("output is required")

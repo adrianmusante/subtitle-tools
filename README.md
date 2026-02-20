@@ -88,23 +88,22 @@ subtitle-tools translate [flags] <input-file>
 
 Flags:
 
-| Flag                         | Environment variable                                | Description                                                              | Type   | Default  |
-|------------------------------|-----------------------------------------------------|--------------------------------------------------------------------------|--------|----------|
-| `--api-key`                  | `SUBTITLE_TOOLS_TRANSLATE_API_KEY`                  | API key; comma-separated list distributes requests across keys           | string |          |
-| `--dry-run`                  | `SUBTITLE_TOOLS_DRY_RUN`                            | Write output to a temporary file and do not create the final output file | bool   | `false`  |
-| `--max-batch-chars`          | `SUBTITLE_TOOLS_TRANSLATE_MAX_BATCH_CHARS`          | Soft limit for the batch payload size                                    | int    | `7000`   |
-| `--max-workers`              | `SUBTITLE_TOOLS_TRANSLATE_MAX_WORKERS`              | Number of concurrent translation workers (batches in-flight)             | int    | `2`      |
-| `--model`                    | `SUBTITLE_TOOLS_TRANSLATE_MODEL`                    | Model to use (e.g. gpt-5, gemini-flash-latest)                           | string | required |
-| `-o, --output`               |                                                     | Output file path; must not already exist                                 | string | required |
-| `--retry-max-attempts`       | `SUBTITLE_TOOLS_TRANSLATE_RETRY_MAX_ATTEMPTS`       | Max attempts per request for retryable errors                            | int    | `5`      |
-| `--retry-parse-max-attempts` | `SUBTITLE_TOOLS_TRANSLATE_RETRY_PARSE_MAX_ATTEMPTS` | Max attempts per batch when model output is invalid/unparseable          | int    | `2`      |
-| `--rps`                      | `SUBTITLE_TOOLS_TRANSLATE_RPS`                      | Max requests per second (0 disables rate limiting)                       | float  | `4`      |
-| `--source-language`          |                                                     | Source language. If omitted, it’s auto-detected. (e.g. es, es-MX, fr)    | string |          |
-| `--target-language`          |                                                     | Target language (e.g. es, es-MX, fr)                                     | string | required |
-| `--url`                      | `SUBTITLE_TOOLS_TRANSLATE_URL`                      | Base URL for the API endpoint (inferred from --model if omitted)         | string |          |
-| `-w, --workdir`              | `SUBTITLE_TOOLS_WORKDIR`                            | Working directory base; unique subdirectory per run                      | string |          |
-
-
+| Flag                         | Environment variable                                | Description                                                              | Type     | Default  |
+|------------------------------|-----------------------------------------------------|--------------------------------------------------------------------------|----------|----------|
+| `--api-key`                  | `SUBTITLE_TOOLS_TRANSLATE_API_KEY`                  | API key; comma-separated list distributes requests across keys           | string   |          |
+| `--dry-run`                  | `SUBTITLE_TOOLS_DRY_RUN`                            | Write output to a temporary file and do not create the final output file | bool     | `false`  |
+| `--max-batch-chars`          | `SUBTITLE_TOOLS_TRANSLATE_MAX_BATCH_CHARS`          | Soft limit for the batch payload size                                    | int      | `7000`   |
+| `--max-workers`              | `SUBTITLE_TOOLS_TRANSLATE_MAX_WORKERS`              | Number of concurrent translation workers (batches in-flight)             | int      | `2`      |
+| `--model`                    | `SUBTITLE_TOOLS_TRANSLATE_MODEL`                    | Model to use (e.g. gpt-5, gemini-flash-latest)                           | string   | required |
+| `-o, --output`               |                                                     | Output file path; must not already exist                                 | string   | required |
+| `--request-timeout`          | `SUBTITLE_TOOLS_TRANSLATE_REQUEST_TIMEOUT`          | HTTP request timeout duration (e.g. 30s, 1m; 0 disables timeout)         | duration | `2m30s`  |
+| `--retry-max-attempts`       | `SUBTITLE_TOOLS_TRANSLATE_RETRY_MAX_ATTEMPTS`       | Max attempts per request for retryable errors                            | int      | `5`      |
+| `--retry-parse-max-attempts` | `SUBTITLE_TOOLS_TRANSLATE_RETRY_PARSE_MAX_ATTEMPTS` | Max attempts per batch when model output is invalid/unparseable          | int      | `2`      |
+| `--rps`                      | `SUBTITLE_TOOLS_TRANSLATE_RPS`                      | Max requests per second (0 disables rate limiting)                       | float    | `4`      |
+| `--source-language`          |                                                     | Source language. If omitted, it’s auto-detected. (e.g. es, es-MX, fr)    | string   |          |
+| `--target-language`          |                                                     | Target language (e.g. es, es-MX, fr)                                     | string   | required |
+| `--url`                      | `SUBTITLE_TOOLS_TRANSLATE_URL`                      | Base URL for the API endpoint (inferred from --model if omitted)         | string   |          |
+| `-w, --workdir`              | `SUBTITLE_TOOLS_WORKDIR`                            | Working directory base; unique subdirectory per run                      | string   |          |
 
 ## Configuration (environment variables)
 

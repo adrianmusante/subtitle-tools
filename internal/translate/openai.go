@@ -20,6 +20,7 @@ type OpenAIClient struct {
 	BaseURL      string // e.g. https://api.openai.com
 	APIKey       string // can be a single key or a comma-separated list of keys
 	Model        string
+	Timeout      time.Duration
 	RetryOptions RetryOptions
 
 	apiKeyRR uint32 // round-robin counter for multi-key rotation
@@ -95,7 +96,7 @@ func (c *OpenAIClient) TranslateBatch(ctx context.Context, sourceLanguage string
 
 	hc := c.HTTPClient
 	if hc == nil {
-		hc = &http.Client{Timeout: 60 * time.Second}
+		hc = &http.Client{Timeout: c.Timeout}
 	}
 
 	base, err := resolveBaseURLForModel(c.Model, c.BaseURL)

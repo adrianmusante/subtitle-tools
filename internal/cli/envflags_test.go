@@ -172,6 +172,66 @@ func TestResolveFloat64FlagFromEnv_InvalidValueErrors(t *testing.T) {
 	}
 }
 
+func TestResolveDurationFlagFromEnv_FlagTakesPrecedence(t *testing.T) {
+	cmd := &cobra.Command{Use: "t"}
+	cmd.Flags().Duration(flagRequestTimeout, 0, "")
+	_ = cmd.Flags().Set(flagRequestTimeout, "45s")
+
+	t.Setenv(envTranslateRequestTimeout, "10s")
+
+	if err := resolveDurationFlagFromEnv(cmd, flagRequestTimeout, envTranslateRequestTimeout); err != nil {
+		t.Fatalf("resolveDurationFlagFromEnv: %v", err)
+	}
+
+	got, _ := cmd.Flags().GetDuration(flagRequestTimeout)
+	if got.String() != "45s" {
+		t.Fatalf("expected request-timeout=45s from flag, got %v", got)
+	}
+}
+
+func TestResolveDurationFlagFromEnv_UsesEnvWhenFlagMissing(t *testing.T) {
+	cmd := &cobra.Command{Use: "t"}
+	cmd.Flags().Duration(flagRequestTimeout, 0, "")
+
+	t.Setenv(envTranslateRequestTimeout, "30s")
+
+	if err := resolveDurationFlagFromEnv(cmd, flagRequestTimeout, envTranslateRequestTimeout); err != nil {
+		t.Fatalf("resolveDurationFlagFromEnv: %v", err)
+	}
+
+	got, _ := cmd.Flags().GetDuration(flagRequestTimeout)
+	if got.String() != "30s" {
+		t.Fatalf("expected request-timeout=30s from env, got %v", got)
+	}
+}
+
+func TestResolveDurationFlagFromEnv_InvalidValueErrors(t *testing.T) {
+	cmd := &cobra.Command{Use: "t"}
+	cmd.Flags().Duration(flagRequestTimeout, 0, "")
+
+	t.Setenv(envTranslateRequestTimeout, "nope")
+
+	if err := resolveDurationFlagFromEnv(cmd, flagRequestTimeout, envTranslateRequestTimeout); err == nil {
+		t.Fatalf("expected error for invalid env duration")
+	}
+}
+
+func TestResolveDurationFlagFromEnv_EmptyEnvDoesNotOverride(t *testing.T) {
+	cmd := &cobra.Command{Use: "t"}
+	cmd.Flags().Duration(flagRequestTimeout, 0, "")
+
+	t.Setenv(envTranslateRequestTimeout, "   ")
+
+	if err := resolveDurationFlagFromEnv(cmd, flagRequestTimeout, envTranslateRequestTimeout); err != nil {
+		t.Fatalf("resolveDurationFlagFromEnv: %v", err)
+	}
+
+	got, _ := cmd.Flags().GetDuration(flagRequestTimeout)
+	if got != 0 {
+		t.Fatalf("expected request-timeout=0 (default), got %v", got)
+	}
+}
+
 func TestTranslateCmd_RunE_ResolvesEnvVars(t *testing.T) {
 	// Minimal smoke check that translate's RunE resolves env vars BEFORE reading flags.
 	// We don't want to execute the full translate.Run (would require an API), so we

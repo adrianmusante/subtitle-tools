@@ -18,34 +18,37 @@ var translateCmd = &cobra.Command{
 	Args:  cobra.ExactArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
 		// Allow resolving some flags from env vars.
-		if err := resolveBoolFlagFromEnv(cmd, "dry-run", envDryRun); err != nil {
+		if err := resolveBoolFlagFromEnv(cmd, flagDryRun, envDryRun); err != nil {
 			return err
 		}
-		if err := resolveStringFlagFromEnv(cmd, "workdir", envWorkdir); err != nil {
+		if err := resolveStringFlagFromEnv(cmd, flagWorkdir, envWorkdir); err != nil {
 			return err
 		}
-		if err := resolveStringFlagFromEnv(cmd, "api-key", envTranslateAPIKey); err != nil {
+		if err := resolveStringFlagFromEnv(cmd, flagApiKey, envTranslateAPIKey); err != nil {
 			return err
 		}
-		if err := resolveStringFlagFromEnv(cmd, "model", envTranslateModel); err != nil {
+		if err := resolveStringFlagFromEnv(cmd, flagModel, envTranslateModel); err != nil {
 			return err
 		}
-		if err := resolveStringFlagFromEnv(cmd, "url", envTranslateBaseURL); err != nil {
+		if err := resolveStringFlagFromEnv(cmd, flagURL, envTranslateBaseURL); err != nil {
 			return err
 		}
-		if err := resolveIntFlagFromEnv(cmd, "max-batch-chars", envTranslateMaxBatchChars); err != nil {
+		if err := resolveIntFlagFromEnv(cmd, flagMaxBatchChars, envTranslateMaxBatchChars); err != nil {
 			return err
 		}
-		if err := resolveIntFlagFromEnv(cmd, "max-workers", envTranslateMaxWorkers); err != nil {
+		if err := resolveIntFlagFromEnv(cmd, flagMaxWorkers, envTranslateMaxWorkers); err != nil {
 			return err
 		}
-		if err := resolveFloat64FlagFromEnv(cmd, "rps", envTranslateRPS); err != nil {
+		if err := resolveFloat64FlagFromEnv(cmd, flagRPS, envTranslateRPS); err != nil {
 			return err
 		}
-		if err := resolveIntFlagFromEnv(cmd, "retry-max-attempts", envTranslateRetryMax); err != nil {
+		if err := resolveIntFlagFromEnv(cmd, flagRetryMax, envTranslateRetryMax); err != nil {
 			return err
 		}
-		if err := resolveIntFlagFromEnv(cmd, "retry-parse-max-attempts", envTranslateRetryParseMax); err != nil {
+		if err := resolveIntFlagFromEnv(cmd, flagRetryParseMax, envTranslateRetryParseMax); err != nil {
+			return err
+		}
+		if err := resolveDurationFlagFromEnv(cmd, flagRequestTimeout, envTranslateRequestTimeout); err != nil {
 			return err
 		}
 
@@ -80,18 +83,19 @@ var translateCmd = &cobra.Command{
 			return fmt.Errorf("invalid --output path %s: %w", outputPath, err)
 		}
 
-		sourceLang, _ := cmd.Flags().GetString("source-language")
-		targetLang, _ := cmd.Flags().GetString("target-language")
-		apiKey, _ := cmd.Flags().GetString("api-key")
-		model, _ := cmd.Flags().GetString("model")
-		baseURL, _ := cmd.Flags().GetString("url")
-		dryRun, _ := cmd.Flags().GetBool("dry-run")
-		workdir, _ := cmd.Flags().GetString("workdir")
-		maxBatchChars, _ := cmd.Flags().GetInt("max-batch-chars")
-		maxWorkers, _ := cmd.Flags().GetInt("max-workers")
-		rps, _ := cmd.Flags().GetFloat64("rps")
-		retryMaxAttempts, _ := cmd.Flags().GetInt("retry-max-attempts")
-		retryParseMaxAttempts, _ := cmd.Flags().GetInt("retry-parse-max-attempts")
+		sourceLang, _ := cmd.Flags().GetString(flagSourceLanguage)
+		targetLang, _ := cmd.Flags().GetString(flagTargetLanguage)
+		apiKey, _ := cmd.Flags().GetString(flagApiKey)
+		model, _ := cmd.Flags().GetString(flagModel)
+		baseURL, _ := cmd.Flags().GetString(flagURL)
+		dryRun, _ := cmd.Flags().GetBool(flagDryRun)
+		workdir, _ := cmd.Flags().GetString(flagWorkdir)
+		maxBatchChars, _ := cmd.Flags().GetInt(flagMaxBatchChars)
+		maxWorkers, _ := cmd.Flags().GetInt(flagMaxWorkers)
+		rps, _ := cmd.Flags().GetFloat64(flagRPS)
+		retryMaxAttempts, _ := cmd.Flags().GetInt(flagRetryMax)
+		retryParseMaxAttempts, _ := cmd.Flags().GetInt(flagRetryParseMax)
+		requestTimeout, _ := cmd.Flags().GetDuration(flagRequestTimeout)
 
 		// Normalize comma-separated api keys early so opts don't carry spaces.
 		apiKey = run.NormalizeCSV(apiKey)
@@ -128,6 +132,7 @@ var translateCmd = &cobra.Command{
 			RPS:                   rps,
 			RetryMaxAttempts:      retryMaxAttempts,
 			RetryParseMaxAttempts: retryParseMaxAttempts,
+			RequestTimeout:        requestTimeout,
 		}
 
 		safeOpts := opts
@@ -145,20 +150,21 @@ var translateCmd = &cobra.Command{
 }
 
 func init() {
-	_ = translateCmd.Flags().StringP("output", "o", "", "Output file path (required; must not already exist)")
-	_ = translateCmd.Flags().String("source-language", "", "Source language (optional; helps disambiguate the input)")
-	_ = translateCmd.Flags().String("target-language", "", "Target language (e.g. es, es-MX, fr)")
-	_ = translateCmd.Flags().String("api-key", "", "API key. A comma-separated list of keys can be provided to distribute requests across multiple keys")
-	_ = translateCmd.Flags().String("model", "", "Model to use (e.g. gpt-5, gemini-flash-latest)")
-	_ = translateCmd.Flags().String("url", "", "Base URL for the API endpoint (optional; inferred from --model if omitted)")
-	_ = translateCmd.Flags().Bool("dry-run", false, "Write output to a temporary file and do not create the final output file")
-	_ = translateCmd.Flags().StringP("workdir", "w", "", "Working directory base. If set, a unique subdirectory is created per run")
-	_ = translateCmd.Flags().Int("max-batch-chars", translate.DefaultMaxBatchChars, "Soft limit for the batch payload size")
-	_ = translateCmd.Flags().Int("max-workers", translate.DefaultMaxWorkers, "Number of concurrent translation workers (batches in-flight)")
-	_ = translateCmd.Flags().Float64("rps", translate.DefaultRequestPerSecond, "Max requests per second (0 disables rate limiting)")
-	_ = translateCmd.Flags().Int("retry-max-attempts", translate.DefaultRetryMaxAttempts, "Max attempts per request for retryable errors")
-	_ = translateCmd.Flags().Int("retry-parse-max-attempts", translate.DefaultParseRetryMaxAttempts, "Max attempts per batch when the model output is invalid/unparseable (ParseTranslatedLines/mismatch)")
+	_ = translateCmd.Flags().StringP(flagOutput, flagOutputShorthand, "", "Output file path (required; must not already exist)")
+	_ = translateCmd.Flags().String(flagSourceLanguage, "", "Source language (optional; helps disambiguate the input)")
+	_ = translateCmd.Flags().String(flagTargetLanguage, "", "Target language (e.g. es, es-MX, fr)")
+	_ = translateCmd.Flags().String(flagApiKey, "", "API key. A comma-separated list of keys can be provided to distribute requests across multiple keys")
+	_ = translateCmd.Flags().String(flagModel, "", "Model to use (e.g. gpt-5, gemini-flash-latest)")
+	_ = translateCmd.Flags().String(flagURL, "", "Base URL for the API endpoint (optional; inferred from --model if omitted)")
+	_ = translateCmd.Flags().Bool(flagDryRun, false, "Write output to a temporary file and do not create the final output file")
+	_ = translateCmd.Flags().StringP(flagWorkdir, flagWorkdirShorthand, "", "Working directory base. If set, a unique subdirectory is created per run")
+	_ = translateCmd.Flags().Int(flagMaxBatchChars, translate.DefaultMaxBatchChars, "Soft limit for the batch payload size")
+	_ = translateCmd.Flags().Int(flagMaxWorkers, translate.DefaultMaxWorkers, "Number of concurrent translation workers (batches in-flight)")
+	_ = translateCmd.Flags().Float64(flagRPS, translate.DefaultRequestPerSecond, "Max requests per second (0 disables rate limiting)")
+	_ = translateCmd.Flags().Int(flagRetryMax, translate.DefaultRetryMaxAttempts, "Max attempts per request for retryable errors")
+	_ = translateCmd.Flags().Int(flagRetryParseMax, translate.DefaultParseRetryMaxAttempts, "Max attempts per batch when the model output is invalid/unparseable (ParseTranslatedLines/mismatch)")
+	_ = translateCmd.Flags().Duration(flagRequestTimeout, translate.DefaultRequestTimeout, "HTTP request timeout duration (e.g. 30s, 1m; 0 disables timeout)")
 
-	_ = translateCmd.MarkFlagRequired("target-language")
+	_ = translateCmd.MarkFlagRequired(flagTargetLanguage)
 	// NOTE: api-key and model can be provided via env vars, so we validate at runtime.
 }

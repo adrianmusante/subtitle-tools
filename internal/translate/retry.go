@@ -3,6 +3,7 @@ package translate
 import (
 	"context"
 	"errors"
+	"log/slog"
 	"math"
 	"math/rand"
 	"net"
@@ -142,6 +143,7 @@ func requestWithRetry[T any](
 			if delay <= 0 {
 				delay = computeBackoff(attempt, o)
 			}
+			slog.Warn("Sleeping before retrying request", "attempt", attempt, "delay", delay, "error", lastErr)
 			if err := sleepWithContext(ctx, delay); err != nil {
 				return zero, err
 			}
