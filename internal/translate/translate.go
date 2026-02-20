@@ -132,7 +132,7 @@ func validateAndDefaultOptions(opts Options) (Options, error) {
 	if opts.RetryParseMaxAttempts <= 0 {
 		opts.RetryParseMaxAttempts = 1 // at least one attempt
 	}
-	if opts.RequestTimeout < 0 { //
+	if opts.RequestTimeout < 0 {
 		opts.RequestTimeout = 0 // disable timeout if negative
 	}
 	if opts.OutputPath == "" {
