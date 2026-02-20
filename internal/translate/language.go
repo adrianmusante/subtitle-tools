@@ -13,7 +13,8 @@ const (
 	LanguageSpanishNeutral = "Spanish (Neutral)"
 )
 
-var exactLanguageLabels = map[string]string{
+// keys are normalized to lowercase for case-insensitive matching
+var languageLabels = map[string]string{
 	"en":    LanguageEnglish,
 	"en-us": LanguageEnglishUS,
 	"en-gb": LanguageEnglishUK,
@@ -22,7 +23,13 @@ var exactLanguageLabels = map[string]string{
 	"es-es": LanguageSpanishSpain,
 	"ea":    LanguageSpanishLatin,
 	"spl":   LanguageSpanishLatin,
+
+	// If a specific region isn't recognized, but the language is, we can still apply a more general label.
+	"en-*": LanguageEnglish,
+	"es-*": LanguageSpanishLatin,
 }
+
+const LanguageSeparator = "-"
 
 // normalizeTargetLanguage takes user input (often BCP-47-ish tags like "es", "es-MX",
 // "es_419", or patterns like "es-*"), normalizes it, and returns:
@@ -33,19 +40,20 @@ var exactLanguageLabels = map[string]string{
 // and otherwise falls back to the normalized input.
 func normalizeTargetLanguage(input string) (tag string, label string) {
 	tag = strings.TrimSpace(input)
-	tag = strings.ReplaceAll(tag, "_", "-")
+	tag = strings.ReplaceAll(tag, "_", LanguageSeparator)
 	for strings.Contains(tag, "--") {
-		tag = strings.ReplaceAll(tag, "--", "-")
+		tag = strings.ReplaceAll(tag, "--", LanguageSeparator)
 	}
 	if tag == "" {
 		return "", ""
 	}
 
 	// Normalize to canonical-ish casing for language/region tags.
-	parts := strings.Split(tag, "-")
+	parts := strings.Split(tag, LanguageSeparator)
 	if len(parts) >= 1 {
 		parts[0] = strings.ToLower(parts[0])
 	}
+	wildcardLang := ""
 	if len(parts) >= 2 {
 		// Region is usually 2 letters or 3 digits.
 		if len(parts[1]) == 2 {
@@ -53,18 +61,19 @@ func normalizeTargetLanguage(input string) (tag string, label string) {
 		} else if len(parts[1]) == 3 {
 			parts[1] = strings.ToLower(parts[1])
 		}
+		wildcardLang = parts[0] + LanguageSeparator + "*" // e.g. "es-AR" would match "es-*"
 	}
-	tag = strings.Join(parts, "-")
+	tag = strings.Join(parts, LanguageSeparator)
 	lower := strings.ToLower(tag)
 
-	if label, ok := exactLanguageLabels[lower]; ok {
+	if label, ok := languageLabels[lower]; ok {
 		return tag, label
 	}
-	if strings.HasPrefix(lower, "en-") {
-		return tag, LanguageEnglish
-	}
-	if strings.HasPrefix(lower, "es-") {
-		return tag, LanguageSpanishLatin
+
+	if wildcardLang != "" {
+		if label, ok := languageLabels[wildcardLang]; ok {
+			return tag, label
+		}
 	}
 
 	return tag, tag
