@@ -336,7 +336,10 @@ func moveFileWithFallback(src, dst string) error {
 
 			// Now move again the new file to the destination
 			if err := fs.MoveFile(src, dst); err != nil {
-				// If move fails, log the issue but still return an error
+				// Attempt rollback: try to restore the original file so we don't leave dst missing.
+				if rollbackErr := os.Rename(oldPath, dst); rollbackErr != nil {
+					slog.Warn("Failed to roll back after move failure; original file may be left at .old", "oldPath", oldPath, "dst", dst, "error", rollbackErr)
+				}
 				return fmt.Errorf("could not move new file to destination: %w", err)
 			}
 
