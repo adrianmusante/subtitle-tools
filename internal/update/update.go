@@ -114,7 +114,7 @@ func Run(ctx context.Context, opts Options) (Result, error) {
 	if opts.DryRun {
 		outputPath = namer.Step("exec")
 	}
-	err = fs.RenameOrMove(newPath, outputPath)
+	err = moveFileWithFallback(newPath, outputPath)
 	if err != nil {
 		return Result{}, err
 	}
@@ -313,4 +313,36 @@ func getExePath() (string, error) {
 		return "", fmt.Errorf("resolve executable symlink: %w", err)
 	}
 	return exePath, nil
+}
+
+// moveFileWithFallback attempts to move src to dst.
+// On Windows, if the destination file is in use (sharing violation), it attempts a fallback:
+// rename dst to dst.old and then move src to dst.
+func moveFileWithFallback(src, dst string) error {
+	if err := fs.MoveFile(src, dst); err != nil {
+		if fs.IsFileInUseError(err) {
+			slog.Info("File in use, attempting fallback rename strategy", "path", dst, "error", err)
+
+			// Try to rename the old file to .old
+			oldPath := dst + ".old"
+			if err := os.Rename(dst, oldPath); err != nil {
+				return fmt.Errorf("could not rename existing file to .old: %w", err)
+			}
+
+			// Now move again the new file to the destination
+			if err := fs.MoveFile(src, dst); err != nil {
+				// If move fails, log the issue but still return an error
+				return fmt.Errorf("could not move new file to destination: %w", err)
+			}
+
+			// Clean up the old file. If this fails, log a warning but don't return an error since the update succeeded.
+			if err := os.Remove(oldPath); err != nil {
+				slog.Warn("Could not remove old file after successful update", "path", oldPath, "error", err)
+			}
+
+			return nil
+		}
+		return err
+	}
+	return nil
 }

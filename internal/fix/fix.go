@@ -107,11 +107,11 @@ func Run(ctx context.Context, opts Options) (Result, error) {
 		if opts.CreateBackup && fs.SameFilePath(outputPath, opts.InputPath) {
 			backupFilePath := opts.InputPath + opts.BackupExt
 			_ = os.Remove(backupFilePath)
-			if err := fs.RenameOrMove(opts.InputPath, backupFilePath); err != nil {
+			if err := fs.MoveFile(opts.InputPath, backupFilePath); err != nil {
 				return Result{}, err
 			}
 		}
-		if err := fs.RenameOrMove(tmpOutputPath, outputPath); err != nil {
+		if err := fs.MoveFile(tmpOutputPath, outputPath); err != nil {
 			return Result{}, err
 		}
 	}
