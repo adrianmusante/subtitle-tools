@@ -120,7 +120,7 @@ Flags:
 | Flag            | Environment variable            | Description                                                              | Type   | Default |
 |-----------------|---------------------------------|--------------------------------------------------------------------------|--------|---------|
 | `--api-key`     | `SUBTITLE_TOOLS_GITHUB_API_KEY` | GitHub API key (optional; helps avoid rate limits)                       | string |         |
-| `--dry-run`     | `SUBTITLE_TOOLS_DRY_RUN`        | Write output to a temporary file and do not create the final output file | bool   | `false` |
+| `--dry-run`     | `SUBTITLE_TOOLS_DRY_RUN`        | Download the update but do not replace the current executable            | bool   | `false` |
 | `-w, --workdir` | `SUBTITLE_TOOLS_WORKDIR`        | Working directory base; unique subdirectory per run                      | string |         |
 
 ## Configuration (environment variables)
