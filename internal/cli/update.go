@@ -65,7 +65,7 @@ var updateCmd = &cobra.Command{
 }
 
 func init() {
-	updateCmd.Flags().Bool(flagDryRun, false, "Write output to a temporary file and do not overwrite the original")
+	updateCmd.Flags().Bool(flagDryRun, false, "Download the update to a temporary file but do not replace the current executable")
 	updateCmd.Flags().StringP(flagWorkdir, flagWorkdirShorthand, "", "Working directory base. If set, a unique subdirectory is created per run")
 	updateCmd.Flags().String(flagApiKey, "", "GitHub API key (optional; helps avoid rate limits)")
 }
