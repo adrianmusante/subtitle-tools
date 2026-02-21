@@ -325,6 +325,11 @@ func moveFileWithFallback(src, dst string) error {
 
 			// Try to rename the old file to .old
 			oldPath := dst + ".old"
+			// If a previous .old file exists (for example from a prior failed update),
+			// attempt to remove it first so that the rename does not fail with "file exists".
+			if err := os.Remove(oldPath); err != nil && !errors.Is(err, os.ErrNotExist) {
+				slog.Warn("Could not remove existing .old file before rename", "path", oldPath, "error", err)
+			}
 			if err := os.Rename(dst, oldPath); err != nil {
 				return fmt.Errorf("could not rename existing file to .old: %w", err)
 			}
