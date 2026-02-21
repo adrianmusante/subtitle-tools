@@ -9,7 +9,7 @@ import (
 )
 
 func IsFileInUseError(err error) bool {
-	// En Unix/Linux, el acceso denegado se manifiesta como ErrPermission
+	// In Unix/Linux, access denied manifests as ErrPermission
 	return errors.Is(err, os.ErrPermission)
 }
 
