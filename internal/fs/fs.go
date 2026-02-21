@@ -42,14 +42,7 @@ func CopyFile(src, dst string) error {
 	if err != nil {
 		return err
 	}
-	defer func() {
-		if cerr := in.Close(); cerr != nil {
-			slog.Error("failed to close: "+src, "err", cerr)
-			if err == nil {
-				err = cerr
-			}
-		}
-	}()
+	defer CloseOrLog(in, src)
 	return WriteFile(in, dst)
 }
 
