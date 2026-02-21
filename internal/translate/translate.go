@@ -413,7 +413,7 @@ func writeOutput(opts Options, subs []*srt.Subtitle) (string, error) {
 	if opts.DryRun {
 		outputPath = tmpOutputPath
 	} else {
-		if err := fs.RenameOrMove(tmpOutputPath, outputPath); err != nil {
+		if err := fs.MoveFile(tmpOutputPath, outputPath); err != nil {
 			return "", err
 		}
 	}

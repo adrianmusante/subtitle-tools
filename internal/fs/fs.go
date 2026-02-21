@@ -8,7 +8,6 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
-	"syscall"
 )
 
 func CloseOrLog(c io.Closer, what string) {
@@ -44,17 +43,7 @@ func CopyFile(src, dst string) error {
 		return err
 	}
 	defer CloseOrLog(in, src)
-
-	out, err := os.Create(dst)
-	if err != nil {
-		return err
-	}
-	defer func() { _ = out.Close() }()
-
-	if _, err := io.Copy(out, in); err != nil {
-		return err
-	}
-	return out.Close()
+	return WriteFile(in, dst)
 }
 
 func FilesEqual(pathA, pathB string) (bool, error) {
@@ -191,15 +180,15 @@ func ValidatePathWritable(path string) error {
 	return nil
 }
 
-// RenameOrMove renames src => dst.
+// MoveFile moves src => dst.
 //
 // It prefers os.Rename (atomic within the same filesystem). If the operation
-// fails due to a cross-device move (EXDEV), it falls back to copy+sync+remove,
-// which works across different filesystems/mounts (e.g. SMB/CIFS/Samba).
-func RenameOrMove(src, dst string) error {
+// fails due to a cross-device move (EXDEV on Unix, ERROR_NOT_SAME_DEVICE on Windows),
+// it falls back to copy+sync+remove, which works across different filesystems/mounts
+// (e.g. SMB/CIFS/Samba or different drives on Windows).
+func MoveFile(src, dst string) error {
 	if err := os.Rename(src, dst); err != nil {
-		var linkErr *os.LinkError
-		if errors.As(err, &linkErr) && errors.Is(linkErr.Err, syscall.EXDEV) {
+		if isCrossDeviceError(err) {
 			if err2 := copyFileContentsSync(src, dst); err2 != nil {
 				return fmt.Errorf("cross-device move: copy %s -> %s: %w", src, dst, err2)
 			}
