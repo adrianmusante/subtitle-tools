@@ -9,8 +9,11 @@ import (
 )
 
 func IsFileInUseError(err error) bool {
-	// In Unix/Linux, access denied manifests as ErrPermission
-	return errors.Is(err, os.ErrPermission)
+	// On non-Windows platforms we don't reliably detect "file in use".
+	// Returning false avoids treating generic permission errors as "file in use"
+	// and prevents masking the original failure in higher-level fallbacks.
+	_ = err
+	return false
 }
 
 func isCrossDeviceError(err error) bool {
