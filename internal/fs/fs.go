@@ -17,6 +17,18 @@ func CloseOrLog(c io.Closer, what string) {
 	}
 }
 
+func WriteFile(r io.Reader, destPath string) error {
+	out, err := os.Create(destPath)
+	if err != nil {
+		return err
+	}
+	defer CloseOrLog(out, destPath)
+	if _, err := io.Copy(out, r); err != nil {
+		return err
+	}
+	return nil
+}
+
 func CopyFile(src, dst string) error {
 	in, err := os.Open(src)
 	if err != nil {
