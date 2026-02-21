@@ -14,6 +14,8 @@ const (
 	envVerbose = "SUBTITLE_TOOLS_VERBOSE"
 	envDryRun  = "SUBTITLE_TOOLS_DRY_RUN"
 	envWorkdir = "SUBTITLE_TOOLS_WORKDIR"
+	// Update flags.
+	envGithubAPIKey = "SUBTITLE_TOOLS_GITHUB_API_KEY"
 	// Translate tuning flags.
 	envTranslateAPIKey         = "SUBTITLE_TOOLS_TRANSLATE_API_KEY"
 	envTranslateModel          = "SUBTITLE_TOOLS_TRANSLATE_MODEL"

@@ -17,6 +17,27 @@ func CloseOrLog(c io.Closer, what string) {
 	}
 }
 
+func WriteFile(r io.Reader, destPath string) (err error) {
+	out, err := os.Create(destPath)
+	if err != nil {
+		return err
+	}
+	defer func() {
+		if cerr := out.Close(); cerr != nil {
+			// Preserve existing behavior of logging close failures,
+			// but also propagate the error if no earlier error occurred.
+			slog.Error("failed to close: "+destPath, "err", cerr)
+			if err == nil {
+				err = cerr
+			}
+		}
+	}()
+	if _, err = io.Copy(out, r); err != nil {
+		return err
+	}
+	return nil
+}
+
 func CopyFile(src, dst string) error {
 	in, err := os.Open(src)
 	if err != nil {

@@ -66,4 +66,5 @@ func init() {
 
 	rootCmd.AddCommand(fixCmd)
 	rootCmd.AddCommand(translateCmd)
+	rootCmd.AddCommand(updateCmd)
 }

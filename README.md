@@ -105,6 +105,24 @@ Flags:
 | `--url`                      | `SUBTITLE_TOOLS_TRANSLATE_URL`                      | Base URL for the API endpoint (inferred from --model if omitted)         | string   |          |
 | `-w, --workdir`              | `SUBTITLE_TOOLS_WORKDIR`                            | Working directory base; unique subdirectory per run                      | string   |          |
 
+### update
+
+Download and replace the CLI with the latest version.
+
+#### Usage:
+
+```text
+subtitle-tools update [flags]
+```
+
+Flags:
+
+| Flag            | Environment variable            | Description                                                              | Type   | Default |
+|-----------------|---------------------------------|--------------------------------------------------------------------------|--------|---------|
+| `--api-key`     | `SUBTITLE_TOOLS_GITHUB_API_KEY` | GitHub API key (optional; helps avoid rate limits)                       | string |         |
+| `--dry-run`     | `SUBTITLE_TOOLS_DRY_RUN`        | Download the update but do not replace the current executable            | bool   | `false` |
+| `-w, --workdir` | `SUBTITLE_TOOLS_WORKDIR`        | Working directory base; unique subdirectory per run                      | string |         |
+
 ## Configuration (environment variables)
 
 You can provide some flag values via environment variables.
