@@ -400,13 +400,23 @@ func shiftTimeSubtitles(inputPath string, opts Options, namer run.TempNamer) (st
 		}
 
 		// Shift times and check for negative results.
-		subtitle.FromTime += shiftTime
-		subtitle.ToTime += shiftTime
+		origFrom := subtitle.FromTime
+		origTo := subtitle.ToTime
+		shiftedFrom := origFrom + shiftTime
+		shiftedTo := origTo + shiftTime
 
-		if subtitle.FromTime < 0 || subtitle.ToTime < 0 {
-			slog.Debug("negative subtitle time after shift", "subtitle", subtitle, "shift_time", shiftTime)
-			return outputTmpPath, fmt.Errorf("negative subtitle time after shift; check shift time %v and subtitle times in file", shiftTime)
+		if shiftedFrom < 0 || shiftedTo < 0 {
+			slog.Debug("negative subtitle time after shift", "subtitle", subtitle,
+				"shifted_from", shiftedFrom, "shifted_to", shiftedTo,
+				"shift_time", shiftTime)
+			return outputTmpPath, fmt.Errorf(
+				"negative subtitle time after shift for cue %d: original [%v --> %v], shifted [%v --> %v], shift %v",
+				newIdx, origFrom, origTo, shiftedFrom, shiftedTo, shiftTime,
+			)
 		}
+
+		subtitle.FromTime = shiftedFrom
+		subtitle.ToTime = shiftedTo
 
 		if err := srt.WriteOne(out, subtitle, &newIdx); err != nil {
 			return outputTmpPath, err
