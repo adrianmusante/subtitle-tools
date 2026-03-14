@@ -6,6 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
+	"time"
 
 	"github.com/adrianmusante/subtitle-tools/internal/run"
 )
@@ -297,7 +298,7 @@ func TestShiftTimeSubtitles_PositiveShift(t *testing.T) {
 	}, "\n")
 
 	namer := run.NewTempNamer(workdir, input)
-	opts := Options{ShiftTime: 2_000_000_000} // +2s
+	opts := Options{ShiftTime: 2 * time.Second} // +2s
 
 	outPath, err := shiftTimeSubtitles(input, opts, namer)
 	if err != nil {
