@@ -39,12 +39,13 @@ Fixes common issues in `.srt` files.
 
 Fixes:
 - overlaps: subtitles sharing the same time span.
-- out-of-order: subtitles not sorted by time.
+- out of order: subtitles not sorted by time.
 - cue index: invalid sequence of cue indices.
 - line wrap: rewraps lines that may exceed typical screen width.
 - style stripping: removes styling such as HTML tags (when enabled).
 - empty cues: removes subtitles with no text.
 - deduplication: removes duplicated subtitles.
+- time shifting: shifts all cue times by a specified duration (when enabled).
 
 #### Usage:
 
