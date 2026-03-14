@@ -37,6 +37,7 @@ var fixCmd = &cobra.Command{
 		minWords, _ := cmd.Flags().GetInt(flagMinWordsMerge)
 		maxLineLen, _ := cmd.Flags().GetInt(flagMaxLineLen)
 		stripStyle, _ := cmd.Flags().GetBool(flagStripStyle)
+		shiftTime, _ := cmd.Flags().GetDuration(flagShiftTime)
 
 		if inputPath == "-" {
 			return errors.New("stdin is not supported yet; pass a subtitle file path")
@@ -91,6 +92,7 @@ var fixCmd = &cobra.Command{
 			BackupExt:      ".bak",
 			CreateBackup:   !dryRun && !skipBackup,
 			SkipTranslator: true,
+			ShiftTime:      shiftTime,
 		}
 
 		log.Debug("running fix", "opts", opts)
@@ -115,6 +117,7 @@ func init() {
 	fixCmd.Flags().Int(flagMinWordsMerge, fix.DefaultMinWordsForMerging, "Minimum words to consider a line 'short' for merging")
 	fixCmd.Flags().Int(flagMaxLineLen, fix.DefaultMaxLineLength, "Max line length when wrapping")
 	fixCmd.Flags().Bool(flagStripStyle, false, "Remove HTML/XML style tags from subtitle text")
+	fixCmd.Flags().Duration(flagShiftTime, 0, "Shift all cue times by the specified duration (e.g. 500ms, -2s, 1s250ms)")
 }
 
 // for tests / future hooking

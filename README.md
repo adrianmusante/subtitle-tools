@@ -54,15 +54,16 @@ subtitle-tools fix [flags] <input-file>
 
 Flags:
 
-| Flag                | Environment variable     | Description                                                        | Type   | Default |
-|---------------------|--------------------------|--------------------------------------------------------------------|--------|---------|
-| `--dry-run`         | `SUBTITLE_TOOLS_DRY_RUN` | Write output to a temporary file and do not overwrite the original | bool   | `false` |
-| `--max-line-len`    |                          | Max line length when wrapping                                      | int    | `70`    |
-| `--min-words-merge` |                          | Minimum words to consider a line short for merging                 | int    | `3`     |
-| `-o, --output`      |                          | Output file path (defaults to overwriting input)                   | string |         |
-| `--skip-backup`     |                          | Do not create a .bak backup when overwriting the input file        | bool   | `false` |
-| `--strip-style`     |                          | Remove HTML/XML style tags from subtitle text                      | bool   | `false` |
-| `-w, --workdir`     | `SUBTITLE_TOOLS_WORKDIR` | Working directory base; unique subdirectory per run                | string |         |
+| Flag                | Environment variable     | Description                                                              | Type     | Default |
+|---------------------|--------------------------|--------------------------------------------------------------------------|----------|---------|
+| `--dry-run`         | `SUBTITLE_TOOLS_DRY_RUN` | Write output to a temporary file and do not overwrite the original       | bool     | `false` |
+| `--max-line-len`    |                          | Max line length when wrapping                                            | int      | `70`    |
+| `--min-words-merge` |                          | Minimum words to consider a line short for merging                       | int      | `3`     |
+| `-o, --output`      |                          | Output file path (defaults to overwriting input)                         | string   |         |
+| `--shift-time`      |                          | Shift all cue times by the specified duration (e.g. 500ms, -2s, 1s250ms) | duration | `0ms`   |
+| `--skip-backup`     |                          | Do not create a .bak backup when overwriting the input file              | bool     | `false` |
+| `--strip-style`     |                          | Remove HTML/XML style tags from subtitle text                            | bool     | `false` |
+| `-w, --workdir`     | `SUBTITLE_TOOLS_WORKDIR` | Working directory base; unique subdirectory per run                      | string   |         |
 
 Behavior:
 - If `-o/--output` is omitted, `fix` overwrites the input file.
