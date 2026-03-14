@@ -42,6 +42,7 @@ type Options struct {
 	SkipTranslator bool
 	CreateBackup   bool
 	BackupExt      string
+	ShiftTime      time.Duration
 }
 
 type Result struct {
@@ -86,6 +87,11 @@ func Run(ctx context.Context, opts Options) (Result, error) {
 			return Result{}, fmt.Errorf("out of order; remerge failed: %w", err3)
 		}
 		tmpOutputPath = mergedSortedFilePath
+	}
+
+	tmpOutputPath, err = shiftTimeSubtitles(tmpOutputPath, opts.ShiftTime, namer)
+	if err != nil {
+		return Result{}, err
 	}
 
 	outputPath := opts.OutputPath
@@ -356,4 +362,64 @@ func sortSubtitles(inputPath string, namer run.TempNamer) (string, error) {
 	}
 
 	return outputPath, nil
+}
+
+func shiftTimeSubtitles(inputPath string, shiftTime time.Duration, namer run.TempNamer) (string, error) {
+	if inputPath == "" {
+		return "", errors.New("empty file path")
+	}
+	if shiftTime == 0 {
+		return inputPath, nil
+	}
+
+	slog.Info("shifting subtitle times", "shift_time", shiftTime)
+
+	f, err := os.Open(inputPath)
+	if err != nil {
+		return "", err
+	}
+	defer fs.CloseOrLog(f, inputPath)
+
+	outputTmpPath := namer.Step("shift-time")
+	out, err := os.Create(outputTmpPath)
+	if err != nil {
+		return "", err
+	}
+	defer fs.CloseOrLog(out, outputTmpPath)
+
+	scanner := bufio.NewScanner(f)
+	newIdx := 1
+	for {
+		subtitle, err := srt.ReadOne(scanner)
+		if err != nil {
+			return outputTmpPath, err
+		}
+		if subtitle == nil {
+			break
+		}
+
+		// Shift times and check for negative results.
+		origFrom := subtitle.FromTime
+		origTo := subtitle.ToTime
+		shiftedFrom := origFrom + shiftTime
+		shiftedTo := origTo + shiftTime
+
+		if shiftedFrom < 0 || shiftedTo < 0 {
+			slog.Debug("negative subtitle time after shift", "subtitle", subtitle,
+				"shifted_from", shiftedFrom, "shifted_to", shiftedTo,
+				"shift_time", shiftTime)
+			return outputTmpPath, fmt.Errorf(
+				"negative subtitle time after shift for cue %d: original [%v --> %v], shifted [%v --> %v], shift %v",
+				newIdx, origFrom, origTo, shiftedFrom, shiftedTo, shiftTime,
+			)
+		}
+
+		subtitle.FromTime = shiftedFrom
+		subtitle.ToTime = shiftedTo
+
+		if err := srt.WriteOne(out, subtitle, &newIdx); err != nil {
+			return outputTmpPath, err
+		}
+	}
+	return outputTmpPath, nil
 }

@@ -6,6 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
+	"time"
 
 	"github.com/adrianmusante/subtitle-tools/internal/run"
 )
@@ -233,6 +234,157 @@ func TestFixFile_StripStyle_RemovesTags(t *testing.T) {
 	}
 	if string(b) != expected {
 		t.Fatalf("output mismatch\nexpected:\n%s\n\nactual:\n%s", expected, string(b))
+	}
+}
+
+func TestShiftTimeSubtitles_ZeroShift_ReturnsSamePath(t *testing.T) {
+	workdir, cleanup, err := run.NewWorkdir("", "test")
+	if err != nil {
+		t.Fatalf("NewWorkdir: %v", err)
+	}
+	defer cleanup()
+
+	input := filepath.Join(workdir, "in.srt")
+	orig := "1\n00:00:01,000 --> 00:00:02,000\nHello\n\n"
+	if err := os.WriteFile(input, []byte(orig), 0o644); err != nil {
+		t.Fatalf("WriteFile: %v", err)
+	}
+
+	namer := run.NewTempNamer(workdir, input)
+	shiftTime := time.Duration(0)
+
+	outPath, err := shiftTimeSubtitles(input, shiftTime, namer)
+	if err != nil {
+		t.Fatalf("shiftTimeSubtitles: %v", err)
+	}
+	if outPath != input {
+		t.Fatalf("zero shift should return input path unchanged; got %q", outPath)
+	}
+}
+
+func TestShiftTimeSubtitles_PositiveShift(t *testing.T) {
+	workdir, cleanup, err := run.NewWorkdir("", "test")
+	if err != nil {
+		t.Fatalf("NewWorkdir: %v", err)
+	}
+	defer cleanup()
+
+	input := filepath.Join(workdir, "in.srt")
+	orig := strings.Join([]string{
+		"1",
+		"00:00:01,000 --> 00:00:02,000",
+		"Hello",
+		"",
+		"2",
+		"00:00:03,000 --> 00:00:04,500",
+		"World",
+		"",
+		"",
+	}, "\n")
+	if err := os.WriteFile(input, []byte(orig), 0o644); err != nil {
+		t.Fatalf("WriteFile: %v", err)
+	}
+
+	expected := strings.Join([]string{
+		"1",
+		"00:00:03,000 --> 00:00:04,000",
+		"Hello",
+		"",
+		"2",
+		"00:00:05,000 --> 00:00:06,500",
+		"World",
+		"",
+		"",
+	}, "\n")
+
+	namer := run.NewTempNamer(workdir, input)
+	shiftTime := 2 * time.Second
+
+	outPath, err := shiftTimeSubtitles(input, shiftTime, namer)
+	if err != nil {
+		t.Fatalf("shiftTimeSubtitles: %v", err)
+	}
+
+	b, err := os.ReadFile(outPath)
+	if err != nil {
+		t.Fatalf("ReadFile: %v", err)
+	}
+	if string(b) != expected {
+		t.Fatalf("output mismatch\nexpected:\n%s\n\nactual:\n%s", expected, string(b))
+	}
+}
+
+func TestShiftTimeSubtitles_NegativeShift(t *testing.T) {
+	workdir, cleanup, err := run.NewWorkdir("", "test")
+	if err != nil {
+		t.Fatalf("NewWorkdir: %v", err)
+	}
+	defer cleanup()
+
+	input := filepath.Join(workdir, "in.srt")
+	orig := strings.Join([]string{
+		"1",
+		"00:00:02,000 --> 00:00:03,000",
+		"Hello",
+		"",
+		"2",
+		"00:00:04,000 --> 00:00:05,500",
+		"World",
+		"",
+		"",
+	}, "\n")
+	if err := os.WriteFile(input, []byte(orig), 0o644); err != nil {
+		t.Fatalf("WriteFile: %v", err)
+	}
+
+	expected := strings.Join([]string{
+		"1",
+		"00:00:01,500 --> 00:00:02,500",
+		"Hello",
+		"",
+		"2",
+		"00:00:03,500 --> 00:00:05,000",
+		"World",
+		"",
+		"",
+	}, "\n")
+
+	namer := run.NewTempNamer(workdir, input)
+	shiftTime := -500 * time.Millisecond
+
+	outPath, err := shiftTimeSubtitles(input, shiftTime, namer)
+	if err != nil {
+		t.Fatalf("shiftTimeSubtitles: %v", err)
+	}
+
+	b, err := os.ReadFile(outPath)
+	if err != nil {
+		t.Fatalf("ReadFile: %v", err)
+	}
+	if string(b) != expected {
+		t.Fatalf("output mismatch\nexpected:\n%s\n\nactual:\n%s", expected, string(b))
+	}
+}
+
+func TestShiftTimeSubtitles_NegativeResult_ReturnsError(t *testing.T) {
+	workdir, cleanup, err := run.NewWorkdir("", "test")
+	if err != nil {
+		t.Fatalf("NewWorkdir: %v", err)
+	}
+	defer cleanup()
+
+	input := filepath.Join(workdir, "in.srt")
+	orig := "1\n00:00:01,000 --> 00:00:02,000\nHello\n\n"
+	if err := os.WriteFile(input, []byte(orig), 0o644); err != nil {
+		t.Fatalf("WriteFile: %v", err)
+	}
+
+	namer := run.NewTempNamer(workdir, input)
+	shiftTime := -2 * time.Second // -2s, causes 1s - 2s = -1s
+
+	_, err = shiftTimeSubtitles(input, shiftTime, namer)
+	if err == nil {
+		t.Fatal("expected an error for negative subtitle time, got nil")
 	}
 }
 
