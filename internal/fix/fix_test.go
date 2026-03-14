@@ -251,9 +251,9 @@ func TestShiftTimeSubtitles_ZeroShift_ReturnsSamePath(t *testing.T) {
 	}
 
 	namer := run.NewTempNamer(workdir, input)
-	opts := Options{ShiftTime: 0}
+	shiftTime := time.Duration(0)
 
-	outPath, err := shiftTimeSubtitles(input, opts, namer)
+	outPath, err := shiftTimeSubtitles(input, shiftTime, namer)
 	if err != nil {
 		t.Fatalf("shiftTimeSubtitles: %v", err)
 	}
@@ -298,9 +298,9 @@ func TestShiftTimeSubtitles_PositiveShift(t *testing.T) {
 	}, "\n")
 
 	namer := run.NewTempNamer(workdir, input)
-	opts := Options{ShiftTime: 2_000_000_000} // +2s
+	shiftTime := 2 * time.Second
 
-	outPath, err := shiftTimeSubtitles(input, opts, namer)
+	outPath, err := shiftTimeSubtitles(input, shiftTime, namer)
 	if err != nil {
 		t.Fatalf("shiftTimeSubtitles: %v", err)
 	}
@@ -350,9 +350,9 @@ func TestShiftTimeSubtitles_NegativeShift(t *testing.T) {
 	}, "\n")
 
 	namer := run.NewTempNamer(workdir, input)
-	opts := Options{ShiftTime: -500 * time.Millisecond} // -500ms
+	shiftTime := -500 * time.Millisecond
 
-	outPath, err := shiftTimeSubtitles(input, opts, namer)
+	outPath, err := shiftTimeSubtitles(input, shiftTime, namer)
 	if err != nil {
 		t.Fatalf("shiftTimeSubtitles: %v", err)
 	}
@@ -380,9 +380,9 @@ func TestShiftTimeSubtitles_NegativeResult_ReturnsError(t *testing.T) {
 	}
 
 	namer := run.NewTempNamer(workdir, input)
-	opts := Options{ShiftTime: -2 * time.Second} // -2s, causes 1s - 2s = -1s
+	shiftTime := -2 * time.Second // -2s, causes 1s - 2s = -1s
 
-	_, err = shiftTimeSubtitles(input, opts, namer)
+	_, err = shiftTimeSubtitles(input, shiftTime, namer)
 	if err == nil {
 		t.Fatal("expected an error for negative subtitle time, got nil")
 	}

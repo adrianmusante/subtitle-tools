@@ -89,7 +89,7 @@ func Run(ctx context.Context, opts Options) (Result, error) {
 		tmpOutputPath = mergedSortedFilePath
 	}
 
-	tmpOutputPath, err = shiftTimeSubtitles(tmpOutputPath, opts, namer)
+	tmpOutputPath, err = shiftTimeSubtitles(tmpOutputPath, opts.ShiftTime, namer)
 	if err != nil {
 		return Result{}, err
 	}
@@ -364,11 +364,10 @@ func sortSubtitles(inputPath string, namer run.TempNamer) (string, error) {
 	return outputPath, nil
 }
 
-func shiftTimeSubtitles(inputPath string, opts Options, namer run.TempNamer) (string, error) {
+func shiftTimeSubtitles(inputPath string, shiftTime time.Duration, namer run.TempNamer) (string, error) {
 	if inputPath == "" {
 		return "", errors.New("empty file path")
 	}
-	shiftTime := opts.ShiftTime
 	if shiftTime == 0 {
 		return inputPath, nil
 	}
