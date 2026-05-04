@@ -171,6 +171,43 @@ func TestReadOne_MissingCueContentStillReturnsFriendlyError(t *testing.T) {
 	}
 }
 
+func TestReadOne_MissingCueContentBeforeNextCueDoesNotConsumeNextCue(t *testing.T) {
+	scanner := bufio.NewScanner(strings.NewReader("1\n00:00:01,000 --> 00:00:02,500\n\n2\n00:00:03,000 --> 00:00:04,500\nWorld\n\n"))
+
+	sub, err := ReadOne(scanner)
+	if err == nil {
+		t.Fatal("expected error, got nil")
+	}
+	if err.Error() != "could not find subtitle text" {
+		t.Fatalf("unexpected error: %v", err)
+	}
+	if sub != nil {
+		t.Fatalf("expected nil subtitle on error, got %+v", sub)
+	}
+
+	next, err := ReadOne(scanner)
+	if err != nil {
+		t.Fatalf("expected no error reading next cue, got %v", err)
+	}
+	if next == nil {
+		t.Fatal("expected next subtitle, got nil")
+	}
+	if next.Idx != 2 {
+		t.Fatalf("expected next subtitle idx 2, got %d", next.Idx)
+	}
+	if next.Text != "World" {
+		t.Fatalf("unexpected next subtitle text: %q", next.Text)
+	}
+
+	last, err := ReadOne(scanner)
+	if err != nil {
+		t.Fatalf("expected no error on final read, got %v", err)
+	}
+	if last != nil {
+		t.Fatalf("expected no more subtitles, got %+v", last)
+	}
+}
+
 func TestReadOne_PropagatesErrTooLongOnFirstCueLine(t *testing.T) {
 	longLine := strings.Repeat("A", bufio.MaxScanTokenSize+1)
 	input := strings.NewReader("1\n00:00:01,000 --> 00:00:02,500\n" + longLine + "\n\n")
