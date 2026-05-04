@@ -162,12 +162,15 @@ func TestReadOne_WhitespaceOnlyLineInsideCue(t *testing.T) {
 func TestReadOne_MissingCueContentStillReturnsFriendlyError(t *testing.T) {
 	scanner := bufio.NewScanner(strings.NewReader("1\n00:00:01,000 --> 00:00:02,500\n"))
 
-	_, err := ReadOne(scanner)
-	if err == nil {
-		t.Fatal("expected error, got nil")
+	sub, err := ReadOne(scanner)
+	if err != nil {
+		t.Fatalf("expected no error, got %v", err)
 	}
-	if err.Error() != "could not find subtitle text" {
-		t.Fatalf("unexpected error: %v", err)
+	if sub == nil {
+		t.Fatal("expected subtitle, got nil")
+	}
+	if sub.Text != "" {
+		t.Fatalf("expected empty text, got %q", sub.Text)
 	}
 }
 
@@ -175,14 +178,17 @@ func TestReadOne_MissingCueContentBeforeNextCueDoesNotConsumeNextCue(t *testing.
 	scanner := bufio.NewScanner(strings.NewReader("1\n00:00:01,000 --> 00:00:02,500\n\n2\n00:00:03,000 --> 00:00:04,500\nWorld\n\n"))
 
 	sub, err := ReadOne(scanner)
-	if err == nil {
-		t.Fatal("expected error, got nil")
+	if err != nil {
+		t.Fatalf("expected no error, got %v", err)
 	}
-	if err.Error() != "could not find subtitle text" {
-		t.Fatalf("unexpected error: %v", err)
+	if sub == nil {
+		t.Fatal("expected subtitle, got nil")
 	}
-	if sub != nil {
-		t.Fatalf("expected nil subtitle on error, got %+v", sub)
+	if sub.Idx != 1 {
+		t.Fatalf("expected subtitle idx 1, got %d", sub.Idx)
+	}
+	if sub.Text != "" {
+		t.Fatalf("expected empty text for first subtitle, got %q", sub.Text)
 	}
 
 	next, err := ReadOne(scanner)
