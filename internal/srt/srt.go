@@ -43,6 +43,10 @@ func formatDuration(duration time.Duration) string {
 	return fmt.Sprintf(`%02d:%02d:%02d,%03d`, hour, minute, second, millisecond)
 }
 
+func trimUTF8BOM(text string) string {
+	return strings.TrimPrefix(text, "\uFEFF")
+}
+
 func CleanText(text string) string {
 	text = strings.ReplaceAll(text, "\r\n", "\n")
 	lines := strings.Split(text, "\n")
@@ -57,32 +61,76 @@ func CleanText(text string) string {
 	return strings.Join(cleaned, "\n")
 }
 
-func ReadOne(scanner *bufio.Scanner) (*Subtitle, error) {
+// readStructuralLine reads structural SRT lines (index and timing), normalizes
+// whitespace, and strips a leading UTF-8 BOM before parsing those fields.
+func readStructuralLine(scanner *bufio.Scanner) (string, error) {
 	if !scanner.Scan() {
-		return nil, nil
+		if err := scanner.Err(); err != nil {
+			return "", err
+		}
+		return "", io.EOF
 	}
-	idxRaw := scanner.Text()
+	text := scanner.Text()
+	text = trimUTF8BOM(text)
+	text = CleanText(text)
+	text = trimUTF8BOM(text)
+	return text, nil
+}
+
+// readCueContent reads raw subtitle content lines until a physically empty line
+// and then applies a single normalization pass.
+func readCueContent(scanner *bufio.Scanner) (string, error) {
+	var lines []string
+	for scanner.Scan() {
+		line := scanner.Text()
+		if line == "" {
+			break
+		}
+		lines = append(lines, line)
+	}
+	if err := scanner.Err(); err != nil {
+		return "", err
+	}
+	return CleanText(strings.Join(lines, "\n")), nil
+}
+
+func ReadOne(scanner *bufio.Scanner) (*Subtitle, error) {
+	// Read lines until we find a non-empty one for the subtitle index
+	var idxRaw string
+	for {
+		var err error
+		idxRaw, err = readStructuralLine(scanner)
+		if err != nil {
+			if errors.Is(err, io.EOF) {
+				return nil, nil
+			}
+			return nil, err
+		}
+		if strings.TrimSpace(idxRaw) != "" {
+			break
+		}
+	}
 	idx, err := strconv.Atoi(idxRaw)
 	if err != nil {
 		return nil, errors.New("invalid subtitle index")
 	}
-	if !scanner.Scan() {
-		return nil, errors.New("could not find subtitle timing")
+	timingRaw, err := readStructuralLine(scanner)
+	if err != nil {
+		if errors.Is(err, io.EOF) {
+			return nil, errors.New("could not find subtitle timing")
+		}
+		return nil, err
 	}
-	timing := timeFramePattern.FindStringSubmatch(scanner.Text())
+	timing := timeFramePattern.FindStringSubmatch(timingRaw)
 	if timing == nil {
 		return nil, errors.New("invalid subtitle timing")
 	}
 	fromTime := getDuration(timing[1:5])
 	toTime := getDuration(timing[5:9])
-	if !scanner.Scan() {
-		return nil, errors.New("could not find subtitle text")
+	content, err := readCueContent(scanner)
+	if err != nil {
+		return nil, err
 	}
-	content := scanner.Text()
-	for scanner.Scan() && scanner.Text() != "" {
-		content += "\n" + scanner.Text()
-	}
-	content = CleanText(content)
 	return &Subtitle{Idx: idx, FromTime: fromTime, ToTime: toTime, Text: content}, nil
 }
 
