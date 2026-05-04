@@ -80,24 +80,18 @@ func readStructuralLine(scanner *bufio.Scanner) (string, error) {
 // readCueContent reads raw subtitle content lines until a physically empty line
 // and then applies a single normalization pass.
 func readCueContent(scanner *bufio.Scanner) (string, error) {
-	if !scanner.Scan() {
-		if err := scanner.Err(); err != nil {
-			return "", err
-		}
-		return "", errors.New("could not find subtitle text")
-	}
-	content := scanner.Text()
+	var lines []string
 	for scanner.Scan() {
 		line := scanner.Text()
 		if line == "" {
 			break
 		}
-		content += "\n" + line
+		lines = append(lines, line)
 	}
 	if err := scanner.Err(); err != nil {
 		return "", err
 	}
-	return CleanText(content), nil
+	return CleanText(strings.Join(lines, "\n")), nil
 }
 
 func ReadOne(scanner *bufio.Scanner) (*Subtitle, error) {
