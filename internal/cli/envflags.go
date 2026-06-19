@@ -44,6 +44,8 @@ const (
 	flagRetryParseMax    = "retry-parse-max-attempts"
 	flagShiftTime        = "shift-time"
 	flagSkipBackup       = "skip-backup"
+	flagStripHI          = "strip-hi"
+	flagStripHIMode      = "strip-hi-mode"
 	flagSourceLanguage   = "source-language"
 	flagStripStyle       = "strip-style"
 	flagTargetLanguage   = "target-language"

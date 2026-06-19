@@ -43,7 +43,9 @@ Fixes:
 - cue index: invalid sequence of cue indices.
 - line wrap: rewraps lines that may exceed typical screen width.
 - style stripping: removes styling such as HTML tags (when enabled).
+- HI stripping: removes hearing-impaired cues (when enabled).
 - empty cues: removes subtitles with no text.
+- decoration-only cues: removes cues that contain only decorative symbols (e.g. music notes) and no other text.
 - deduplication: removes duplicated subtitles.
 - time shifting: shifts all cue times by a specified duration (when enabled).
 
@@ -55,16 +57,18 @@ subtitle-tools fix [flags] <input-file>
 
 Flags:
 
-| Flag                | Environment variable     | Description                                                              | Type     | Default |
-|---------------------|--------------------------|--------------------------------------------------------------------------|----------|---------|
-| `--dry-run`         | `SUBTITLE_TOOLS_DRY_RUN` | Write output to a temporary file and do not overwrite the original       | bool     | `false` |
-| `--max-line-len`    |                          | Max line length when wrapping                                            | int      | `70`    |
-| `--min-words-merge` |                          | Minimum words to consider a line short for merging                       | int      | `3`     |
-| `-o, --output`      |                          | Output file path (defaults to overwriting input)                         | string   |         |
-| `--shift-time`      |                          | Shift all cue times by the specified duration (e.g. 500ms, -2s, 1s250ms) | duration | `0s`    |
-| `--skip-backup`     |                          | Do not create a .bak backup when overwriting the input file              | bool     | `false` |
-| `--strip-style`     |                          | Remove HTML/XML style tags from subtitle text                            | bool     | `false` |
-| `-w, --workdir`     | `SUBTITLE_TOOLS_WORKDIR` | Working directory base; unique subdirectory per run                      | string   |         |
+| Flag                | Environment variable     | Description                                                                       | Type     | Default    |
+|---------------------|--------------------------|-----------------------------------------------------------------------------------|----------|------------|
+| `--dry-run`         | `SUBTITLE_TOOLS_DRY_RUN` | Write output to a temporary file and do not overwrite the original                | bool     | `false`    |
+| `--max-line-len`    |                          | Max line length when wrapping                                                     | int      | `70`       |
+| `--min-words-merge` |                          | Minimum words to consider a line short for merging                                | int      | `3`        |
+| `-o, --output`      |                          | Output file path (defaults to overwriting input)                                  | string   |            |
+| `--shift-time`      |                          | Shift all cue times by the specified duration (e.g. 500ms, -2s, 1s250ms)          | duration | `0s`       |
+| `--skip-backup`     |                          | Do not create a .bak backup when overwriting the input file                       | bool     | `false`    |
+| `--strip-hi`        |                          | Remove hearing-impaired cues (e.g. [music])                                       | bool     | `false`    |
+| `--strip-hi-mode`   |                          | HI stripping mode: safe, standard, safe-plus, standard-plus                       | string   | `standard` |
+| `--strip-style`     |                          | Remove HTML/XML style tags from subtitle text                                     | bool     | `false`    |
+| `-w, --workdir`     | `SUBTITLE_TOOLS_WORKDIR` | Working directory base; unique subdirectory per run                               | string   |            |
 
 Behavior:
 - If `-o/--output` is omitted, `fix` overwrites the input file.
@@ -73,6 +77,40 @@ Behavior:
 - If `-w/--workdir` is provided, a unique subdirectory is created inside it per run.
   If omitted, a system temp directory is used and deleted at the end.
 - If `--strip-style` is set, all styling (e.g. HTML tags) is removed from subtitle lines.
+- If `--strip-hi` is set, HI cues are removed after style stripping.
+- `--strip-hi-mode safe` is conservative: strips only `[]` cues with low risk of over-cleaning.
+- `--strip-hi-mode standard` (default) is more thorough: strips `[]` cues including speaker prefixes and inline cues.
+- `--strip-hi-mode safe-plus` strips `[]`, `()`, and `{}` while preserving safe behavior.
+- `--strip-hi-mode standard-plus` strips `[]`, `()`, and `{}` with full standard cleanup.
+- All HI stripping modes preserve leading dialogue dashes (e.g. `- Thank you.`).
+- Music symbols (`♪`, `♫`) are preserved when the line has content (e.g. lyrics), while empty music-only lines are removed.
+
+Examples:
+
+```bash
+subtitle-tools fix --strip-hi input.srt
+subtitle-tools fix --strip-hi --strip-hi-mode safe input.srt
+subtitle-tools fix --strip-hi --strip-hi-mode standard input.srt
+subtitle-tools fix --strip-hi --strip-hi-mode safe-plus input.srt
+subtitle-tools fix --strip-hi --strip-hi-mode standard-plus input.srt
+```
+
+When to use each mode:
+- Use `standard` (default) for most files: strips `[]` cues including speaker prefixes.
+- Use `safe` when you want minimal intervention and only obvious `[]` cues removed.
+- Use `safe-plus` or `standard-plus` when you also want to strip `()` and `{}` cues.
+- If unsure, run with `--dry-run` first and inspect the result.
+
+Practical cases:
+
+| Input pattern (example)                        | Recommended mode              | Why                                                                 |
+|------------------------------------------------|-------------------------------|---------------------------------------------------------------------|
+| `[MUSIC]` on its own line                      | `standard` (default)          | Removes obvious HI-only cues reliably.                              |
+| `JOHN: Hello there.`                           | `standard`                    | Speaker prefix is stripped, keeping only the dialogue.              |
+| `(whispers) Hello` or `{door closes} Hello`    | `safe-plus`                   | Trims extended HI context while keeping dialogue.                   |
+| `JOHN: ♪ (whispers) run! [door slams]`         | `standard-plus`               | Best for heavily cluttered lines when clean dialogue is preferred.  |
+| Mixed style + HI: `<i>[MUSIC]</i>`             | `--strip-style` + `standard`  | First removes tags, then strips base HI cues.                       |
+| Ambiguous speaker text: `MARIA: We should go.` | `safe` + `--dry-run`          | Avoids over-cleaning when speaker labels may be meaningful.         |
 
 ### translate
 
