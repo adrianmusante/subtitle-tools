@@ -1,5 +1,5 @@
 name: Release
-run-name: "Release ${{inputs.version}} (mode: ${{inputs.mode}})"
+run-name: "Release ${{ github.event_name == 'workflow_dispatch' && (inputs.version != '' && format('v{0}', inputs.version) || 'auto-patch') || github.ref_name }} (mode: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'tag-push' }})"
 
 on:
   push:
@@ -16,7 +16,7 @@ on:
           - dry-run
           - release
       version:
-        description: "Version to release (without the leading 'v'), e.g. 1.2.3. Required when mode=release."
+        description: "Version to release (without the leading 'v'), e.g. 1.2.3. Optional in mode=release: if omitted, the workflow auto-increments the latest vMAJOR.MINOR.PATCH tag."
         type: string
         required: false
       branch:
@@ -36,7 +36,7 @@ jobs:
     name: Publish GitHub Release
     runs-on: [ubuntu-latest]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
           ref: ${{ github.event_name == 'workflow_dispatch' && inputs.branch || github.ref }}
@@ -61,21 +61,67 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Create and push tag (workflow_dispatch release)
+      - name: Resolve release tag (workflow_dispatch release)
+        id: resolve_release_tag
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'release' }}
         env:
           VERSION: ${{ inputs.version }}
         run: |
+          # Ensure we calculate from the latest remote tags.
+          git fetch --force --tags origin
+
           if [ -z "$VERSION" ]; then
-            echo "inputs.version is required when mode=release (example: 1.2.3)" >&2
-            exit 1
+            LAST_TAG="$(git tag -l 'v[0-9]*.[0-9]*.[0-9]*' --sort=-v:refname | head -n1)"
+            if [ -z "$LAST_TAG" ]; then
+              TAG="v0.0.1"
+              echo "No existing vMAJOR.MINOR.PATCH tags found; using initial tag $TAG"
+            else
+              IFS='.' read -r MAJOR MINOR PATCH <<< "${LAST_TAG#v}"
+              TAG="v${MAJOR}.${MINOR}.$((PATCH + 1))"
+              echo "inputs.version not provided; auto-incrementing patch: ${LAST_TAG} -> ${TAG}"
+            fi
+          else
+            TAG="v${VERSION}"
           fi
-          TAG="v${VERSION}"
+
           # Basic sanity check: vMAJOR.MINOR.PATCH
           if ! echo "$TAG" | grep -Eq '^v[0-9]+\.[0-9]+\.[0-9]+$'; then
             echo "Invalid version '$VERSION'. Expected MAJOR.MINOR.PATCH (example: 1.2.3)" >&2
             exit 1
           fi
+
+          echo "Resolved release tag: $TAG"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Write release summary (workflow_dispatch release)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'release' }}
+        env:
+          TAG: ${{ steps.resolve_release_tag.outputs.tag }}
+        run: |
+          {
+            echo "## Release summary"
+            echo
+            echo "- mode: \`release\`"
+            echo "- source: \`workflow_dispatch\`"
+            echo "- version/tag: \`${TAG}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Write release summary (push tag)
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          {
+            echo "## Release summary"
+            echo
+            echo "- mode: \`tag-push\`"
+            echo "- source: \`push\`"
+            echo "- version/tag: \`${GITHUB_REF_NAME}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create and push tag (workflow_dispatch release)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'release' }}
+        env:
+          TAG: ${{ steps.resolve_release_tag.outputs.tag }}
+        run: |
           # Fail fast if tag already exists remotely
           if git ls-remote --exit-code --tags origin "$TAG" >/dev/null 2>&1; then
             echo "Tag '$TAG' already exists on origin. Aborting." >&2
@@ -87,7 +133,7 @@ jobs:
           git fetch --force --tags origin
 
       - name: Set up Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version-file: go.mod
           cache: true
@@ -103,7 +149,7 @@ jobs:
       # For workflow_dispatch, default is a dry-run (does not publish).
       - name: Run GoReleaser (dry-run)
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'dry-run' }}
-        uses: goreleaser/goreleaser-action@v6
+        uses: goreleaser/goreleaser-action@v7
         with:
           distribution: goreleaser
           version: ${{ env.GORELEASER_VERSION }}
@@ -112,7 +158,7 @@ jobs:
       # On tags, or if requested manually, publish the GitHub Release.
       - name: Run GoReleaser (publish)
         if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'release') }}
-        uses: goreleaser/goreleaser-action@v6
+        uses: goreleaser/goreleaser-action@v7
         with:
           distribution: goreleaser
           version: ${{ env.GORELEASER_VERSION }}
@@ -123,7 +169,7 @@ jobs:
       # Attach the SBOM as a release asset when publishing.
       - name: Upload SBOM to GitHub Release
         if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'release') }}
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: dist/sbom.cdx.json
-          tag_name: ${{ github.event_name == 'workflow_dispatch' && format('v{0}', inputs.version) || github.ref_name }}
+          tag_name: ${{ github.event_name == 'workflow_dispatch' && steps.resolve_release_tag.outputs.tag || github.ref_name }}

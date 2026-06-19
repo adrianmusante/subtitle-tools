@@ -27,6 +27,15 @@ const DefaultMinSubtitleDurationForDedup = 150 * time.Millisecond
 
 var translatorPattern = regexp.MustCompile(`(?i)traductor|traducción|traduccion|translate|translator`)
 
+var decorativeLineSymbols = map[rune]struct{}{
+	'-': {},
+	':': {},
+	'.': {},
+	'_': {},
+	'♪': {},
+	'♫': {},
+}
+
 var ErrSubtitlesOutOfOrder = errors.New("subtitles are out of order")
 
 type Options struct {
@@ -39,6 +48,8 @@ type Options struct {
 	MinWordsMerge int
 
 	StripStyle     bool
+	StripHI        bool
+	StripHIMode    string
 	SkipTranslator bool
 	CreateBackup   bool
 	BackupExt      string
@@ -47,10 +58,14 @@ type Options struct {
 
 type Result struct {
 	WrittenPath string
+	// WasEmpty is true when processing produced an empty output; in that case
+	// the original input file is left untouched and WrittenPath points to it.
+	WasEmpty bool
 }
 
 func Run(ctx context.Context, opts Options) (Result, error) {
 	_ = ctx
+	wasEmptyOutput := false
 	if opts.InputPath == "" {
 		return Result{}, errors.New("input path is required")
 	}
@@ -62,6 +77,13 @@ func Run(ctx context.Context, opts Options) (Result, error) {
 	}
 	if opts.CreateBackup && opts.BackupExt == "" {
 		return Result{}, errors.New("backup ext is required")
+	}
+	if opts.StripHIMode == "" {
+		opts.StripHIMode = DefaultStripHIMode
+	}
+	opts.StripHIMode = normalizeStripHIMode(opts.StripHIMode)
+	if !isValidStripHIMode(opts.StripHIMode) {
+		return Result{}, fmt.Errorf("invalid strip-hi mode %q (supported: %s, %s, %s, %s)", opts.StripHIMode, StripHIModeSafe, StripHIModeSafePlus, StripHIModeStandard, StripHIModeStandardPlus)
 	}
 	if opts.WorkDir == "" {
 		return Result{}, errors.New("workdir is required (create one with run.NewWorkdir)")
@@ -94,6 +116,19 @@ func Run(ctx context.Context, opts Options) (Result, error) {
 		return Result{}, err
 	}
 
+	// Guard: if all subtitles were stripped, preserve original content as fallback
+	// and keep the regular output flow so alternate destinations still get a file.
+	if info, statErr := os.Stat(tmpOutputPath); statErr == nil && info.Size() == 0 {
+		wasEmptyOutput = true
+		slog.Warn("processing produced an empty output; using original input as fallback",
+			"input_path", opts.InputPath)
+		fallbackOutputPath := namer.Step("empty-fallback")
+		if err := fs.CopyFile(opts.InputPath, fallbackOutputPath); err != nil {
+			return Result{}, err
+		}
+		tmpOutputPath = fallbackOutputPath
+	}
+
 	outputPath := opts.OutputPath
 	if opts.DryRun {
 		// In dry-run, always write to temp file.
@@ -122,7 +157,7 @@ func Run(ctx context.Context, opts Options) (Result, error) {
 		}
 	}
 
-	return Result{WrittenPath: outputPath}, nil
+	return Result{WrittenPath: outputPath, WasEmpty: wasEmptyOutput}, nil
 }
 
 func isContinueLine(s string) bool {
@@ -147,7 +182,55 @@ func normalizeSubtitleText(text string, opts Options) string {
 	if opts.StripStyle {
 		text = stripSubtitleStyles(text)
 	}
+	if opts.StripHI {
+		text = stripSubtitleHI(text, opts.StripHIMode)
+	}
+	text = removeDecorativeLines(text)
 	return srt.CleanText(text)
+}
+
+func removeDecorativeLines(text string) string {
+	lines := strings.Split(text, "\n")
+	filtered := make([]string, 0, len(lines))
+	for _, line := range lines {
+		if isDecorativeLine(line) {
+			continue
+		}
+		filtered = append(filtered, line)
+	}
+	return strings.Join(filtered, "\n")
+}
+
+func isDecorativeLine(line string) bool {
+	// isDecorativeLine returns true only if the line consists entirely of repetitions
+	// of a single decorative symbol (-, :, ., _, ♪, ♫). Mixed symbols are not considered
+	// decorative (e.g., "♪ ♫" will return false).
+	line = strings.TrimSpace(line)
+	if line == "" {
+		return false
+	}
+
+	var base rune
+	hasSymbol := false
+
+	for _, r := range line {
+		if unicode.IsSpace(r) {
+			continue
+		}
+		if _, ok := decorativeLineSymbols[r]; !ok {
+			return false
+		}
+		if !hasSymbol {
+			base = r
+			hasSymbol = true
+			continue
+		}
+		if r != base {
+			return false
+		}
+	}
+
+	return hasSymbol
 }
 
 func mergeShortLines(text string, minWords int, maxLineLen int) string {

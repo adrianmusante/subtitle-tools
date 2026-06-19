@@ -36,6 +36,8 @@ var fixCmd = &cobra.Command{
 
 		minWords, _ := cmd.Flags().GetInt(flagMinWordsMerge)
 		maxLineLen, _ := cmd.Flags().GetInt(flagMaxLineLen)
+		stripHI, _ := cmd.Flags().GetBool(flagStripHI)
+		stripHIMode, _ := cmd.Flags().GetString(flagStripHIMode)
 		stripStyle, _ := cmd.Flags().GetBool(flagStripStyle)
 		shiftTime, _ := cmd.Flags().GetDuration(flagShiftTime)
 
@@ -88,6 +90,8 @@ var fixCmd = &cobra.Command{
 			WorkDir:        runWorkdir,
 			MaxLineLength:  maxLineLen,
 			MinWordsMerge:  minWords,
+			StripHI:        stripHI,
+			StripHIMode:    stripHIMode,
 			StripStyle:     stripStyle,
 			BackupExt:      ".bak",
 			CreateBackup:   !dryRun && !skipBackup,
@@ -109,15 +113,21 @@ var fixCmd = &cobra.Command{
 }
 
 func init() {
-	fixCmd.Flags().StringP(flagOutput, flagOutputShorthand, "", "Output file path (optional; defaults to overwriting input)")
-	fixCmd.Flags().Bool(flagDryRun, false, "Write output to a temporary file and do not overwrite the original")
-	fixCmd.Flags().Bool(flagSkipBackup, false, "Do not create a .bak backup when overwriting the input file")
-	fixCmd.Flags().StringP(flagWorkdir, flagWorkdirShorthand, "", "Working directory base. If set, a unique subdirectory is created per run")
+	registerFixFlags(fixCmd)
+}
 
-	fixCmd.Flags().Int(flagMinWordsMerge, fix.DefaultMinWordsForMerging, "Minimum words to consider a line 'short' for merging")
-	fixCmd.Flags().Int(flagMaxLineLen, fix.DefaultMaxLineLength, "Max line length when wrapping")
-	fixCmd.Flags().Bool(flagStripStyle, false, "Remove HTML/XML style tags from subtitle text")
-	fixCmd.Flags().Duration(flagShiftTime, 0, "Shift all cue times by the specified duration (e.g. 500ms, -2s, 1s250ms)")
+func registerFixFlags(cmd *cobra.Command) {
+	cmd.Flags().StringP(flagOutput, flagOutputShorthand, "", "Output file path (optional; defaults to overwriting input)")
+	cmd.Flags().Bool(flagDryRun, false, "Write output to a temporary file and do not overwrite the original")
+	cmd.Flags().Bool(flagSkipBackup, false, "Do not create a .bak backup when overwriting the input file")
+	cmd.Flags().StringP(flagWorkdir, flagWorkdirShorthand, "", "Working directory base. If set, a unique subdirectory is created per run")
+
+	cmd.Flags().Int(flagMinWordsMerge, fix.DefaultMinWordsForMerging, "Minimum words to consider a line 'short' for merging")
+	cmd.Flags().Int(flagMaxLineLen, fix.DefaultMaxLineLength, "Max line length when wrapping")
+	cmd.Flags().Bool(flagStripHI, false, "Remove hearing-impaired (HI) cues like [music]")
+	cmd.Flags().String(flagStripHIMode, fix.DefaultStripHIMode, "HI stripping mode: safe, standard, safe-plus, or standard-plus")
+	cmd.Flags().Bool(flagStripStyle, false, "Remove HTML/XML style tags from subtitle text")
+	cmd.Flags().Duration(flagShiftTime, 0, "Shift all cue times by the specified duration (e.g. 500ms, -2s, 1s250ms)")
 }
 
 // for tests / future hooking

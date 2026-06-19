@@ -1,0 +1,13 @@
+{
+  "args": [
+    "--strip-style",
+    "--shift-time",
+    "1s",
+    "--skip-backup",
+    "-o",
+    "{{output}}",
+    "{{input}}"
+  ],
+  "expected_target": "output"
+}
+
