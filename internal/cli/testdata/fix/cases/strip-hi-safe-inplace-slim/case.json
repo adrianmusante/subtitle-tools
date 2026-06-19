@@ -1,0 +1,5 @@
+{
+  "args": ["--strip-hi", "--strip-hi-mode", "safe", "--skip-backup", "{{input}}"],
+  "expected_target": "input"
+}
+

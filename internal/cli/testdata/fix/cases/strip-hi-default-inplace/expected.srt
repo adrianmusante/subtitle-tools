@@ -1,0 +1,5873 @@
+1
+00:02:23,947 --> 00:02:25,470
+Here, have one of these.
+
+2
+00:02:48,319 --> 00:02:50,103
+Fuck me.
+
+3
+00:03:16,652 --> 00:03:18,131
+Right.
+
+4
+00:03:19,611 --> 00:03:22,048
+Are you sure there's time?
+
+5
+00:03:22,092 --> 00:03:23,615
+There's time.
+
+6
+00:03:30,056 --> 00:03:32,015
+- Thank you.
+
+7
+00:03:40,980 --> 00:03:42,895
+Did they say how long
+you'll be gone for?
+
+8
+00:03:44,114 --> 00:03:45,637
+No, they didn't say.
+
+9
+00:03:53,210 --> 00:03:55,212
+I'm very proud
+they chose you, Jim.
+
+10
+00:03:59,172 --> 00:04:00,565
+I'll be fine.
+
+11
+00:04:02,828 --> 00:04:04,265
+Go.
+
+12
+00:04:05,614 --> 00:04:07,137
+Okay.
+
+13
+00:04:30,987 --> 00:04:32,336
+Morning, sir.
+
+14
+00:05:14,683 --> 00:05:16,554
+Sir.
+
+15
+00:05:16,598 --> 00:05:18,382
+Group Captain Dr. James Stagg,
+
+16
+00:05:18,426 --> 00:05:21,603
+chief meteorological officer,
+reporting for duty.
+
+17
+00:05:21,646 --> 00:05:23,300
+I.D. card and pass, please, sir.
+
+18
+00:05:23,344 --> 00:05:24,780
+Right this way, sir.
+
+19
+00:05:25,824 --> 00:05:27,609
+Welcome to Southwick House, sir.
+
+20
+00:05:29,567 --> 00:05:31,047
+I'm Andrew Carter
+with the Met Office.
+
+21
+00:05:31,090 --> 00:05:32,135
+I'll be your ADC.
+
+22
+00:05:32,178 --> 00:05:33,702
+- Mm-hmm.
+
+23
+00:05:43,625 --> 00:05:47,411
+I must admit it's a great honor
+to meet you, Dr. Stagg.
+
+24
+00:05:47,455 --> 00:05:49,195
+I so enjoyed your paper
+on terrestrial magnetism.
+
+25
+00:05:49,239 --> 00:05:50,806
+It's a fascinating subject.
+
+26
+00:05:50,849 --> 00:05:52,590
+It is, yes.
+
+27
+00:06:09,520 --> 00:06:11,174
+And here we are, sir.
+
+28
+00:06:26,842 --> 00:06:28,365
+Operations rooms
+are upstairs, sir.
+
+29
+00:06:28,409 --> 00:06:29,932
+Teleprinters are in the cellars.
+
+30
+00:06:29,975 --> 00:06:32,151
+And our forecast room
+is just through here.
+
+31
+00:06:43,032 --> 00:06:44,599
+- Where can I put this down?
+- Anywhere, sir.
+
+32
+00:06:44,642 --> 00:06:47,471
+We'll have someone
+take it to your tent.
+
+33
+00:06:47,515 --> 00:06:48,951
+What are these?
+
+34
+00:06:48,994 --> 00:06:50,692
+They're historical
+analog charts.
+
+35
+00:06:50,735 --> 00:06:52,345
+I know what they are,
+but what are they doing here?
+
+36
+00:06:52,389 --> 00:06:54,260
+Colonel Krick,
+he requested them.
+
+37
+00:06:55,958 --> 00:06:58,526
+Well, which one is he?
+Introduce me.
+
+38
+00:06:58,569 --> 00:07:00,136
+I believe he's with General...
+
+39
+00:07:00,179 --> 00:07:02,225
+Can you stop!
+Stop the banging, please.
+
+40
+00:07:05,489 --> 00:07:07,012
+I believe
+he's with General Eisenhower
+
+41
+00:07:07,056 --> 00:07:08,579
+at the moment, sir.
+
+42
+00:07:11,974 --> 00:07:13,454
+I'll call you back.
+
+43
+00:07:16,065 --> 00:07:17,196
+Sir.
+
+44
+00:07:17,240 --> 00:07:18,676
+What's coming through?
+
+45
+00:07:18,720 --> 00:07:22,245
+Soundings at 53 north,
+35 west, sir.
+
+46
+00:07:22,288 --> 00:07:24,334
+Mm-hmm. Weather ship Hoste, yes?
+
+47
+00:07:24,377 --> 00:07:25,857
+Yes, sir.
+
+48
+00:07:25,901 --> 00:07:27,946
+Uh, Casey and Bryant here
+are linked directly
+
+49
+00:07:27,990 --> 00:07:29,948
+to the teleprinter ops
+at Dunstable and Bushy Park.
+
+50
+00:07:29,992 --> 00:07:31,907
+- Which one are you?
+- I'm Casey, sir.
+
+51
+00:07:31,950 --> 00:07:34,518
+That's wrong, Casey.
+
+52
+00:07:36,128 --> 00:07:38,522
+Our American contingent, sir.
+
+53
+00:07:40,306 --> 00:07:42,961
+This is Flight Officer Murray,
+Flight Officer Hamilton.
+
+54
+00:07:43,005 --> 00:07:45,007
+- Good to meet you, sir.
+- They're on surface weather.
+
+55
+00:07:45,050 --> 00:07:47,226
+What, both of you?
+Who's on upper air?
+
+56
+00:07:47,270 --> 00:07:49,054
+Uh, no one, sir.
+
+57
+00:07:49,098 --> 00:07:50,578
+No one's on upper air?
+
+58
+00:07:50,621 --> 00:07:54,103
+So that data just goes
+unrecorded, does it?
+
+59
+00:07:54,146 --> 00:07:56,845
+I'll need both of you
+on upper air at all times.
+
+60
+00:07:56,888 --> 00:07:58,847
+Uh, we were told to use
+historical analog charts, sir.
+
+61
+00:07:58,890 --> 00:08:00,718
+Not by me.
+Those weren't my instructions.
+
+62
+00:08:00,762 --> 00:08:03,242
+It's just, Colonel Krick
+instructed us otherwise, sir.
+
+63
+00:08:03,286 --> 00:08:04,809
+Did he? Do I have an office?
+
+64
+00:08:04,853 --> 00:08:06,985
+Yes, sir.
+It's just through here.
+
+65
+00:08:15,516 --> 00:08:17,213
+Ah.
+
+66
+00:08:17,256 --> 00:08:19,258
+Good afternoon, sir.
+
+67
+00:08:20,346 --> 00:08:22,174
+Uh, this is Group Captain Stagg.
+
+68
+00:08:22,218 --> 00:08:23,785
+He's just transferred
+from Dunstable.
+
+69
+00:08:23,828 --> 00:08:26,527
+We've been very much
+looking forward to his...
+
+70
+00:08:26,570 --> 00:08:28,006
+him joining us here.
+
+71
+00:08:29,704 --> 00:08:31,488
+Lieutenant Kay Summersby.
+
+72
+00:08:31,532 --> 00:08:34,099
+Motor Transport Corps.
+Welcome to Southwick House.
+
+73
+00:08:34,143 --> 00:08:36,754
+Are we sharing an office,
+or what?
+
+74
+00:08:36,798 --> 00:08:40,192
+No. I was just using it
+temporarily.
+
+75
+00:08:40,236 --> 00:08:42,804
+Good, because I'll need it
+exclusively.
+
+76
+00:08:48,070 --> 00:08:50,638
+Well, very good.
+
+77
+00:09:10,788 --> 00:09:12,747
+Can you see to it that
+General Eisenhower knows
+
+78
+00:09:12,790 --> 00:09:14,226
+that I'm here?
+
+79
+00:09:14,270 --> 00:09:18,143
+And that I apologize
+for my late arrival?
+
+80
+00:09:18,187 --> 00:09:19,710
+Yes, sir.
+
+81
+00:09:22,017 --> 00:09:23,409
+Sir.
+
+82
+00:09:27,762 --> 00:09:29,851
+Right.
+
+83
+00:09:36,074 --> 00:09:37,423
+Hello. Signals Department.
+
+84
+00:09:37,467 --> 00:09:38,860
+Switchboard speaking.
+
+85
+00:09:38,903 --> 00:09:41,993
+Yes, um,
+Richmond 1-9-3-7, please.
+
+86
+00:09:42,037 --> 00:09:44,648
+I'm sorry, but all
+outgoing calls are forbidden
+
+87
+00:09:44,692 --> 00:09:47,433
+without prior authorization,
+sir.
+
+88
+00:09:47,477 --> 00:09:50,480
+Uh, no, no, I-I-I...
+I need to speak with my wife.
+
+89
+00:09:50,523 --> 00:09:53,004
+- I'm sorry, sir.
+
+90
+00:09:53,048 --> 00:09:54,615
+- Hello?
+
+91
+00:09:54,658 --> 00:09:56,573
+Yes? Hello?
+
+92
+00:10:02,579 --> 00:10:04,450
+If you'd like to follow me,
+please,
+
+93
+00:10:04,494 --> 00:10:06,452
+General Eisenhower
+will see you now.
+
+94
+00:10:10,456 --> 00:10:12,720
+I wouldn't keep him waiting any
+longer than you already have.
+
+95
+00:10:29,911 --> 00:10:32,000
+Group Captain Dr. James Stagg,
+
+96
+00:10:32,043 --> 00:10:34,916
+here at the express request
+of General Eisenhower.
+
+97
+00:10:42,967 --> 00:10:45,709
+And all 265 vessels arrived
+without issue, sir.
+
+98
+00:10:45,753 --> 00:10:48,016
+And we've assigned, uh,
+five patrol craft
+
+99
+00:10:48,059 --> 00:10:49,670
+and three destroyers.
+
+100
+00:10:49,713 --> 00:10:51,454
+DWIGHT "IKE" EISENHOWER:
+Let's get the job done.
+
+101
+00:10:51,497 --> 00:10:52,977
+Glad to hear it.
+
+102
+00:10:53,021 --> 00:10:54,587
+Lieutenant Summersby?
+
+103
+00:10:54,631 --> 00:10:56,764
+Sir, may I introduce
+Group Captain James Stagg,
+
+104
+00:10:56,807 --> 00:10:58,853
+who finally made it in
+from London?
+
+105
+00:10:58,896 --> 00:11:00,768
+Well, it's good to meet you,
+Group Captain Stagg.
+
+106
+00:11:00,811 --> 00:11:02,247
+Welcome aboard.
+
+107
+00:11:02,291 --> 00:11:05,990
+Nice to finally put
+a face to the name.
+
+108
+00:11:06,034 --> 00:11:08,558
+Have you got all the equipment
+you need downstairs?
+
+109
+00:11:08,601 --> 00:11:10,168
+Equipment is not
+the problem, sir.
+
+110
+00:11:10,212 --> 00:11:11,866
+What's the problem?
+
+111
+00:11:11,909 --> 00:11:13,650
+Um, well, it's time, sir.
+I haven't really had any...
+
+112
+00:11:13,694 --> 00:11:16,435
+any time to establish
+any clear picture.
+
+113
+00:11:16,479 --> 00:11:18,133
+Have a look, Group Captain.
+
+114
+00:11:18,176 --> 00:11:20,918
+I got 7,000 naval vessels,
+
+115
+00:11:20,962 --> 00:11:22,920
+130,000 ground troops,
+
+116
+00:11:22,964 --> 00:11:26,097
+200,000 naval personnel,
+15 hospital ships,
+
+117
+00:11:26,141 --> 00:11:28,796
+8,000 doctors,
+three airborne divisions
+
+118
+00:11:28,839 --> 00:11:30,754
+and a partridge in a pear tree.
+
+119
+00:11:32,234 --> 00:11:36,978
+Largest seaborne invasion force
+in history.
+
+120
+00:11:37,021 --> 00:11:38,719
+Is it?
+
+121
+00:11:42,070 --> 00:11:44,986
+And do we have a date yet
+for the invasion, sir?
+
+122
+00:11:46,161 --> 00:11:48,076
+We invade France Monday.
+
+123
+00:11:48,119 --> 00:11:50,687
+- This Monday?
+- Correct.
+
+124
+00:11:50,731 --> 00:11:53,908
+Monday, June 5th, 0630.
+
+125
+00:11:53,951 --> 00:11:59,435
+That is D-Day,
+which is in 61 hours from now.
+
+126
+00:12:02,003 --> 00:12:05,310
+Fate of the war hinges on this.
+
+127
+00:12:05,354 --> 00:12:08,009
+All the pieces of the jigsaw
+are in place.
+
+128
+00:12:08,052 --> 00:12:10,576
+There's only one imponderable
+that remains.
+
+129
+00:12:11,621 --> 00:12:13,275
+I need a forecast.
+
+130
+00:12:15,277 --> 00:12:18,280
+I'm... Yes, I'm concerned
+that what you're asking me is
+
+131
+00:12:18,323 --> 00:12:20,412
+scientifically impossible, sir.
+
+132
+00:12:20,456 --> 00:12:22,414
+Uh, long-term forecasting is
+
+133
+00:12:22,458 --> 00:12:24,242
+really only ever
+educated guesswork.
+
+134
+00:12:24,286 --> 00:12:26,723
+Monday is not long-term,
+for Christ's sake.
+
+135
+00:12:26,767 --> 00:12:29,726
+Does Monday sound like long-term
+to you, Lieutenant Summersby?
+
+136
+00:12:29,770 --> 00:12:31,119
+No, it certainly does not, sir.
+
+137
+00:12:31,162 --> 00:12:33,164
+Well, this is
+Northern Europe, sir.
+
+138
+00:12:33,208 --> 00:12:36,559
+Anything over 24 hours is-is...
+is considered long-term,
+
+139
+00:12:36,602 --> 00:12:38,343
+meteorologically speaking.
+
+140
+00:12:41,477 --> 00:12:42,913
+But I'll...
+
+141
+00:12:44,132 --> 00:12:45,307
+I'll do my best.
+
+142
+00:12:45,350 --> 00:12:46,656
+I don't want your best.
+
+143
+00:12:46,699 --> 00:12:48,440
+I already expect that.
+
+144
+00:12:48,484 --> 00:12:49,746
+I need certainty.
+
+145
+00:12:49,790 --> 00:12:51,313
+Churchill tells me
+
+146
+00:12:51,356 --> 00:12:53,010
+you're the best meteorologist
+in the country
+
+147
+00:12:53,054 --> 00:12:55,404
+and that I should rely on you
+over Colonel Krick.
+
+148
+00:12:55,447 --> 00:12:56,927
+You know him?
+
+149
+00:12:56,971 --> 00:12:58,320
+Only by reputation.
+
+150
+00:12:58,363 --> 00:13:00,452
+Well, Krick's been with me
+since '42.
+
+151
+00:13:00,496 --> 00:13:03,107
+He's never steered me wrong,
+so...
+
+152
+00:13:03,151 --> 00:13:05,109
+let's see how you measure up.
+
+153
+00:13:06,197 --> 00:13:07,851
+I need a forecast for Monday.
+
+154
+00:13:07,895 --> 00:13:10,071
+I need it first thing
+tomorrow morning.
+
+155
+00:13:10,114 --> 00:13:11,463
+Y-Yes, sir.
+
+156
+00:13:12,464 --> 00:13:13,857
+Don't let me down.
+
+157
+00:13:17,469 --> 00:13:18,993
+Group Captain.
+
+158
+00:13:19,036 --> 00:13:20,821
+Let's go.
+
+159
+00:13:23,127 --> 00:13:25,086
+Group Captain.
+
+160
+00:13:32,136 --> 00:13:33,572
+♪ He had a boogie style
+that no one else could play ♪
+
+161
+00:13:33,616 --> 00:13:35,923
+♪ He was the top man
+at his craft ♪
+
+162
+00:13:35,966 --> 00:13:37,315
+♪ But then his number came up ♪
+
+163
+00:13:37,359 --> 00:13:39,013
+♪ And he was gone
+with the draft ♪
+
+164
+00:13:39,056 --> 00:13:41,363
+♪ He's in the Army now
+a-blowing reveille ♪
+
+165
+00:13:41,406 --> 00:13:43,974
+♪ He's the boogie-woogie
+bugle boy of Company B ♪
+
+166
+00:13:44,018 --> 00:13:46,585
+♪ They made him blow a bugle
+for his Uncle Sam ♪
+
+167
+00:13:46,629 --> 00:13:48,761
+♪ It really brought him down
+because he couldn't jam ♪
+
+168
+00:13:48,805 --> 00:13:50,894
+♪ The captain seemed
+to understand ♪
+
+169
+00:13:50,938 --> 00:13:52,809
+♪ Because the next day
+the cap went out ♪
+
+170
+00:13:52,853 --> 00:13:54,419
+- ♪ And drafted a band ♪
+- Kay!
+
+171
+00:13:54,463 --> 00:13:55,986
+♪ And now the company jumps... ♪
+
+172
+00:13:56,030 --> 00:13:57,727
+Ladies and gentlemen,
+Kay Summersby. Take over.
+
+173
+00:13:57,770 --> 00:13:59,598
+- Come on, Kay.
+- Oh.
+
+174
+00:13:59,642 --> 00:14:01,644
+- Dance with me.
+
+175
+00:14:01,687 --> 00:14:03,254
+Like old times.
+
+176
+00:14:05,604 --> 00:14:07,215
+There you go.
+
+177
+00:14:08,694 --> 00:14:11,088
+- There you go.
+
+178
+00:14:12,960 --> 00:14:15,353
+Oh, stick to piano, Irv.
+
+179
+00:14:18,400 --> 00:14:22,317
+I-I don't believe you've met,
+uh, Group Captain Stagg.
+
+180
+00:14:23,840 --> 00:14:25,929
+Only by telephone.
+
+181
+00:14:25,973 --> 00:14:28,714
+Dr. Stagg, so nice
+to finally meet you.
+
+182
+00:14:28,758 --> 00:14:30,194
+You're younger than I imagined.
+
+183
+00:14:30,238 --> 00:14:32,370
+You're shorter than I imagined.
+
+184
+00:14:35,852 --> 00:14:37,288
+Analogs.
+
+185
+00:14:39,290 --> 00:14:41,205
+I realize that, yes.
+
+186
+00:14:41,249 --> 00:14:45,688
+Every single weather chart
+for Northern Europe since 1900.
+
+187
+00:14:45,731 --> 00:14:47,864
+Mm. Um, in my experience,
+
+188
+00:14:47,908 --> 00:14:51,868
+the weather never replicates
+its own history.
+
+189
+00:14:51,912 --> 00:14:54,697
+Ah, well, try telling that
+to a movie producer.
+
+190
+00:14:54,740 --> 00:14:56,264
+Remember Selznick, Kay?
+
+191
+00:14:56,307 --> 00:14:57,352
+Oh.
+
+192
+00:14:57,395 --> 00:14:58,919
+July '39.
+
+193
+00:14:58,962 --> 00:15:01,008
+David Selznick calls me up.
+
+194
+00:15:01,051 --> 00:15:02,966
+He's making a movie.
+He wants a forecast
+
+195
+00:15:03,010 --> 00:15:05,621
+for a three-day period
+in Beverly Hills.
+
+196
+00:15:05,664 --> 00:15:07,623
+- The scene is...
+
+197
+00:15:07,666 --> 00:15:09,103
+the burning of Atlanta.
+
+198
+00:15:09,146 --> 00:15:11,366
+"I don't want to see
+a drop of rain, Irv.
+
+199
+00:15:11,409 --> 00:15:13,368
+Not a drop. Not a drop."
+
+200
+00:15:13,411 --> 00:15:15,761
+Well, MGM calls me up.
+They give me the dates.
+
+201
+00:15:15,805 --> 00:15:17,676
+I give 'em the forecast.
+
+202
+00:15:17,720 --> 00:15:19,417
+Beautiful weather.
+
+203
+00:15:19,461 --> 00:15:21,419
+I mean, just gorgeous.
+
+204
+00:15:21,463 --> 00:15:22,899
+Not a cloud in the sky.
+
+205
+00:15:22,943 --> 00:15:24,596
+Movie's a hit.
+I get to meet Clark Gable.
+
+206
+00:15:24,640 --> 00:15:27,730
+Little picture— I-I don't know
+if you heard of it.
+
+207
+00:15:27,773 --> 00:15:29,819
+Called Gone with the Wind.
+
+208
+00:15:29,862 --> 00:15:31,560
+- You seen it, Stagg?
+- No.
+
+209
+00:15:31,603 --> 00:15:34,302
+No? That...
+
+210
+00:15:34,345 --> 00:15:36,521
+That's crazy. Who hasn't seen
+Gone with the Wind?
+
+211
+00:15:36,565 --> 00:15:38,132
+Me. I haven't seen it.
+
+212
+00:15:38,175 --> 00:15:39,742
+Well, you must.
+I mean, it's a great picture.
+
+213
+00:15:39,785 --> 00:15:41,744
+It's great. I saw it with Ike.
+
+214
+00:15:41,787 --> 00:15:44,094
+Kay drove us...
+to the London premiere.
+
+215
+00:15:44,138 --> 00:15:45,748
+- This is true.
+- Great night.
+
+216
+00:15:45,791 --> 00:15:47,619
+So, did you meet Vivien Leigh?
+
+217
+00:15:47,663 --> 00:15:49,273
+Oh, we sure did.
+
+218
+00:15:49,317 --> 00:15:50,883
+- What was she like?
+- What was she like?
+
+219
+00:15:50,927 --> 00:15:52,668
+Uh, she was cute.
+
+220
+00:15:52,711 --> 00:15:54,365
+The Allied High Command
+has requested
+
+221
+00:15:54,409 --> 00:15:57,499
+our forecast
+by 1:00 p.m. tomorrow.
+
+222
+00:15:57,542 --> 00:16:00,850
+Time and date of the invasion
+to France
+
+223
+00:16:00,893 --> 00:16:04,506
+has been confirmed for Monday.
+Monday. Monday.
+
+224
+00:16:08,466 --> 00:16:11,078
+June 5th, 6:30 a.m.,
+so can we start, please?
+
+225
+00:16:11,121 --> 00:16:12,557
+Get rid of the piano. Thank you.
+
+226
+00:16:16,170 --> 00:16:17,954
+Is it bothering you, Dr. Stagg?
+
+227
+00:16:17,998 --> 00:16:20,130
+- It's inappropriate.
+
+228
+00:16:24,091 --> 00:16:26,919
+Call this extension
+if you need to speak
+
+229
+00:16:26,963 --> 00:16:29,313
+to General Eisenhower anytime,
+day or night.
+
+230
+00:16:29,357 --> 00:16:31,707
+Is this his direct line?
+
+231
+00:16:31,750 --> 00:16:33,752
+Oh, no.
+It's a direct line to me.
+
+232
+00:16:33,796 --> 00:16:36,538
+I handle all communication
+with the general.
+
+233
+00:16:46,026 --> 00:16:47,592
+Can I have your attention,
+please?
+
+234
+00:16:50,030 --> 00:16:52,510
+Bryant, can you put
+the phone down, please?
+
+235
+00:16:53,555 --> 00:16:55,122
+Is that his name? Bryant?
+
+236
+00:16:55,165 --> 00:16:57,037
+Okay, go ahead.
+
+237
+00:17:08,178 --> 00:17:10,528
+I needn't, I hope,
+have to stress to you
+
+238
+00:17:10,572 --> 00:17:13,357
+how crucial this forecast is,
+but I do want to stress
+
+239
+00:17:13,401 --> 00:17:16,578
+one thing to you all
+and one thing only:
+
+240
+00:17:16,621 --> 00:17:18,101
+Get me the data.
+
+241
+00:17:18,145 --> 00:17:19,755
+That's what counts.
+
+242
+00:17:19,798 --> 00:17:21,974
+Get me the latest readings
+from every single base
+
+243
+00:17:22,018 --> 00:17:24,629
+within 2,000 miles of Normandy.
+
+244
+00:17:24,673 --> 00:17:26,849
+That's Paris, Galway, Reykjavík,
+
+245
+00:17:26,892 --> 00:17:29,634
+Boston, Washington, Lisbon...
+
+246
+00:17:30,809 --> 00:17:33,073
+New York, Newfoundland.
+
+247
+00:17:33,116 --> 00:17:34,552
+You get the idea.
+
+248
+00:17:34,596 --> 00:17:36,467
+Get me the data
+from every Met station,
+
+249
+00:17:36,511 --> 00:17:38,643
+every weather balloon,
+every reconnaissance flight.
+
+250
+00:17:38,687 --> 00:17:40,776
+That's upper air.
+That's surface air.
+
+251
+00:17:40,819 --> 00:17:42,604
+That's radar soundings.
+That's sea temperature.
+
+252
+00:17:42,647 --> 00:17:44,040
+That's salinity. Everything.
+
+253
+00:17:44,084 --> 00:17:46,216
+If we've measured it,
+then I want it.
+
+254
+00:17:50,568 --> 00:17:53,005
+That room there...
+
+255
+00:17:53,049 --> 00:17:54,616
+that's where I'll be.
+
+256
+00:17:54,659 --> 00:17:56,705
+Get me the data.
+
+257
+00:17:58,054 --> 00:18:00,012
+That's what counts.
+
+258
+00:18:18,161 --> 00:18:20,468
+700 millibars.
+
+259
+00:18:20,511 --> 00:18:23,079
+210. 28.
+
+260
+00:18:23,123 --> 00:18:24,863
+650 millibars.
+
+261
+00:18:24,907 --> 00:18:28,258
+- Plus 19.
+
+262
+00:18:28,302 --> 00:18:29,999
+Observations
+coming in from Spain.
+
+263
+00:18:30,042 --> 00:18:31,827
+Sea surface temp: 18 degrees.
+
+264
+00:18:31,870 --> 00:18:34,264
+Ten-tenths
+stratocumulus and altocumulus
+
+265
+00:18:34,308 --> 00:18:35,570
+now rising in zero-two.
+
+266
+00:18:35,613 --> 00:18:38,442
+1-0-1-5 millibars.
+
+267
+00:18:40,705 --> 00:18:42,098
+Northwest wind, force five.
+
+268
+00:18:42,142 --> 00:18:43,621
+6-0-0 millibars.
+
+269
+00:18:43,665 --> 00:18:46,450
+Wind southwest, force four.
+
+270
+00:18:46,494 --> 00:18:48,322
+South Iceland
+seven-tenths, 30,000 feet.
+
+271
+00:18:48,365 --> 00:18:49,453
+Southeast, force six.
+
+272
+00:18:52,500 --> 00:18:54,458
+1-0-1-8 millibars.
+
+273
+00:18:54,502 --> 00:18:56,112
+Say that again, please.
+Repeat that.
+
+274
+00:18:56,156 --> 00:18:57,635
+- Are you getting the
+I front temp? -No, I have...
+
+275
+00:18:59,550 --> 00:19:01,726
+Seven-tenths, stratocumulus,
+
+276
+00:19:01,770 --> 00:19:04,207
+3,000 feet, force six.
+
+277
+00:19:04,251 --> 00:19:05,730
+Southwesterly, force six.
+
+278
+00:19:05,774 --> 00:19:07,123
+We're still waiting on
+the Greenland data, sir.
+
+279
+00:19:09,386 --> 00:19:10,996
+Just-just leave that.
+Just leave that be.
+
+280
+00:19:11,040 --> 00:19:12,128
+What speed is L3 moving at?
+
+281
+00:19:12,172 --> 00:19:13,825
+25 knots.
+
+282
+00:19:13,869 --> 00:19:16,437
+- Finished with that?
+
+283
+00:19:16,480 --> 00:19:20,789
+Ten StratoCu 3,000 feet,
+southeast, force four.
+
+284
+00:19:20,832 --> 00:19:23,052
+1-0-1-3 millibars.
+
+285
+00:19:23,095 --> 00:19:24,575
+Radar soundings from 0930.
+
+286
+00:19:26,142 --> 00:19:27,752
+There's been no movement
+from the main course.
+
+287
+00:19:27,796 --> 00:19:30,451
+Sir, the weather conditions
+in Normandy.
+
+288
+00:19:31,930 --> 00:19:33,410
+These are from yesterday's
+12 o'clock, sir.
+
+289
+00:19:33,454 --> 00:19:34,846
+Humidity reports.
+
+290
+00:19:34,890 --> 00:19:36,892
+And we have those folders
+you requested...
+
+291
+00:19:38,981 --> 00:19:40,548
+There's nothing there.
+
+292
+00:19:44,769 --> 00:19:47,511
+Carter. It's done.
+
+293
+00:19:49,470 --> 00:19:50,949
+Good man.
+
+294
+00:20:01,482 --> 00:20:02,613
+Sir.
+
+295
+00:20:05,529 --> 00:20:07,357
+The latest completed maps.
+
+296
+00:20:30,162 --> 00:20:31,599
+Oh, come on.
+
+297
+00:20:31,642 --> 00:20:33,122
+Look at the analogs.
+
+298
+00:20:33,165 --> 00:20:34,950
+It's as plain as day:
+calm, sunny weather.
+
+299
+00:20:34,993 --> 00:20:36,952
+Those analogs prove
+absolutely nothing.
+
+300
+00:20:36,995 --> 00:20:38,562
+How can you say that?
+It's right here.
+
+301
+00:20:38,606 --> 00:20:39,694
+- Are you blind?
+
+302
+00:20:39,737 --> 00:20:40,956
+Look at it.
+
+303
+00:20:40,999 --> 00:20:42,174
+I don't need to look at it.
+
+304
+00:20:42,218 --> 00:20:43,611
+The chart is 19 years old.
+
+305
+00:20:43,654 --> 00:20:46,701
+Fine, that's-that's
+40 years old,
+
+306
+00:20:46,744 --> 00:20:51,096
+27 years, uh, 15 years old.
+
+307
+00:20:51,140 --> 00:20:54,622
+That's-that's the point:
+patterns over time.
+
+308
+00:20:54,665 --> 00:20:56,537
+Okay. Thank you.
+
+309
+00:20:56,580 --> 00:20:58,887
+I think what we need to do
+is establish
+
+310
+00:20:58,930 --> 00:21:01,672
+what we already know today,
+here and now.
+
+311
+00:21:01,716 --> 00:21:06,242
+Um, we have
+two aggressive storms
+
+312
+00:21:06,286 --> 00:21:08,549
+stretching themselves
+across the Atlantic
+
+313
+00:21:08,592 --> 00:21:10,551
+from Newfoundland to Normandy.
+
+314
+00:21:10,594 --> 00:21:12,292
+Agreed.
+
+315
+00:21:12,335 --> 00:21:14,990
+There is an area of
+high pressure above the Azores.
+
+316
+00:21:15,033 --> 00:21:16,383
+That's what interests me.
+
+317
+00:21:16,426 --> 00:21:18,428
+But it's moving lethargically
+and...
+
+318
+00:21:18,472 --> 00:21:19,777
+Your word, not mine.
+
+319
+00:21:19,821 --> 00:21:21,866
+I'm sorry, would you like
+the floor again?
+
+320
+00:21:21,910 --> 00:21:24,304
+Me? No, it's your floor.
+Go ahead.
+
+321
+00:21:26,958 --> 00:21:30,440
+We can't just base the forecast
+on surface air
+
+322
+00:21:30,484 --> 00:21:32,921
+and, uh, analog charts.
+
+323
+00:21:32,964 --> 00:21:35,184
+We must also consider
+the jet stream, which...
+
+324
+00:21:35,227 --> 00:21:36,316
+The jet stream?
+
+325
+00:21:36,359 --> 00:21:37,795
+Yes, the jet stream
+
+326
+00:21:37,839 --> 00:21:39,406
+currently hurtling its way
+towards Europe
+
+327
+00:21:39,449 --> 00:21:40,929
+and dragging
+both the storms with it,
+
+328
+00:21:40,972 --> 00:21:42,234
+likely spawning a third storm.
+
+329
+00:21:42,278 --> 00:21:43,323
+That jet stream.
+
+330
+00:21:43,366 --> 00:21:44,976
+Okay.
+
+331
+00:21:47,805 --> 00:21:50,591
+Which will inevitably mean
+stormier conditions
+
+332
+00:21:50,634 --> 00:21:53,594
+over the next few days—
+tomorrow, Sunday, into Monday.
+
+333
+00:21:53,637 --> 00:21:56,988
+Disastrous conditions
+for an invasion.
+
+334
+00:21:57,032 --> 00:21:58,729
+Okay, thank you so much,
+Dr. Stagg.
+
+335
+00:21:58,773 --> 00:22:02,777
+Now, this is a chart
+for June 2, 1925.
+
+336
+00:22:02,820 --> 00:22:04,779
+Nearly identical conditions
+to today.
+
+337
+00:22:04,822 --> 00:22:06,302
+Same depressions
+in the Atlantic,
+
+338
+00:22:06,346 --> 00:22:08,260
+same high pressures
+over the Azores.
+
+339
+00:22:08,304 --> 00:22:10,306
+Move ahead... three days
+
+340
+00:22:10,350 --> 00:22:14,702
+to June 5, 1925,
+D-Day if you will.
+
+341
+00:22:14,745 --> 00:22:18,619
+Calm. Sunny weather.
+
+342
+00:22:18,662 --> 00:22:21,535
+1925 is entirely irrelevant
+to what we're talking about.
+
+343
+00:22:21,578 --> 00:22:26,496
+I could've just as easily picked
+June 2, 1904, or 1929.
+
+344
+00:22:26,540 --> 00:22:28,368
+You know as well as I do
+
+345
+00:22:28,411 --> 00:22:31,936
+that atmospheric conditions
+can never be identical ever.
+
+346
+00:22:31,980 --> 00:22:35,549
+What I do know is who nailed
+the forecast at Alamein
+
+347
+00:22:35,592 --> 00:22:37,159
+for the Western Desert campaign,
+
+348
+00:22:37,202 --> 00:22:39,770
+for the Tunisian campaign,
+for Operation Torch.
+
+349
+00:22:39,814 --> 00:22:43,121
+I know who got it right
+every goddamn time in Cairo.
+
+350
+00:22:43,165 --> 00:22:46,081
+In Tripoli, Algiers,
+Oran, Casablanca.
+
+351
+00:22:47,822 --> 00:22:49,519
+Do you know?
+
+352
+00:22:49,563 --> 00:22:50,738
+You?
+
+353
+00:22:51,739 --> 00:22:54,350
+Yeah. Me.
+
+354
+00:22:54,394 --> 00:22:57,266
+This isn't Casablanca,
+Colonel Krick.
+
+355
+00:22:57,309 --> 00:22:58,789
+This is Northern Europe.
+
+356
+00:22:58,833 --> 00:23:01,705
+It doesn't matter.
+It doesn't matter.
+
+357
+00:23:01,749 --> 00:23:04,621
+When the atmospheric conditions
+are a match,
+
+358
+00:23:04,665 --> 00:23:07,407
+the weather follows suit.
+
+359
+00:23:09,974 --> 00:23:12,194
+Mark my words.
+
+360
+00:23:12,237 --> 00:23:14,152
+D-Day will be calm and sunny.
+
+361
+00:23:15,240 --> 00:23:17,460
+Nighty night, gentlemen.
+
+362
+00:23:18,505 --> 00:23:19,593
+Nobody move.
+
+363
+00:23:24,032 --> 00:23:25,468
+Back to work.
+
+364
+00:23:31,996 --> 00:23:33,694
+What do you make of Stagg?
+
+365
+00:23:34,999 --> 00:23:36,348
+Hmm.
+
+366
+00:23:37,524 --> 00:23:39,439
+Scottish.
+
+367
+00:23:40,483 --> 00:23:42,093
+Churchill says he's a genius.
+
+368
+00:23:42,137 --> 00:23:44,313
+Hmm.
+
+369
+00:23:44,356 --> 00:23:46,358
+Yeah, well...
+
+370
+00:23:46,402 --> 00:23:48,709
+men are too fond of that word.
+
+371
+00:24:03,506 --> 00:24:05,900
+Three-tenths Cu and StratoCu
+
+372
+00:24:05,943 --> 00:24:08,816
+at 2,000 feet,
+cloud extending to West Wales.
+
+373
+00:24:19,261 --> 00:24:21,132
+Inflatable Shermans,
+
+374
+00:24:21,176 --> 00:24:24,048
+Spitfires, Long Toms
+
+375
+00:24:24,092 --> 00:24:26,050
+and troop carriers.
+
+376
+00:24:26,094 --> 00:24:29,097
+Just rubber and air, gentlemen.
+
+377
+00:24:29,140 --> 00:24:31,229
+But to a Nazi
+reconnaissance plane,
+
+378
+00:24:31,273 --> 00:24:34,145
+utterly indistinguishable
+from the real thing.
+
+379
+00:24:34,189 --> 00:24:37,235
+In North Africa,
+I proved this time and again
+
+380
+00:24:37,279 --> 00:24:41,283
+with victory after victory
+after victory.
+
+381
+00:24:41,326 --> 00:24:44,547
+Of course, it's not just about
+crushing the enemy, gentlemen.
+
+382
+00:24:44,591 --> 00:24:47,985
+It's about deceiving him, too,
+and deceive him we will.
+
+383
+00:24:48,029 --> 00:24:52,294
+We've conjured up phantom armies
+across all of East Anglia,
+
+384
+00:24:52,337 --> 00:24:54,818
+thousands of fake supply depots,
+
+385
+00:24:54,862 --> 00:24:58,213
+false radio transmissions,
+empty tents
+
+386
+00:24:58,256 --> 00:24:59,780
+and decoy campfires.
+
+387
+00:25:02,173 --> 00:25:04,524
+On D-Day,
+
+388
+00:25:04,567 --> 00:25:07,396
+dummy paratroopers
+weighted with sand
+
+389
+00:25:07,439 --> 00:25:12,270
+will be dropped 15 to 20 miles
+inland from the Normandy coast.
+
+390
+00:25:12,314 --> 00:25:14,751
+They explode on impact.
+
+391
+00:25:17,058 --> 00:25:19,887
+Only the chute remains.
+
+392
+00:25:19,930 --> 00:25:22,585
+With any luck, the enemy will
+think our boys are running wild
+
+393
+00:25:22,629 --> 00:25:24,239
+through the French interior,
+
+394
+00:25:24,282 --> 00:25:26,371
+drawing great chunks
+of their forces
+
+395
+00:25:26,415 --> 00:25:29,113
+right away from the beaches.
+
+396
+00:25:29,157 --> 00:25:32,552
+It's a little small,
+don't you think, Monty?
+
+397
+00:25:32,595 --> 00:25:34,597
+Small?
+
+398
+00:25:34,641 --> 00:25:36,512
+It's a joke, Monty.
+
+399
+00:25:39,384 --> 00:25:40,560
+Yes.
+
+400
+00:25:40,603 --> 00:25:44,433
+What's small is our window.
+
+401
+00:25:44,476 --> 00:25:47,915
+The 12th SS Panzer
+is already near Caen.
+
+402
+00:25:47,958 --> 00:25:52,049
+The 352nd Infantry Division
+are heavily entrenched.
+
+403
+00:25:53,094 --> 00:25:56,880
+If we delay beyond Monday,
+
+404
+00:25:56,924 --> 00:25:59,579
+they will see right through
+all of this.
+
+405
+00:25:59,622 --> 00:26:01,537
+Everything that we have done,
+
+406
+00:26:01,581 --> 00:26:05,585
+all our meticulous efforts,
+will be for naught.
+
+407
+00:26:10,285 --> 00:26:13,505
+He's doubled his defenses
+in as many weeks.
+
+408
+00:26:13,549 --> 00:26:17,771
+Every passing hour
+makes our task more perilous.
+
+409
+00:26:17,814 --> 00:26:19,642
+Ideally, we bring D-Day forward.
+
+410
+00:26:22,863 --> 00:26:24,255
+Can't be done.
+
+411
+00:26:24,299 --> 00:26:26,214
+We are two days out.
+
+412
+00:26:28,259 --> 00:26:33,308
+The more prepared the enemy,
+the more ruthless I must become.
+
+413
+00:26:33,351 --> 00:26:34,701
+Though it's not my wish,
+
+414
+00:26:34,744 --> 00:26:36,354
+if it means getting
+more men ashore,
+
+415
+00:26:36,398 --> 00:26:37,878
+I may have to sacrifice
+
+416
+00:26:37,921 --> 00:26:40,228
+every last member
+of my advance brigade.
+
+417
+00:26:40,271 --> 00:26:41,838
+Well, if I didn't
+know you better, Monty,
+
+418
+00:26:41,882 --> 00:26:43,840
+I would've thought
+you enjoyed saying that.
+
+419
+00:26:43,884 --> 00:26:45,363
+Yes.
+
+420
+00:26:45,407 --> 00:26:46,843
+But then again,
+I've actually been to war.
+
+421
+00:26:49,193 --> 00:26:52,153
+Be that as it may,
+you're the boss.
+
+422
+00:26:52,196 --> 00:26:54,459
+I am.
+
+423
+00:26:54,503 --> 00:26:58,333
+And the final decision on the
+timing of D-Day will be mine...
+
+424
+00:26:58,376 --> 00:27:00,335
+and mine alone.
+
+425
+00:27:04,774 --> 00:27:06,123
+Pray for good weather.
+
+426
+00:27:06,167 --> 00:27:08,125
+The weather is irrelevant.
+
+427
+00:27:08,169 --> 00:27:09,866
+We must go,
+whatever the weather.
+
+428
+00:27:28,145 --> 00:27:30,104
+George said that
+she came over to him.
+
+429
+00:27:30,147 --> 00:27:32,802
+She came over to him, right?
+
+430
+00:27:46,990 --> 00:27:48,557
+Ah.
+
+431
+00:27:48,600 --> 00:27:50,602
+Thought I'd pop in
+and identify myself.
+
+432
+00:27:50,646 --> 00:27:52,256
+Bernard Montgomery.
+
+433
+00:27:53,301 --> 00:27:54,998
+Oh, yes.
+
+434
+00:27:56,217 --> 00:27:58,741
+Hello. Uh, James Stagg.
+
+435
+00:27:59,829 --> 00:28:01,352
+All looking good for Monday?
+
+436
+00:28:01,396 --> 00:28:03,180
+Um, no.
+
+437
+00:28:03,224 --> 00:28:04,486
+No, no, no.
+
+438
+00:28:04,529 --> 00:28:06,140
+Can't say that we are, sir.
+
+439
+00:28:07,358 --> 00:28:09,317
+Well, can't be that bad, surely.
+
+440
+00:28:09,360 --> 00:28:12,102
+Well, you know
+this country, sir.
+
+441
+00:28:12,146 --> 00:28:14,061
+Looks can be deceiving.
+
+442
+00:28:14,104 --> 00:28:16,019
+Hmm.
+
+443
+00:28:16,063 --> 00:28:19,109
+Do not sow doubt, Group Captain.
+
+444
+00:28:19,153 --> 00:28:22,504
+Battles are lost
+when doubt enters the mind.
+
+445
+00:28:22,547 --> 00:28:23,984
+We'll cross the Channel
+on Monday.
+
+446
+00:28:24,027 --> 00:28:25,507
+That is definite.
+
+447
+00:28:27,944 --> 00:28:31,861
+If D-Day is canceled,
+we will lose this war.
+
+448
+00:28:31,905 --> 00:28:33,689
+Do you want to be
+personally responsible
+
+449
+00:28:33,733 --> 00:28:35,865
+for losing this war,
+Group Captain Stagg?
+
+450
+00:28:36,997 --> 00:28:38,433
+No, sir.
+
+451
+00:28:54,231 --> 00:28:55,755
+For Christ's sake.
+
+452
+00:28:55,798 --> 00:28:57,104
+Okay.
+
+453
+00:28:57,147 --> 00:28:58,453
+We ready to go?
+
+454
+00:28:58,496 --> 00:28:59,715
+Go where?
+
+455
+00:28:59,759 --> 00:29:02,370
+To the meeting.
+
+456
+00:29:02,413 --> 00:29:06,374
+And when we get to the meeting,
+what will we be saying exactly?
+
+457
+00:29:06,417 --> 00:29:09,638
+Monday will be calm and sunny.
+
+458
+00:29:09,681 --> 00:29:12,597
+The barometer at Foynes
+has been falling all morning.
+
+459
+00:29:12,641 --> 00:29:13,947
+Yeah, I saw it.
+
+460
+00:29:13,990 --> 00:29:15,470
+Minimal drop, insignificant.
+
+461
+00:29:16,471 --> 00:29:18,647
+I think it's significant.
+
+462
+00:29:22,129 --> 00:29:24,218
+Listen, pal.
+
+463
+00:29:24,261 --> 00:29:26,698
+I've been working with Ike
+for three years.
+
+464
+00:29:26,742 --> 00:29:29,266
+- I know the guy.
+- Mm-hmm. And?
+
+465
+00:29:29,310 --> 00:29:31,747
+He won't want uncertainty.
+
+466
+00:29:31,791 --> 00:29:34,881
+Right. Well, then I better
+attend the meeting alone.
+
+467
+00:29:36,230 --> 00:29:37,579
+Are you kidding?
+
+468
+00:29:37,622 --> 00:29:39,059
+You can't do that.
+
+469
+00:29:40,669 --> 00:29:42,149
+That's not how that works.
+
+470
+00:29:42,192 --> 00:29:43,846
+Uh, you can't do that.
+
+471
+00:29:43,890 --> 00:29:48,633
+The responsibility for
+the D-Day forecast is mine,
+
+472
+00:29:48,677 --> 00:29:50,984
+and it's not one that
+I'm going to take lightly.
+
+473
+00:29:51,027 --> 00:29:52,550
+It's not yours.
+
+474
+00:29:52,594 --> 00:29:53,856
+Okay? It's ours.
+
+475
+00:29:53,900 --> 00:29:55,553
+Ours, jointly.
+
+476
+00:29:55,597 --> 00:29:58,687
+No, no. There's one
+chief meteorological officer,
+
+477
+00:29:58,730 --> 00:30:00,210
+and it's not you.
+
+478
+00:30:01,908 --> 00:30:03,910
+You won't be attending
+the meeting.
+
+479
+00:30:07,914 --> 00:30:09,437
+Is there anything else?
+
+480
+00:30:14,921 --> 00:30:16,618
+Asshole.
+
+481
+00:30:16,661 --> 00:30:18,315
+Irv.
+
+482
+00:30:28,282 --> 00:30:30,545
+- How much time do I have?
+- It's time.
+
+483
+00:30:31,633 --> 00:30:33,069
+What happened
+with Colonel Krick?
+
+484
+00:30:33,113 --> 00:30:34,810
+Never mind Colonel Krick.
+
+485
+00:30:42,209 --> 00:30:44,167
+Well, they won't like this.
+
+486
+00:30:45,342 --> 00:30:47,170
+Well, I don't like this.
+
+487
+00:30:51,087 --> 00:30:54,003
+They're waiting for you,
+Group Captain Stagg.
+
+488
+00:31:29,691 --> 00:31:32,041
+- Yes?
+- Sir, he's here.
+
+489
+00:31:33,434 --> 00:31:35,392
+Excuse me, gentlemen.
+
+490
+00:31:38,787 --> 00:31:40,658
+Group Captain Stagg.
+
+491
+00:31:42,356 --> 00:31:44,793
+This is
+General Bernard Montgomery,
+
+492
+00:31:44,836 --> 00:31:46,882
+commander in chief,
+Allied land forces.
+
+493
+00:31:46,926 --> 00:31:48,840
+And here we have
+
+494
+00:31:48,884 --> 00:31:50,581
+Air Chief Marshal Leigh-Mallory,
+
+495
+00:31:50,625 --> 00:31:54,150
+commander in chief,
+Allied Expeditionary Air Force.
+
+496
+00:31:54,194 --> 00:31:55,891
+This is Admiral Ramsay,
+
+497
+00:31:55,935 --> 00:31:58,024
+commander in chief,
+Allied naval forces,
+
+498
+00:31:58,067 --> 00:32:00,852
+and Lieutenant General
+Omar Bradley,
+
+499
+00:32:00,896 --> 00:32:03,638
+commander of
+the U.S. First Army.
+
+500
+00:32:06,902 --> 00:32:08,425
+Where's Colonel Krick?
+
+501
+00:32:08,469 --> 00:32:09,644
+He's not attending, sir.
+
+502
+00:32:09,687 --> 00:32:11,124
+Why not?
+
+503
+00:32:11,167 --> 00:32:12,734
+Well, I believe it's my duty
+to brief you all
+
+504
+00:32:12,777 --> 00:32:15,389
+on the forecast for Monday.
+
+505
+00:32:15,432 --> 00:32:17,782
+- He should be here.
+- Shall I have him fetched?
+
+506
+00:32:17,826 --> 00:32:19,654
+My forecast will be the same
+
+507
+00:32:19,697 --> 00:32:21,482
+whether Colonel Krick
+attends or not.
+
+508
+00:32:21,525 --> 00:32:23,092
+All right.
+
+509
+00:32:23,136 --> 00:32:25,660
+Going forward, I want him here.
+
+510
+00:32:25,703 --> 00:32:27,053
+Is that understood?
+
+511
+00:32:27,096 --> 00:32:29,185
+- Certainly, sir.
+- Good.
+
+512
+00:32:29,229 --> 00:32:30,665
+What have you got?
+
+513
+00:32:56,125 --> 00:32:58,432
+Regrettably, we are faced
+with a succession
+
+514
+00:32:58,475 --> 00:33:02,349
+of two aggressive storms
+in the Atlantic
+
+515
+00:33:02,392 --> 00:33:06,092
+of unprecedented intensity
+for this time of year.
+
+516
+00:33:06,135 --> 00:33:08,746
+My forecast, therefore...
+
+517
+00:33:10,879 --> 00:33:12,576
+Uh, excuse me.
+
+518
+00:33:15,405 --> 00:33:18,017
+My forecast, therefore,
+
+519
+00:33:18,060 --> 00:33:20,802
+for Monday, June 5th,
+the proposed D-Day,
+
+520
+00:33:20,845 --> 00:33:22,586
+is as follows.
+
+521
+00:33:22,630 --> 00:33:26,068
+Wind, west-northwest, strong,
+
+522
+00:33:26,112 --> 00:33:28,810
+reaching force six,
+possibly force seven.
+
+523
+00:33:28,853 --> 00:33:30,290
+Force seven? Are you sure?
+
+524
+00:33:31,552 --> 00:33:33,162
+No.
+
+525
+00:33:33,206 --> 00:33:34,859
+It's an estimate.
+
+526
+00:33:37,732 --> 00:33:40,082
+Cloud low.
+
+527
+00:33:40,126 --> 00:33:41,910
+Visibility poor.
+
+528
+00:33:42,867 --> 00:33:45,435
+Rain very likely.
+
+529
+00:33:45,479 --> 00:33:48,134
+Waves eight to 12 feet,
+
+530
+00:33:48,177 --> 00:33:50,962
+possibly with an increase
+to 15 feet.
+
+531
+00:33:52,181 --> 00:33:55,315
+Confidence... poor.
+
+532
+00:33:57,752 --> 00:33:59,275
+Monday, June 5th
+
+533
+00:33:59,319 --> 00:34:01,843
+through at least
+Tuesday, June 6th, falling...
+
+534
+00:34:04,063 --> 00:34:05,803
+to very poor.
+
+535
+00:34:07,631 --> 00:34:09,372
+Stagg, I-I'm no weatherman,
+
+536
+00:34:09,416 --> 00:34:12,027
+but have you looked
+out a window lately?
+
+537
+00:34:12,071 --> 00:34:13,811
+Well, the weather
+in this part of Europe, sir,
+
+538
+00:34:13,855 --> 00:34:15,857
+can change very rapidly.
+
+539
+00:34:15,900 --> 00:34:19,426
+This poor visibility— how poor?
+
+540
+00:34:19,469 --> 00:34:21,906
+Less than a mile,
+or thereabouts.
+
+541
+00:34:23,386 --> 00:34:27,477
+Our paratroopers
+require a full moon
+
+542
+00:34:27,521 --> 00:34:29,392
+to land on target.
+
+543
+00:34:29,436 --> 00:34:32,526
+Spring tides are essential
+for landing our watercraft.
+
+544
+00:34:32,569 --> 00:34:34,919
+Do you realize,
+Group Captain Stagg,
+
+545
+00:34:34,963 --> 00:34:38,271
+that Monday, June 5th is
+the only date this calendar year
+
+546
+00:34:38,314 --> 00:34:40,664
+upon which these conditions
+perfectly coincide?
+
+547
+00:34:40,708 --> 00:34:42,188
+I do realize. Of course, sir.
+
+548
+00:34:44,059 --> 00:34:46,714
+So, when exactly
+do you suggest we go?
+
+549
+00:34:46,757 --> 00:34:48,585
+Well, as it relates
+to the weather,
+
+550
+00:34:48,629 --> 00:34:50,239
+it's impossible to say.
+
+551
+00:34:50,283 --> 00:34:52,589
+As to the moon and the tides,
+
+552
+00:34:52,633 --> 00:34:55,679
+the next opportunity
+would be June 18.
+
+553
+00:34:57,203 --> 00:34:59,553
+Two more weeks? Are you mad?
+
+554
+00:34:59,596 --> 00:35:02,338
+We can't keep our preparations
+secret for that long.
+
+555
+00:35:02,382 --> 00:35:03,470
+It's just not possible.
+
+556
+00:35:03,513 --> 00:35:04,862
+Of course it isn't.
+
+557
+00:35:04,906 --> 00:35:07,213
+The enemy will be ready
+and waiting.
+
+558
+00:35:07,256 --> 00:35:10,346
+They'll slaughter
+every single last one of us.
+
+559
+00:35:10,390 --> 00:35:13,915
+That's an extremely
+pessimistic forecast.
+
+560
+00:35:14,959 --> 00:35:16,439
+Are you absolutely certain?
+
+561
+00:35:16,483 --> 00:35:18,180
+No.
+
+562
+00:35:18,224 --> 00:35:20,748
+I'm not certain.
+
+563
+00:35:20,791 --> 00:35:23,664
+I'm confident
+that the storms will come.
+
+564
+00:35:23,707 --> 00:35:26,145
+I can't be absolutely certain
+as to when.
+
+565
+00:35:26,188 --> 00:35:28,190
+Not good enough.
+
+566
+00:35:28,234 --> 00:35:29,670
+If the storms come tonight,
+
+567
+00:35:29,713 --> 00:35:31,976
+then they may burn
+themselves off by Monday.
+
+568
+00:35:32,020 --> 00:35:35,284
+If they come tomorrow,
+then the weather will be...
+
+569
+00:35:35,328 --> 00:35:36,720
+exactly as I described.
+
+570
+00:35:36,764 --> 00:35:38,635
+We must go regardless.
+
+571
+00:35:41,377 --> 00:35:43,336
+This moment demands judgment
+
+572
+00:35:43,379 --> 00:35:46,165
+shaped by
+actual battlefield experience.
+
+573
+00:35:46,208 --> 00:35:48,776
+We can't risk another
+Exercise Tiger.
+
+574
+00:35:50,865 --> 00:35:55,435
+My men are ready and primed
+for the big match.
+
+575
+00:35:55,478 --> 00:35:58,394
+Get them onto the beaches
+somehow, anyhow.
+
+576
+00:35:58,438 --> 00:36:00,440
+Leave the rest to me.
+
+577
+00:36:10,667 --> 00:36:12,016
+Reload me, please.
+
+578
+00:36:12,060 --> 00:36:14,497
+Let's go. It's time.
+
+579
+00:36:18,066 --> 00:36:19,198
+Monty.
+
+580
+00:36:23,680 --> 00:36:25,378
+You can think what you like,
+
+581
+00:36:25,421 --> 00:36:28,816
+and you can say what you like
+to my face,
+
+582
+00:36:28,859 --> 00:36:32,385
+but don't you ever undermine me
+in front of the men again.
+
+583
+00:36:32,428 --> 00:36:34,300
+Relax, old chap.
+
+584
+00:36:34,343 --> 00:36:35,997
+It's not as if
+I'm telling them anything
+
+585
+00:36:36,040 --> 00:36:37,955
+they don't already know.
+
+586
+00:36:42,395 --> 00:36:44,614
+Tiger was a training op.
+
+587
+00:36:47,530 --> 00:36:49,576
+Dress rehearsal for D-Day.
+
+588
+00:36:52,013 --> 00:36:56,539
+Half those boys were
+fresh out of the draft.
+
+589
+00:36:58,628 --> 00:37:01,501
+So I called in
+live artillery to...
+
+590
+00:37:03,242 --> 00:37:04,852
+toughen them up.
+
+591
+00:37:07,158 --> 00:37:11,206
+Naval command was
+supposed to bomb the beach
+
+592
+00:37:11,250 --> 00:37:13,730
+an hour before we landed.
+
+593
+00:37:15,689 --> 00:37:20,781
+There were delays, so we had to
+push the start time back.
+
+594
+00:37:24,001 --> 00:37:29,311
+Our radios had a different
+frequency from the Brits.
+
+595
+00:37:31,574 --> 00:37:33,881
+Our boys never got the message.
+
+596
+00:37:36,405 --> 00:37:38,407
+They walked right into it.
+
+597
+00:37:40,975 --> 00:37:42,716
+One mistake.
+
+598
+00:37:43,978 --> 00:37:46,023
+Just that one mistake.
+
+599
+00:37:52,334 --> 00:37:53,596
+Ike.
+
+600
+00:37:54,684 --> 00:37:56,817
+Ike, look at me.
+
+601
+00:38:01,430 --> 00:38:05,129
+You have to stop doing this
+to yourself.
+
+602
+00:38:05,173 --> 00:38:06,914
+What's done is done.
+
+603
+00:38:08,350 --> 00:38:10,091
+When I close my eyes...
+
+604
+00:38:12,789 --> 00:38:14,965
+all I can see is failure.
+
+605
+00:38:22,408 --> 00:38:23,974
+Well, look what the cat
+dragged in.
+
+606
+00:38:24,018 --> 00:38:25,628
+Evening, sir.
+
+607
+00:38:25,672 --> 00:38:27,630
+Evening, Irv.
+You doing all right?
+
+608
+00:38:27,674 --> 00:38:29,328
+Yeah. Can we talk?
+
+609
+00:38:29,371 --> 00:38:31,242
+What's on your mind?
+
+610
+00:38:31,286 --> 00:38:33,375
+Well, sir, I'm not sure
+
+611
+00:38:33,419 --> 00:38:35,377
+- if you're aware of...
+- Ike!
+
+612
+00:38:35,421 --> 00:38:37,379
+Associated Press
+have just announced
+
+613
+00:38:37,423 --> 00:38:39,599
+that we're landing
+in France tomorrow.
+
+614
+00:38:41,601 --> 00:38:44,473
+CBS, Radio Moscow,
+they've already picked it up.
+
+615
+00:38:45,866 --> 00:38:47,607
+- Get General McClure on this.
+- Yep.
+
+616
+00:38:47,650 --> 00:38:49,609
+I want this cleaned up now.
+
+617
+00:38:49,652 --> 00:38:50,958
+And I want names.
+
+618
+00:38:51,001 --> 00:38:52,525
+Understood.
+
+619
+00:38:56,137 --> 00:38:57,704
+You were saying?
+
+620
+00:39:02,535 --> 00:39:04,101
+Stagg!
+
+621
+00:39:06,843 --> 00:39:09,106
+- Stagg!
+
+622
+00:39:13,197 --> 00:39:14,764
+Everyone out!
+
+623
+00:39:21,902 --> 00:39:23,382
+Move!
+
+624
+00:39:26,689 --> 00:39:29,039
+Close the door behind you.
+
+625
+00:39:31,215 --> 00:39:34,741
+That, uh, forecast you gave...
+
+626
+00:39:36,569 --> 00:39:40,137
+was that the view
+of the British
+
+627
+00:39:40,181 --> 00:39:42,879
+and the American teams?
+
+628
+00:39:42,923 --> 00:39:45,360
+It was the view of
+the Allied Meteorological Unit.
+
+629
+00:39:45,404 --> 00:39:48,319
+Don't give me
+that mealymouthed crap!
+
+630
+00:39:48,363 --> 00:39:50,757
+Krick told me—
+he just told me!--
+
+631
+00:39:50,800 --> 00:39:52,933
+the weather on Monday
+is gonna be fine.
+
+632
+00:39:52,976 --> 00:39:55,892
+Just fine. Sunny and beautiful!
+
+633
+00:39:57,590 --> 00:40:00,070
+Well, Colonel Krick had no right
+to speak on behalf of...
+
+634
+00:40:00,114 --> 00:40:02,725
+Wrong!
+Colonel Krick has every right
+
+635
+00:40:02,769 --> 00:40:07,034
+to speak up if he thinks
+that that will affect
+
+636
+00:40:07,077 --> 00:40:09,297
+the outcome of the invasion!
+
+637
+00:40:10,472 --> 00:40:11,691
+Is that clear?
+
+638
+00:40:14,737 --> 00:40:16,391
+Is it?
+
+639
+00:40:16,435 --> 00:40:17,697
+Yes, sir.
+
+640
+00:40:19,394 --> 00:40:22,528
+Who do you think
+you are, anyway?
+
+641
+00:40:22,571 --> 00:40:24,225
+Who?
+
+642
+00:40:25,705 --> 00:40:28,969
+Ordering my man to stand down?
+
+643
+00:40:29,012 --> 00:40:33,234
+Pestering my staff
+so that you can phone home?
+
+644
+00:40:36,629 --> 00:40:38,718
+May I respond, sir?
+
+645
+00:40:39,936 --> 00:40:41,590
+I'm all ears.
+
+646
+00:40:44,593 --> 00:40:48,249
+As chief meteorological officer,
+
+647
+00:40:48,292 --> 00:40:50,294
+I take full responsibility
+
+648
+00:40:50,338 --> 00:40:52,732
+for the recommendation made
+at the meeting.
+
+649
+00:40:55,256 --> 00:40:59,434
+And it was precisely because
+Colonel Krick and I disagreed
+
+650
+00:40:59,478 --> 00:41:03,569
+that I decided it would be
+clearer and simpler
+
+651
+00:41:03,612 --> 00:41:05,396
+if I spoke alone.
+
+652
+00:41:05,440 --> 00:41:08,922
+Krick's forecasts have saved
+
+653
+00:41:08,965 --> 00:41:11,402
+thousands of lives.
+
+654
+00:41:11,446 --> 00:41:15,711
+Why on God's green earth
+should I trust you?
+
+655
+00:41:19,019 --> 00:41:20,760
+Because Colonel Krick
+has been lucky.
+
+656
+00:41:20,803 --> 00:41:22,501
+Good.
+
+657
+00:41:23,719 --> 00:41:25,895
+I like luck.
+
+658
+00:41:25,939 --> 00:41:28,637
+Why was he lucky?
+
+659
+00:41:28,681 --> 00:41:30,857
+He's been lucky because
+he's been tasked
+
+660
+00:41:30,900 --> 00:41:35,905
+with forecasting
+stable weather systems.
+
+661
+00:41:35,949 --> 00:41:39,213
+When patterns are predictable,
+then yes, of course,
+
+662
+00:41:39,256 --> 00:41:41,520
+analog charts can be useful.
+
+663
+00:41:41,563 --> 00:41:44,740
+In North Africa,
+he never made a mistake.
+
+664
+00:41:44,784 --> 00:41:46,960
+- Not once.
+- Well, of course he didn't.
+
+665
+00:41:47,003 --> 00:41:49,005
+He was safe as houses there.
+
+666
+00:41:50,267 --> 00:41:52,705
+The conditions here, sir...
+
+667
+00:41:52,748 --> 00:41:54,402
+they're not comparable.
+
+668
+00:41:54,445 --> 00:41:56,578
+Look at the charts, sir.
+
+669
+00:42:01,409 --> 00:42:03,890
+Here, there are two—
+not one but two—
+
+670
+00:42:03,933 --> 00:42:06,893
+major storms advancing towards
+the Normandy coast
+
+671
+00:42:06,936 --> 00:42:08,416
+even as we speak.
+
+672
+00:42:08,459 --> 00:42:11,071
+That's nowhere near France.
+
+673
+00:42:11,114 --> 00:42:12,638
+No, sir.
+
+674
+00:42:13,943 --> 00:42:15,466
+Not yet.
+
+675
+00:42:22,082 --> 00:42:24,563
+I want a forecast
+the two of you agree on.
+
+676
+00:42:26,390 --> 00:42:27,522
+Clear?
+
+677
+00:42:28,523 --> 00:42:29,568
+Yes, sir.
+
+678
+00:42:32,788 --> 00:42:35,095
+OPW confirmed full retraction.
+
+679
+00:42:35,138 --> 00:42:36,879
+Thank you.
+
+680
+00:42:36,923 --> 00:42:38,707
+Not at all, sir.
+
+681
+00:42:52,547 --> 00:42:55,855
+I didn't tell him about
+you trying to call home.
+
+682
+00:42:55,898 --> 00:42:59,206
+Someone downstairs must have
+leaked it, I'm afraid.
+
+683
+00:43:00,729 --> 00:43:01,991
+Okay.
+
+684
+00:43:03,079 --> 00:43:05,560
+He gets like that sometimes.
+
+685
+00:43:05,604 --> 00:43:07,301
+Just let it wash over you.
+
+686
+00:43:07,344 --> 00:43:09,738
+He won't even remember
+what he said.
+
+687
+00:43:09,782 --> 00:43:11,479
+That how you deal with him?
+
+688
+00:43:12,480 --> 00:43:14,438
+Ah, he's nothing.
+
+689
+00:43:14,482 --> 00:43:17,180
+I was an ambulance driver
+during the Blitz.
+
+690
+00:43:17,224 --> 00:43:18,704
+There were so many dead bodies,
+
+691
+00:43:18,747 --> 00:43:20,706
+we had to use a cinema
+as a morgue.
+
+692
+00:43:22,055 --> 00:43:25,014
+- You just grow a thick skin.
+- Hmm.
+
+693
+00:43:28,235 --> 00:43:30,019
+From ambulance driver
+
+694
+00:43:30,063 --> 00:43:32,500
+to aide
+to the supreme commander.
+
+695
+00:43:32,543 --> 00:43:34,545
+Mm-hmm.
+
+696
+00:43:34,589 --> 00:43:37,200
+Driver, secretary,
+
+697
+00:43:37,244 --> 00:43:39,507
+aide, nurse.
+
+698
+00:43:39,550 --> 00:43:40,900
+Everything, really.
+
+699
+00:43:43,903 --> 00:43:46,819
+We've been together
+for three years now.
+
+700
+00:43:48,081 --> 00:43:52,172
+I've been to Morocco, Algeria.
+
+701
+00:43:57,568 --> 00:43:59,005
+Must be exciting.
+
+702
+00:44:02,269 --> 00:44:04,401
+It has its moments.
+
+703
+00:44:13,976 --> 00:44:16,500
+So, these storms
+you keep talking about—
+
+704
+00:44:16,544 --> 00:44:19,155
+how are you so certain
+that they're coming?
+
+705
+00:44:21,462 --> 00:44:23,029
+I'm not certain.
+
+706
+00:44:24,291 --> 00:44:27,337
+You can't be certain
+about the weather.
+
+707
+00:44:27,381 --> 00:44:29,992
+All we can do is
+look to the evidence.
+
+708
+00:44:30,036 --> 00:44:35,258
+Do you know that weathermen are
+traditionally a little boring?
+
+709
+00:44:37,347 --> 00:44:40,176
+- How dare you say that?
+
+710
+00:44:42,483 --> 00:44:46,008
+Weathermen, maybe, but how can
+the weather be boring?
+
+711
+00:44:47,314 --> 00:44:49,272
+It feeds us.
+
+712
+00:44:49,316 --> 00:44:51,144
+The weather.
+
+713
+00:44:52,188 --> 00:44:54,277
+Can destroy us.
+
+714
+00:44:54,321 --> 00:44:56,627
+Controls our daily life.
+
+715
+00:44:58,673 --> 00:45:00,501
+I don't think that's boring.
+
+716
+00:45:05,854 --> 00:45:09,640
+People ask, "When will it rain?
+When will the sun come out?"
+
+717
+00:45:11,991 --> 00:45:13,862
+But what about,
+"Why does it rain?"
+
+718
+00:45:16,125 --> 00:45:17,866
+"Why does the wind blow?"
+
+719
+00:45:19,433 --> 00:45:20,869
+"What's the wind?"
+
+720
+00:45:25,787 --> 00:45:27,702
+Excuse me.
+
+721
+00:45:27,746 --> 00:45:29,486
+Yes. Stagg.
+
+722
+00:45:29,530 --> 00:45:31,010
+Yes, go ahead. Repeat that.
+
+723
+00:45:31,053 --> 00:45:32,141
+Zero, zero, one, zero, four...
+
+724
+00:45:33,664 --> 00:45:35,797
+StratoCu at 2,000 feet.
+
+725
+00:45:35,841 --> 00:45:37,756
+Tops at 5,000 feet.
+
+726
+00:45:50,377 --> 00:45:52,335
+Good news or bad?
+
+727
+00:45:52,379 --> 00:45:53,902
+We're looking good, sir.
+
+728
+00:45:53,946 --> 00:45:55,948
+I couldn't disagree
+with that more.
+
+729
+00:45:55,991 --> 00:45:57,645
+We're not looking good at all.
+
+730
+00:45:57,688 --> 00:45:59,473
+You know what, I am done
+
+731
+00:45:59,516 --> 00:46:02,998
+with this Scotch pessimism
+of yours, this Highland gloom.
+
+732
+00:46:03,042 --> 00:46:04,478
+I'm not from the Highlands.
+
+733
+00:46:04,521 --> 00:46:06,001
+Well, your Lowland gloom, then.
+
+734
+00:46:06,045 --> 00:46:08,221
+I'm neither from the Highlands
+nor the Lowlands.
+
+735
+00:46:09,352 --> 00:46:10,571
+Well, wherever it is he's from,
+
+736
+00:46:10,614 --> 00:46:12,051
+we're in good shape
+for Monday, sir.
+
+737
+00:46:12,094 --> 00:46:13,704
+You see this?
+
+738
+00:46:13,748 --> 00:46:15,750
+This ridge of high pressure
+has already moved in
+
+739
+00:46:15,794 --> 00:46:19,188
+from the Azores,
+just as it did on June 3, 1925.
+
+740
+00:46:19,232 --> 00:46:20,799
+This is moronic.
+
+741
+00:46:21,800 --> 00:46:24,411
+This is actually moronic.
+
+742
+00:46:24,454 --> 00:46:25,891
+Oh, so I'm moronic now?
+
+743
+00:46:25,934 --> 00:46:27,414
+That's great, Stagg.
+That's just great.
+
+744
+00:46:27,457 --> 00:46:28,937
+Just insult me right to my face.
+
+745
+00:46:28,981 --> 00:46:30,504
+I'm not insulting you.
+I'm just describing you.
+
+746
+00:46:30,547 --> 00:46:31,897
+As a moron?
+
+747
+00:46:31,940 --> 00:46:33,028
+All right, enough.
+
+748
+00:46:33,072 --> 00:46:34,725
+As a confident moron, yes.
+
+749
+00:46:34,769 --> 00:46:36,205
+Oh, go to hell, Stagg.
+You come in here,
+
+750
+00:46:36,249 --> 00:46:37,598
+- you think you're better
+than us? -Hey! All right,
+
+751
+00:46:37,641 --> 00:46:38,860
+all right, all right,
+that's enough.
+
+752
+00:46:38,904 --> 00:46:41,428
+Jesus Christ.
+
+753
+00:46:41,471 --> 00:46:44,300
+We have three hours.
+
+754
+00:46:44,344 --> 00:46:47,826
+Three hours until we
+take this up with the C-in-Cs.
+
+755
+00:46:50,089 --> 00:46:51,568
+Now...
+
+756
+00:46:53,005 --> 00:46:55,355
+go or not go?
+
+757
+00:46:55,398 --> 00:46:56,835
+Sir, what we need to consider...
+
+758
+00:46:56,878 --> 00:46:58,924
+No, no. No, no more considering.
+
+759
+00:46:58,967 --> 00:47:00,316
+No.
+
+760
+00:47:00,360 --> 00:47:03,363
+Go or don't go? Go or don't go?
+
+761
+00:47:03,406 --> 00:47:05,104
+- That's it. Which is it?
+
+762
+00:47:05,147 --> 00:47:06,322
+We should go, sir.
+
+763
+00:47:07,323 --> 00:47:08,542
+Stagg.
+
+764
+00:47:11,937 --> 00:47:13,547
+I'm sorry,
+we'll have to call you back.
+
+765
+00:47:13,590 --> 00:47:15,679
+Understood.
+
+766
+00:47:15,723 --> 00:47:17,464
+Uh, uh, I-I'm sorry, sir.
+It's for you.
+
+767
+00:47:17,507 --> 00:47:19,118
+Not now.
+
+768
+00:47:19,161 --> 00:47:20,859
+They say it's extremely urgent.
+
+769
+00:47:25,515 --> 00:47:27,300
+Yes. Stagg.
+
+770
+00:47:27,343 --> 00:47:29,171
+Sir, this is
+Private Amy Haig from Signals
+
+771
+00:47:29,215 --> 00:47:31,652
+relaying a message from
+the Dunstable Met Office.
+
+772
+00:47:31,695 --> 00:47:34,133
+Your wife was taken to the
+maternity ward of St. Mary's.
+
+773
+00:47:34,176 --> 00:47:36,439
+- She is pregnant, yes?
+- Yes.
+
+774
+00:47:36,483 --> 00:47:37,701
+Yes, that's correct.
+
+775
+00:47:37,745 --> 00:47:39,051
+Is the baby here?
+
+776
+00:47:39,094 --> 00:47:40,704
+Have I missed it?
+
+777
+00:47:40,748 --> 00:47:42,924
+Well, sir,
+they felt you should know:
+
+778
+00:47:42,968 --> 00:47:45,405
+St. Mary's Hospital was bombed
+earlier tonight.
+
+779
+00:47:45,448 --> 00:47:48,147
+There have been casualties,
+sir, and they're...
+
+780
+00:47:48,190 --> 00:47:50,366
+they're still looking
+for your wife.
+
+781
+00:47:56,982 --> 00:47:58,766
+Group Captain Stagg?
+
+782
+00:48:05,860 --> 00:48:07,818
+Is there any more information?
+
+783
+00:48:07,862 --> 00:48:09,777
+Not at this point, sir.
+
+784
+00:48:11,257 --> 00:48:13,041
+But there's been casualties?
+
+785
+00:48:13,085 --> 00:48:14,521
+Yes, sir.
+
+786
+00:48:22,094 --> 00:48:24,357
+Okay. Well, um...
+
+787
+00:48:25,924 --> 00:48:28,839
+Well, if you have any more...
+
+788
+00:48:28,883 --> 00:48:31,233
+information,
+then let me know— anything.
+
+789
+00:48:31,277 --> 00:48:32,931
+Of course, sir.
+
+790
+00:48:36,064 --> 00:48:37,544
+Thank you.
+
+791
+00:48:37,587 --> 00:48:39,198
+You're welcome, sir.
+
+792
+00:48:42,070 --> 00:48:43,942
+There a problem, Stagg?
+
+793
+00:48:52,907 --> 00:48:55,257
+No. It's irrelevant.
+
+794
+00:48:55,301 --> 00:48:57,477
+Good.
+
+795
+00:48:57,520 --> 00:48:59,522
+So, can I give the order?
+
+796
+00:49:01,960 --> 00:49:03,962
+What?
+
+797
+00:49:04,005 --> 00:49:05,876
+The order.
+
+798
+00:49:05,920 --> 00:49:07,704
+For Monday.
+
+799
+00:49:09,315 --> 00:49:10,881
+No.
+
+800
+00:49:12,535 --> 00:49:14,102
+N-No?
+
+801
+00:49:14,146 --> 00:49:17,758
+I mean, so you're saying
+don't give the order?
+
+802
+00:49:17,801 --> 00:49:19,978
+Is that it?
+
+803
+00:49:20,021 --> 00:49:21,980
+Yeah, that... Yes.
+
+804
+00:49:24,112 --> 00:49:27,768
+Yes. I'm saying that...
+I'm saying...
+
+805
+00:49:27,811 --> 00:49:32,077
+that the weather on Monday
+will be extremely poor.
+
+806
+00:49:34,340 --> 00:49:36,472
+Let me tell you
+my problem, Stagg.
+
+807
+00:49:38,344 --> 00:49:41,521
+Even I can see that
+
+808
+00:49:41,564 --> 00:49:46,004
+Krick's anticyclone
+is on the move,
+
+809
+00:49:46,047 --> 00:49:50,486
+because it's right here
+on the goddamn map.
+
+810
+00:49:52,923 --> 00:49:57,580
+Now, our final meeting
+is at 0400 hours,
+
+811
+00:49:57,624 --> 00:50:00,583
+and that will be
+the absolute last opportunity
+
+812
+00:50:00,627 --> 00:50:03,064
+to change anything,
+
+813
+00:50:03,108 --> 00:50:07,416
+so unless you can prove
+these storms are inbound,
+
+814
+00:50:07,460 --> 00:50:09,853
+we invade as planned
+
+815
+00:50:09,897 --> 00:50:14,641
+Monday, June 5th, 0630 hours.
+
+816
+00:50:15,642 --> 00:50:17,644
+Yes, sir.
+
+817
+00:50:17,687 --> 00:50:19,602
+Three hours, gentlemen.
+
+818
+00:50:48,675 --> 00:50:50,024
+You ready? You ready?
+
+819
+00:51:02,341 --> 00:51:04,647
+- Yeah!
+
+820
+00:51:13,265 --> 00:51:15,397
+♪ Oh... ♪
+
+821
+00:51:17,921 --> 00:51:22,578
+♪ The hi-de-ho man, that's me ♪
+
+822
+00:51:22,622 --> 00:51:26,104
+♪ How'd you like
+to blow your top? ♪
+
+823
+00:51:26,147 --> 00:51:28,758
+♪ Dig yourself
+some fine rebop? ♪
+
+824
+00:51:28,802 --> 00:51:32,066
+♪ Hi-de-hi, he-de-he ♪
+
+825
+00:51:32,110 --> 00:51:34,938
+♪ Oh, the hi-de-ho man,
+that's me ♪
+
+826
+00:51:34,982 --> 00:51:36,766
+♪ Hi-de, hi-de, hi-de-hi ♪
+
+827
+00:51:36,810 --> 00:51:38,377
+♪ Hi-de, hi-de,
+hi-de-hi ♪
+
+828
+00:51:38,420 --> 00:51:40,074
+♪ Hey-de, hey-de, hey-de-hey ♪
+
+829
+00:51:40,118 --> 00:51:41,554
+♪ Hey-de, hey-de,
+hey-de-hey ♪
+
+830
+00:51:41,597 --> 00:51:43,556
+♪ He-de, he-de, he-de-he ♪
+
+831
+00:51:43,599 --> 00:51:45,123
+♪ He-de, he-de,
+he-de-he ♪
+
+832
+00:51:45,166 --> 00:51:46,646
+♪ Hi-de, hi-de, hi-de-hi ♪
+
+833
+00:51:46,689 --> 00:51:48,082
+♪ Hi-de, hi-de,
+hi-de-hi ♪
+
+834
+00:51:48,126 --> 00:51:49,736
+♪ Say, I hepped 'em in London ♪
+
+835
+00:51:49,779 --> 00:51:51,477
+♪ I hepped 'em in Holland ♪
+
+836
+00:51:51,520 --> 00:51:53,870
+♪ I hepped 'em in gay Paris ♪
+
+837
+00:51:53,914 --> 00:51:57,657
+♪ Yes, sirree, yes, sirree ♪
+
+838
+00:51:57,700 --> 00:52:00,964
+♪ Oh, the hi-de-ho man,
+that's me ♪
+
+839
+00:52:01,008 --> 00:52:03,010
+♪ Hi-de, hi-de, hi-de-hi ♪
+
+840
+00:52:03,053 --> 00:52:04,316
+♪ Hi-de, hi-de-hi ♪
+
+841
+00:52:04,359 --> 00:52:06,274
+♪ Oh-ho, de-ho-de ♪
+
+842
+00:52:06,318 --> 00:52:07,623
+♪ Ho, de-ho-de ♪
+
+843
+00:52:07,667 --> 00:52:09,625
+♪ Hi-de, hi-de, hi-de-hi ♪
+
+844
+00:52:09,669 --> 00:52:11,671
+♪ Hi-de, hi-de,
+hi-de-hi ♪
+
+845
+00:52:31,647 --> 00:52:33,954
+♪ The hi-de-ho man, that's me. ♪
+
+846
+00:52:57,891 --> 00:52:59,719
+- Dr. Stagg.
+
+847
+00:53:05,812 --> 00:53:07,857
+Come with me.
+
+848
+00:53:07,901 --> 00:53:09,337
+Come on.
+
+849
+00:53:10,643 --> 00:53:12,819
+We need you back there.
+
+850
+00:53:15,517 --> 00:53:16,997
+Come on.
+
+851
+00:53:20,566 --> 00:53:22,568
+You'll be all right.
+
+852
+00:53:23,612 --> 00:53:25,310
+- Yes.
+- Mm-hmm.
+
+853
+00:53:29,836 --> 00:53:31,446
+Anything at all.
+
+854
+00:53:31,490 --> 00:53:32,882
+Yeah.
+
+855
+00:53:36,843 --> 00:53:38,975
+Uh, this just came through, sir.
+
+856
+00:54:09,484 --> 00:54:10,833
+I want to say something.
+
+857
+00:54:10,877 --> 00:54:13,053
+Yeah, what's that?
+
+858
+00:54:13,096 --> 00:54:15,621
+I think the way
+you're treating Stagg is wrong.
+
+859
+00:54:16,883 --> 00:54:18,276
+I think if you keep it up,
+
+860
+00:54:18,319 --> 00:54:20,278
+he's gonna crack
+and you'll lose him.
+
+861
+00:54:20,321 --> 00:54:22,410
+Then I'll work with Krick.
+
+862
+00:54:22,454 --> 00:54:25,805
+You know I like Irv,
+but he-he's no match for Stagg.
+
+863
+00:54:25,848 --> 00:54:27,285
+Since when are you an expert?
+
+864
+00:54:27,328 --> 00:54:28,982
+Don't talk to me like that.
+
+865
+00:54:29,025 --> 00:54:30,940
+His wife is in the hospital.
+
+866
+00:54:30,984 --> 00:54:32,464
+- She's pregnant.
+- In labor.
+
+867
+00:54:32,507 --> 00:54:34,161
+Hospital's bombed, yes.
+
+868
+00:54:34,204 --> 00:54:35,945
+I know. What else?
+
+869
+00:54:35,989 --> 00:54:39,775
+He doesn't know if his
+pregnant wife is dead or alive.
+
+870
+00:54:39,819 --> 00:54:41,386
+Uh-huh. Yes.
+
+871
+00:54:41,429 --> 00:54:43,301
+- Let me find out.
+- Find out what?
+
+872
+00:54:43,344 --> 00:54:45,564
+I can make it to the hospital
+and back in a couple of hours.
+
+873
+00:54:45,607 --> 00:54:47,522
+- How are you gonna do that?
+- It'll give him clarity.
+
+874
+00:54:47,566 --> 00:54:48,958
+No. No, I need you here.
+
+875
+00:54:49,002 --> 00:54:50,351
+It's just a couple of hours.
+
+876
+00:54:50,395 --> 00:54:51,744
+No.
+
+877
+00:54:55,400 --> 00:54:57,097
+Dismissed.
+
+878
+00:55:01,406 --> 00:55:02,885
+Dismissed, Lieutenant.
+
+879
+00:55:15,158 --> 00:55:16,638
+South Iceland,
+
+880
+00:55:16,682 --> 00:55:18,553
+seven-tenths StratoCu,
+3,000 feet,
+
+881
+00:55:18,597 --> 00:55:20,163
+- southeast force six.
+
+882
+00:55:20,207 --> 00:55:21,643
+ten-tenths at 1,500 feet.
+
+883
+00:55:32,393 --> 00:55:34,656
+So we have warm sector
+conditions over Ireland,
+
+884
+00:55:34,700 --> 00:55:36,919
+and low 9-9-6 is off
+the northwest of Scotland.
+
+885
+00:55:36,963 --> 00:55:38,094
+It's the secondary low.
+
+886
+00:55:38,138 --> 00:55:39,792
+That's causing a low cloud base.
+
+887
+00:55:39,835 --> 00:55:42,098
+It's very high dew points
+in that warm sector upstream.
+
+888
+00:55:42,142 --> 00:55:43,491
+No sign of frontal systems
+moving north.
+
+889
+00:55:43,535 --> 00:55:45,363
+Not yet.
+
+890
+00:55:45,406 --> 00:55:46,929
+- They're about to start, sir.
+- Just a couple more minutes.
+
+891
+00:55:46,973 --> 00:55:48,496
+Please.
+
+892
+00:55:48,540 --> 00:55:51,238
+I have the 1300 and 1800
+surface air maps. Bryant.
+
+893
+00:55:51,281 --> 00:55:52,935
+It's okay.
+
+894
+00:55:56,199 --> 00:55:58,245
+We don't need the charts.
+
+895
+00:55:59,812 --> 00:56:01,770
+We still have
+a little time, sir.
+
+896
+00:56:38,024 --> 00:56:40,766
+Irving, why don't you
+start us off, please?
+
+897
+00:56:40,809 --> 00:56:42,420
+Yes, sir.
+
+898
+00:56:42,463 --> 00:56:44,030
+Gentlemen...
+
+899
+00:56:44,073 --> 00:56:47,990
+this is a chart
+for June 3, 1925.
+
+900
+00:56:48,034 --> 00:56:49,992
+You'll notice here and here
+
+901
+00:56:50,036 --> 00:56:53,213
+a temporary weakening
+of pressure over the Azores,
+
+902
+00:56:53,256 --> 00:56:55,258
+just as we're seeing today.
+
+903
+00:56:55,302 --> 00:56:59,959
+Now, within 24 hours,
+that pressure reasserted itself,
+
+904
+00:57:00,002 --> 00:57:02,788
+and it cleared the storm
+threatening Northern Europe.
+
+905
+00:57:02,831 --> 00:57:05,791
+As you can see...
+
+906
+00:57:05,834 --> 00:57:10,752
+nearly identical patterns
+occurred in 1904 and 1925,
+
+907
+00:57:10,796 --> 00:57:12,754
+and I can give you
+plenty of others,
+
+908
+00:57:12,798 --> 00:57:15,583
+but the bottom line is this:
+
+909
+00:57:15,627 --> 00:57:20,458
+Tomorrow, Monday, June 5th,
+is good to go.
+
+910
+00:57:24,723 --> 00:57:26,681
+Thank you.
+
+911
+00:57:32,600 --> 00:57:34,472
+Stagg?
+
+912
+00:57:35,473 --> 00:57:36,822
+You've got the floor.
+
+913
+00:57:42,828 --> 00:57:45,787
+Nobody here likes me very much.
+
+914
+00:57:47,049 --> 00:57:49,487
+I realize that,
+and that's all right.
+
+915
+00:57:49,530 --> 00:57:51,619
+I don't expect you to like me,
+
+916
+00:57:51,663 --> 00:57:54,883
+but I do want you
+to listen to me.
+
+917
+00:57:56,494 --> 00:57:59,453
+Um, I could stand here
+and provide you
+
+918
+00:57:59,497 --> 00:58:03,936
+with yet more, uh, data—
+
+919
+00:58:03,979 --> 00:58:06,765
+the latest barometric readings,
+the wind speeds,
+
+920
+00:58:06,808 --> 00:58:09,811
+the new upper-air soundings
+that we've collated—
+
+921
+00:58:09,855 --> 00:58:13,511
+but none of it is going to make
+a lick of difference, is it?
+
+922
+00:58:15,817 --> 00:58:16,949
+Is it?
+
+923
+00:58:18,951 --> 00:58:22,650
+Because you want
+to believe that—
+
+924
+00:58:22,694 --> 00:58:26,306
+what Colonel Krick's just said,
+that it's going to be safe
+
+925
+00:58:26,349 --> 00:58:29,352
+to land in Normandy tomorrow—
+and so that's what you believe.
+
+926
+00:58:29,396 --> 00:58:32,486
+But everything
+that he's just said
+
+927
+00:58:32,530 --> 00:58:35,576
+is pure, unadulterated...
+
+928
+00:58:35,620 --> 00:58:37,578
+horseshit.
+
+929
+00:58:41,147 --> 00:58:44,280
+You can muster
+all the tanks and soldiers
+
+930
+00:58:44,324 --> 00:58:47,109
+and ships that you like.
+
+931
+00:58:47,153 --> 00:58:51,113
+You can assemble the greatest
+armada that ever there was,
+
+932
+00:58:51,157 --> 00:58:55,291
+but if you invade tomorrow,
+they're going to be washed away.
+
+933
+00:58:57,859 --> 00:59:01,994
+Because the storms that
+I'm talking about are real,
+
+934
+00:59:02,037 --> 00:59:03,996
+and the jet stream
+that's propelling them
+
+935
+00:59:04,039 --> 00:59:07,390
+towards the Normandy coast
+is real,
+
+936
+00:59:07,434 --> 00:59:09,610
+and the wrath of nature...
+
+937
+00:59:13,353 --> 00:59:15,094
+is real.
+
+938
+00:59:15,137 --> 00:59:17,618
+And if you ignore it,
+
+939
+00:59:17,662 --> 00:59:21,796
+then countless men
+and countless boys...
+
+940
+00:59:31,893 --> 00:59:33,068
+That's it.
+
+941
+00:59:38,030 --> 00:59:39,684
+He's lost his bloody mind.
+
+942
+00:59:42,295 --> 00:59:45,211
+Why is it horseshit?
+
+943
+00:59:45,254 --> 00:59:46,821
+Yes, the weather was
+as he described
+
+944
+00:59:46,865 --> 00:59:50,869
+in 1904 and 1925,
+but he fails to mention 1916.
+
+945
+00:59:50,912 --> 00:59:52,871
+June 5th,
+the Battle for Mount Sorrel.
+
+946
+00:59:52,914 --> 00:59:55,264
+Then, as now, there were
+areas of high pressure
+
+947
+00:59:55,308 --> 00:59:57,919
+above the Azores,
+but the storms came anyway.
+
+948
+00:59:57,963 --> 01:00:00,226
+Many people here will remember
+that battle.
+
+949
+01:00:00,269 --> 01:00:03,011
+Chaos. Absolute chaos!
+
+950
+01:00:03,055 --> 01:00:04,839
+Thousands of lives lost!
+
+951
+01:00:04,883 --> 01:00:06,928
+Hell on earth! Torrential rain!
+
+952
+01:00:06,972 --> 01:00:09,931
+He's selecting the data
+that suits him
+
+953
+01:00:09,975 --> 01:00:12,630
+and ignoring the rest,
+and we must face the facts.
+
+954
+01:00:12,673 --> 01:00:14,588
+The facts!
+
+955
+01:00:14,632 --> 01:00:16,634
+However frightening they may be!
+
+956
+01:00:20,072 --> 01:00:22,204
+Well, if...
+
+957
+01:00:22,248 --> 01:00:25,207
+if not Monday, when?
+
+958
+01:00:28,428 --> 01:00:30,430
+Not before June 18.
+
+959
+01:00:30,473 --> 01:00:33,433
+Christ on a bike, he's still
+talking about the 18th.
+
+960
+01:00:33,476 --> 01:00:34,956
+- The 18th?
+
+961
+01:00:35,000 --> 01:00:36,523
+There is no 18th.
+
+962
+01:00:36,566 --> 01:00:39,221
+No 18th. No 18th!
+
+963
+01:00:39,265 --> 01:00:40,440
+None!
+
+964
+01:00:40,483 --> 01:00:41,615
+None, none, none, none, none!
+
+965
+01:00:41,659 --> 01:00:44,052
+The 18th is not an option!
+
+966
+01:00:44,096 --> 01:00:45,619
+Montgomery.
+
+967
+01:00:57,587 --> 01:00:59,720
+Bertie...
+
+968
+01:00:59,764 --> 01:01:03,115
+what is the worst
+
+969
+01:01:03,158 --> 01:01:05,378
+we can tolerate?
+
+970
+01:01:05,421 --> 01:01:08,729
+Waves of four to six feet
+would be tolerable.
+
+971
+01:01:10,383 --> 01:01:12,907
+Anything over six feet...
+
+972
+01:01:12,951 --> 01:01:14,996
+impossible.
+
+973
+01:01:16,563 --> 01:01:18,043
+Stagg?
+
+974
+01:01:18,086 --> 01:01:19,697
+I'm estimating waves
+of eight to ten feet.
+
+975
+01:01:27,008 --> 01:01:28,923
+Trafford, worst case?
+
+976
+01:01:28,967 --> 01:01:30,795
+Cloud base can't be lower
+than a thousand feet,
+
+977
+01:01:30,838 --> 01:01:33,145
+or we're flying blind.
+
+978
+01:01:33,188 --> 01:01:36,148
+Cloud base will be
+at least eight to ten-tenths
+
+979
+01:01:36,191 --> 01:01:37,671
+below a thousand feet.
+
+980
+01:01:37,715 --> 01:01:39,499
+Then don't fly.
+
+981
+01:01:39,542 --> 01:01:41,370
+Ramsay, you get us ashore,
+our men will handle the rest.
+
+982
+01:01:41,414 --> 01:01:43,155
+- Without air cover?
+- With or without.
+
+983
+01:01:43,198 --> 01:01:44,809
+Shut up, Monty.
+
+984
+01:01:44,852 --> 01:01:46,854
+We need to land,
+is what we need to do.
+
+985
+01:01:46,898 --> 01:01:49,074
+If we don't land,
+we have no fourth front,
+
+986
+01:01:49,117 --> 01:01:50,815
+- and without a fourth front...
+- For God's sake, Monty.
+
+987
+01:01:50,858 --> 01:01:53,469
+With waves of ten feet,
+we won't be landing anywhere.
+
+988
+01:01:53,513 --> 01:01:55,080
+Well, then, let's just start
+
+989
+01:01:55,123 --> 01:01:56,646
+the blasted Kraut lessons now,
+then, shall we,
+
+990
+01:01:56,690 --> 01:01:58,083
+and all the goose-stepping?
+
+991
+01:01:58,126 --> 01:01:59,998
+And then maybe one day
+years from now,
+
+992
+01:02:00,041 --> 01:02:02,000
+we can all yodel about
+the time that we didn't...
+
+993
+01:02:02,043 --> 01:02:04,045
+- Enough!
+
+994
+01:02:13,663 --> 01:02:15,970
+Krick, do you have
+anything to add?
+
+995
+01:02:16,014 --> 01:02:18,581
+I'm telling you, sir, next week
+is nothing but clear skies.
+
+996
+01:02:18,625 --> 01:02:21,671
+If you choose to postpone,
+
+997
+01:02:21,715 --> 01:02:23,891
+you'll regret it
+for the rest of your lives.
+
+998
+01:02:26,981 --> 01:02:28,809
+I maintain my position.
+
+999
+01:02:33,596 --> 01:02:35,773
+And I maintain mine.
+
+1000
+01:02:41,126 --> 01:02:43,084
+Then so be it.
+
+1001
+01:02:43,128 --> 01:02:44,782
+D-Day will be postponed.
+
+1002
+01:02:59,709 --> 01:03:01,320
+Ike.
+
+1003
+01:03:01,363 --> 01:03:02,843
+I hate to bring this up,
+
+1004
+01:03:02,887 --> 01:03:04,584
+but we have hundreds
+of thousands of troops
+
+1005
+01:03:04,627 --> 01:03:06,151
+ready to deploy down there.
+
+1006
+01:03:06,194 --> 01:03:07,587
+Now, they've obviously
+been briefed
+
+1007
+01:03:07,630 --> 01:03:09,284
+as to the invasion plans.
+
+1008
+01:03:09,328 --> 01:03:11,243
+Yeah,
+that's a lot of loose lips.
+
+1009
+01:03:11,286 --> 01:03:12,984
+- Secure all troops.
+
+1010
+01:03:13,027 --> 01:03:14,507
+- I repeat, secure all troops.
+- I repeat,
+
+1011
+01:03:14,550 --> 01:03:16,204
+all troops must be
+detained at once.
+
+1012
+01:03:16,248 --> 01:03:17,597
+No one leaves
+until further notice.
+
+1013
+01:03:17,640 --> 01:03:19,773
+No one leaves
+until further notice.
+
+1014
+01:03:19,817 --> 01:03:22,167
+I repeat, all troops
+must be detained at once.
+
+1015
+01:03:22,210 --> 01:03:23,646
+All troops must be
+detained at once.
+
+1016
+01:03:23,690 --> 01:03:25,823
+Secure them on board,
+no exceptions.
+
+1017
+01:03:54,982 --> 01:03:56,592
+You did the right thing.
+
+1018
+01:04:11,999 --> 01:04:13,392
+Jesus.
+
+1019
+01:04:16,786 --> 01:04:18,527
+Should've gone.
+
+1020
+01:04:18,571 --> 01:04:20,051
+Ike.
+
+1021
+01:05:37,911 --> 01:05:43,786
+♪ All creatures
+of our God and King ♪
+
+1022
+01:05:43,830 --> 01:05:49,357
+♪ Lift up
+your voice and with us sing ♪
+
+1023
+01:05:49,401 --> 01:05:56,408
+♪ Alleluia, alleluia ♪
+
+1024
+01:05:56,451 --> 01:05:59,541
+♪ Thou burning sun ♪
+
+1025
+01:05:59,585 --> 01:06:02,805
+♪ With golden beam ♪
+
+1026
+01:06:02,849 --> 01:06:05,112
+♪ Thou silver moon ♪
+
+1027
+01:06:05,156 --> 01:06:08,768
+♪ With softer gleam ♪
+
+1028
+01:06:08,811 --> 01:06:14,730
+♪ O praise him, O praise him ♪
+
+1029
+01:06:14,774 --> 01:06:20,823
+♪ Alleluia, alleluia ♪
+
+1030
+01:06:20,867 --> 01:06:27,134
+♪ Alleluia ♪
+
+1031
+01:06:28,788 --> 01:06:34,794
+♪ Thou rushing wind
+that art so strong ♪
+
+1032
+01:06:34,837 --> 01:06:40,539
+♪ Ye clouds that sail
+in heaven along ♪
+
+1033
+01:06:40,582 --> 01:06:46,588
+♪ O praise him, O praise him ♪
+
+1034
+01:06:46,632 --> 01:06:52,594
+♪ Alleluia, alleluia ♪
+
+1035
+01:06:52,638 --> 01:07:01,951
+♪ Alleluia. ♪
+
+1036
+01:07:11,613 --> 01:07:15,052
+God, grant to the living...
+
+1037
+01:07:16,053 --> 01:07:18,272
+grace.
+
+1038
+01:07:18,316 --> 01:07:21,493
+To the departed, rest.
+
+1039
+01:07:21,536 --> 01:07:24,017
+To the nation,
+
+1040
+01:07:24,061 --> 01:07:27,760
+peace and concord.
+
+1041
+01:07:27,803 --> 01:07:30,154
+To us all, your servants,
+
+1042
+01:07:30,197 --> 01:07:33,374
+the promise of eternal life.
+
+1043
+01:07:50,739 --> 01:07:55,004
+Your blessing to unite us all
+in your service
+
+1044
+01:07:55,048 --> 01:07:59,313
+to our God
+and to this, our country.
+
+1045
+01:08:05,885 --> 01:08:08,844
+- Light to guide us...
+
+1046
+01:08:08,888 --> 01:08:11,369
+guide us on our way.
+
+1047
+01:08:20,334 --> 01:08:24,904
+Courage to support us
+and your blessing to unite us...
+
+1048
+01:08:24,947 --> 01:08:27,646
+- in service to you.
+
+1049
+01:08:56,065 --> 01:08:57,676
+Amen.
+
+1050
+01:08:57,719 --> 01:08:59,939
+Amen.
+
+1051
+01:10:05,787 --> 01:10:08,877
+We can't keep the men
+locked up like this, Ike.
+
+1052
+01:10:08,921 --> 01:10:10,662
+Not for two more weeks.
+
+1053
+01:10:12,751 --> 01:10:15,101
+Well, what do you want me to do?
+
+1054
+01:10:15,144 --> 01:10:18,278
+Furlough 300,000 men
+with the playbook for D-Day?
+
+1055
+01:10:19,540 --> 01:10:21,890
+We might as well
+tell the Nazis ourselves.
+
+1056
+01:10:22,891 --> 01:10:25,154
+It's just an observation.
+
+1057
+01:10:27,244 --> 01:10:29,376
+We will find a way, Trafford.
+
+1058
+01:10:30,377 --> 01:10:31,944
+Hang in there.
+
+1059
+01:10:33,293 --> 01:10:34,381
+Yes.
+
+1060
+01:10:35,469 --> 01:10:36,644
+Sir.
+
+1061
+01:10:45,218 --> 01:10:47,220
+So L2 and 3
+have merged into one system.
+
+1062
+01:10:47,264 --> 01:10:48,700
+Mm. And a new low
+
+1063
+01:10:48,743 --> 01:10:50,092
+has intensified
+east of Newfoundland.
+
+1064
+01:10:50,136 --> 01:10:51,659
+Uh, sir?
+
+1065
+01:10:51,703 --> 01:10:53,052
+Excuse me, Dr. Stagg?
+
+1066
+01:10:54,793 --> 01:10:57,622
+The cold front appears to be
+clearing western Ireland.
+
+1067
+01:11:00,407 --> 01:11:01,843
+What?
+
+1068
+01:11:01,887 --> 01:11:03,367
+It's clearing, sir.
+
+1069
+01:11:06,979 --> 01:11:09,111
+What's the geostrophic gradient?
+
+1070
+01:11:09,155 --> 01:11:12,941
+Uh, 40 knots north, sir.
+
+1071
+01:11:12,985 --> 01:11:15,204
+So it's slowing.
+
+1072
+01:11:15,248 --> 01:11:17,424
+Well, you can't be sure, sir.
+We've only had one reading.
+
+1073
+01:11:17,468 --> 01:11:19,252
+- Where'd it come from?
+- Northwest Ireland.
+
+1074
+01:11:19,296 --> 01:11:21,167
+Tell me specifically,
+who... who recorded it?
+
+1075
+01:11:21,210 --> 01:11:22,690
+What weather base?
+
+1076
+01:11:22,734 --> 01:11:25,998
+A Miss Maureen Sweeney, sir.
+
+1077
+01:11:26,041 --> 01:11:27,782
+- Blacksod Point.
+- Show me.
+
+1078
+01:11:32,309 --> 01:11:34,311
+Well, call her back.
+Double-check it.
+
+1079
+01:11:34,354 --> 01:11:35,834
+- Triple-check it.
+- Sir.
+
+1080
+01:11:35,877 --> 01:11:36,965
+Right now, please.
+
+1081
+01:11:39,272 --> 01:11:41,013
+Can you ask, uh, Teleprinter Ops
+
+1082
+01:11:41,056 --> 01:11:42,797
+to get me readings
+from every base
+
+1083
+01:11:42,841 --> 01:11:45,234
+within 500 miles
+of Blacksod Point? Right now.
+
+1084
+01:11:45,278 --> 01:11:47,846
+Can I get the latest
+climate readings, please?
+
+1085
+01:12:03,252 --> 01:12:04,863
+Yeah?
+
+1086
+01:12:06,343 --> 01:12:07,692
+Um...
+
+1087
+01:12:09,955 --> 01:12:13,088
+This just came in
+from Blacksod Point.
+
+1088
+01:12:21,227 --> 01:12:22,489
+Was it checked?
+
+1089
+01:12:22,533 --> 01:12:25,231
+They're checking it now.
+
+1090
+01:12:25,274 --> 01:12:28,277
+Could mean something,
+could mean nothing.
+
+1091
+01:12:29,409 --> 01:12:31,237
+Yes, but which?
+
+1092
+01:12:31,280 --> 01:12:32,456
+What do you think?
+
+1093
+01:12:33,631 --> 01:12:35,328
+Why are you asking me?
+
+1094
+01:12:35,372 --> 01:12:37,548
+Look out the goddamn window,
+Stagg.
+
+1095
+01:12:37,591 --> 01:12:40,159
+I'm asking you because
+I need your expertise.
+
+1096
+01:12:45,382 --> 01:12:46,731
+Please.
+
+1097
+01:12:50,735 --> 01:12:52,389
+It's the fifth reading.
+
+1098
+01:13:04,836 --> 01:13:06,272
+It is unusual.
+
+1099
+01:13:06,315 --> 01:13:08,883
+Mm-hmm. Yeah, it is.
+
+1100
+01:13:11,625 --> 01:13:13,627
+It's worth looking into.
+
+1101
+01:13:14,672 --> 01:13:16,325
+Good.
+
+1102
+01:13:16,369 --> 01:13:18,806
+Heavy frontal cloud, west of 35.
+
+1103
+01:13:18,850 --> 01:13:20,634
+Blacksod Point
+barometer fell overnight,
+
+1104
+01:13:20,678 --> 01:13:22,636
+then slight rise by afternoon,
+front offshore.
+
+1105
+01:13:24,986 --> 01:13:27,772
+1-0-1-1 millibars.
+
+1106
+01:13:27,815 --> 01:13:29,774
+Who do you got now?
+Who are you speaking with?
+
+1107
+01:13:29,817 --> 01:13:30,992
+I was just asking him about...
+
+1108
+01:13:31,036 --> 01:13:33,995
+So, what are you doing now?
+
+1109
+01:13:34,039 --> 01:13:37,434
+And get the result
+for that one, please.
+
+1110
+01:13:37,477 --> 01:13:39,218
+The low is moving
+in the right direction, but...
+
+1111
+01:13:39,261 --> 01:13:42,221
+- It's too close.
+- Yeah.
+
+1112
+01:13:42,264 --> 01:13:44,310
+Hamilton, when's the next chart
+coming out?
+
+1113
+01:13:44,353 --> 01:13:45,703
+Within the hour, sir.
+
+1114
+01:13:45,746 --> 01:13:47,139
+Within the hour
+is not good enough.
+
+1115
+01:13:47,182 --> 01:13:48,880
+Can we get...
+can we get Dunstable...
+
+1116
+01:13:48,923 --> 01:13:51,056
+a result from Dun-Dunstable in,
+please, soon?
+
+1117
+01:13:51,099 --> 01:13:52,840
+It should've been with us
+an hour ago.
+
+1118
+01:13:52,884 --> 01:13:54,451
+What's the movement
+on the cold front?
+
+1119
+01:13:54,494 --> 01:13:56,409
+Still 30 knots, sir.
+
+1120
+01:13:56,453 --> 01:13:58,498
+Have you ever seen
+a progression like this?
+
+1121
+01:13:58,542 --> 01:14:01,240
+Never. Winter, maybe.
+
+1122
+01:14:01,283 --> 01:14:03,024
+Never this time of year.
+
+1123
+01:14:03,068 --> 01:14:04,635
+StratoCu
+lifting above 2,000 feet.
+
+1124
+01:14:04,678 --> 01:14:06,027
+Sea surface
+temperature, 15 degrees.
+
+1125
+01:14:06,071 --> 01:14:07,333
+Data points up
+to 400 millibars.
+
+1126
+01:14:07,376 --> 01:14:09,248
+What are you looking for?
+
+1127
+01:14:09,291 --> 01:14:11,163
+A gap,
+because there's one there.
+
+1128
+01:14:11,206 --> 01:14:12,730
+You call that a gap?
+
+1129
+01:14:12,773 --> 01:14:14,427
+Yes, I call that a gap.
+
+1130
+01:14:14,471 --> 01:14:15,863
+That's a very narrow gap.
+
+1131
+01:14:15,907 --> 01:14:17,604
+A narrow gap is still a gap.
+Thank you.
+
+1132
+01:14:17,648 --> 01:14:19,084
+Do you see a gap?
+
+1133
+01:14:19,127 --> 01:14:20,477
+I believe there's one
+forming, sir, yes.
+
+1134
+01:14:20,520 --> 01:14:21,739
+Yes, a gap. Thank you.
+
+1135
+01:14:25,743 --> 01:14:28,920
+So, if this was a normal
+forecast, would you call it?
+
+1136
+01:14:28,963 --> 01:14:30,269
+Yeah.
+
+1137
+01:14:30,312 --> 01:14:32,489
+I don't know. Uh, probably.
+
+1138
+01:14:33,794 --> 01:14:35,013
+Yeah.
+
+1139
+01:14:36,275 --> 01:14:38,364
+The only difference is
+it's D-Day.
+
+1140
+01:14:40,235 --> 01:14:41,672
+Big difference.
+
+1141
+01:14:45,414 --> 01:14:47,329
+Call Eisenhower.
+
+1142
+01:15:06,610 --> 01:15:08,960
+You wanted to see me?
+
+1143
+01:15:09,003 --> 01:15:10,309
+Yes, sir.
+
+1144
+01:15:12,267 --> 01:15:14,400
+There's been a development, sir.
+
+1145
+01:15:14,443 --> 01:15:17,316
+It seems the storm
+at Newfoundland is slowing.
+
+1146
+01:15:17,359 --> 01:15:20,972
+We believe it's enough
+to provide a... a...
+
+1147
+01:15:21,015 --> 01:15:23,801
+a window
+in the disruptive weather.
+
+1148
+01:15:24,889 --> 01:15:26,325
+Um...
+
+1149
+01:15:28,501 --> 01:15:30,503
+Well, if I may,
+th-the cigarettes
+
+1150
+01:15:30,547 --> 01:15:32,984
+are the Newfoundland storm,
+
+1151
+01:15:33,027 --> 01:15:35,639
+the larger one of three.
+
+1152
+01:15:35,682 --> 01:15:37,597
+My glasses here are
+the two smaller storms.
+
+1153
+01:15:37,641 --> 01:15:40,513
+Currently, the larger storm is
+dragging the two smaller storms
+
+1154
+01:15:40,557 --> 01:15:43,603
+away from the Normandy coast,
+leaving a...
+
+1155
+01:15:43,647 --> 01:15:45,953
+a gap in the weather of sorts
+
+1156
+01:15:45,997 --> 01:15:50,305
+just long enough for us to land
+in Normandy on Tuesday morning.
+
+1157
+01:15:50,349 --> 01:15:51,785
+Tuesday?
+
+1158
+01:15:51,829 --> 01:15:56,007
+As in 26 hours from now,
+Tuesday?
+
+1159
+01:15:56,050 --> 01:15:57,748
+Sir, if you just look
+at the latest charts...
+
+1160
+01:15:57,791 --> 01:15:59,793
+I don't want to look
+at your damn charts.
+
+1161
+01:15:59,837 --> 01:16:02,100
+It's a bunch of gobbledygook.
+
+1162
+01:16:02,143 --> 01:16:04,624
+What I want is for you
+to get down on your knees
+
+1163
+01:16:04,668 --> 01:16:06,278
+and look me in the eye
+and tell me,
+
+1164
+01:16:06,321 --> 01:16:08,759
+"Tuesday morning, sir,
+the sun's got his hat on."
+
+1165
+01:16:08,802 --> 01:16:10,761
+Because in case
+you haven't noticed,
+
+1166
+01:16:10,804 --> 01:16:12,893
+there's a goddamn hurricane
+blowing out there!
+
+1167
+01:16:12,937 --> 01:16:14,678
+Technically, it's not
+a hurricane, sir.
+
+1168
+01:16:17,550 --> 01:16:20,509
+Sunny weather, you say stop.
+Hurricane, you say go.
+
+1169
+01:16:20,553 --> 01:16:21,815
+Well, no. Well, yes, sir.
+
+1170
+01:16:21,859 --> 01:16:23,034
+Yes, that's exactly
+what I'm saying.
+
+1171
+01:16:26,472 --> 01:16:30,389
+Send my men into...
+
+1172
+01:16:30,432 --> 01:16:33,087
+into the storm?
+
+1173
+01:16:36,656 --> 01:16:38,223
+Yeah.
+
+1174
+01:16:41,618 --> 01:16:43,271
+They'll never see it coming,
+sir, never.
+
+1175
+01:16:43,315 --> 01:16:45,622
+A gap like this
+in the storm— never.
+
+1176
+01:17:00,941 --> 01:17:02,813
+You're absolutely sure of that?
+
+1177
+01:17:06,860 --> 01:17:10,951
+Are you absolutely sure
+about that, Group Captain Stagg?
+
+1178
+01:17:13,345 --> 01:17:15,347
+I'm sure there'll be a gap.
+
+1179
+01:17:16,478 --> 01:17:18,959
+The weather won't be perfect...
+
+1180
+01:17:19,003 --> 01:17:20,831
+but it'll do.
+
+1181
+01:17:22,528 --> 01:17:24,573
+This is your official position?
+
+1182
+01:17:28,447 --> 01:17:31,842
+My official position is this.
+
+1183
+01:17:34,235 --> 01:17:35,846
+Go.
+
+1184
+01:17:39,371 --> 01:17:41,242
+You should go, sir.
+
+1185
+01:17:44,811 --> 01:17:46,334
+Okay, we'll go.
+
+1186
+01:17:49,207 --> 01:17:51,426
+D-Day is Tuesday, June 6.
+
+1187
+01:18:22,414 --> 01:18:26,635
+- This is my statement...
+
+1188
+01:18:26,679 --> 01:18:30,204
+- if all goes well tomorrow.
+- Mm-hmm.
+
+1189
+01:18:30,248 --> 01:18:33,033
+And...
+
+1190
+01:18:33,077 --> 01:18:34,731
+this one if not.
+
+1191
+01:18:40,475 --> 01:18:41,563
+- Hey.
+- Hmm?
+
+1192
+01:18:41,607 --> 01:18:43,304
+I've got a surprise for you.
+
+1193
+01:18:46,481 --> 01:18:48,440
+Rare as nylons.
+
+1194
+01:19:00,844 --> 01:19:03,150
+I have a good feeling
+about tomorrow.
+
+1195
+01:19:16,337 --> 01:19:18,209
+- You should get some sleep.
+- Yes.
+
+1196
+01:19:18,252 --> 01:19:19,732
+Yeah?
+
+1197
+01:19:24,345 --> 01:19:27,000
+- 0630 hours.
+- 0630 hours.
+
+1198
+01:19:30,264 --> 01:19:35,617
+My men did all that bravery
+and devotion to duty could do.
+
+1199
+01:19:35,661 --> 01:19:41,493
+If any blame or fault
+is attached to the attempt,
+
+1200
+01:19:41,536 --> 01:19:45,366
+it is mine and mine alone.
+
+1201
+01:19:47,891 --> 01:19:49,240
+That's what I wrote.
+
+1202
+01:19:50,981 --> 01:19:53,679
+In case we fail tomorrow.
+
+1203
+01:19:55,376 --> 01:19:56,987
+We won't.
+
+1204
+01:20:20,575 --> 01:20:25,406
+Soldiers, sailors and airmen
+
+1205
+01:20:25,450 --> 01:20:28,409
+of the Allied
+Expeditionary Force...
+
+1206
+01:20:39,377 --> 01:20:43,120
+you are about to embark
+upon the Great Crusade,
+
+1207
+01:20:43,163 --> 01:20:45,992
+upon which we have striven
+these many months.
+
+1208
+01:20:50,127 --> 01:20:53,391
+The eyes of the world
+are upon you.
+
+1209
+01:20:53,434 --> 01:20:55,045
+The hope and prayers
+
+1210
+01:20:55,088 --> 01:20:59,179
+of liberty-loving people
+everywhere march with you.
+
+1211
+01:21:02,661 --> 01:21:04,924
+In company with our brave allies
+
+1212
+01:21:04,968 --> 01:21:08,014
+and brothers-in-arms
+on other fronts,
+
+1213
+01:21:08,058 --> 01:21:09,798
+you will bring about
+the destruction
+
+1214
+01:21:09,842 --> 01:21:11,452
+of the German war machine...
+
+1215
+01:21:13,237 --> 01:21:17,241
+the elimination
+of Nazi tyranny
+
+1216
+01:21:17,284 --> 01:21:19,765
+over the oppressed peoples
+of Europe
+
+1217
+01:21:19,808 --> 01:21:24,074
+and security for ourselves
+in a free world.
+
+1218
+01:21:27,947 --> 01:21:29,818
+You get any sleep?
+
+1219
+01:21:29,862 --> 01:21:31,168
+Not a wink.
+
+1220
+01:21:32,256 --> 01:21:33,561
+You?
+
+1221
+01:21:33,605 --> 01:21:34,823
+Nope.
+
+1222
+01:21:47,010 --> 01:21:49,838
+Your task
+will not be an easy one.
+
+1223
+01:21:49,882 --> 01:21:53,277
+Your enemy is well trained,
+
+1224
+01:21:53,320 --> 01:21:57,716
+well equipped
+and battle-hardened.
+
+1225
+01:21:58,804 --> 01:22:00,588
+He will fight savagely.
+
+1226
+01:22:05,115 --> 01:22:07,204
+60 seconds to H hour.
+
+1227
+01:22:08,248 --> 01:22:13,297
+Radio silence ends in...
+60 seconds.
+
+1228
+01:22:14,907 --> 01:22:17,649
+But this is the year 1944.
+
+1229
+01:22:17,692 --> 01:22:18,998
+Where you from?
+
+1230
+01:22:19,042 --> 01:22:20,565
+Bracken Mountain,
+North Carolina, sir.
+
+1231
+01:22:20,608 --> 01:22:21,958
+- Bracken Mountain,
+North Carolina? -Yes, sir.
+
+1232
+01:22:22,001 --> 01:22:23,960
+The tide has turned.
+
+1233
+01:22:24,003 --> 01:22:25,657
+The free men of the world
+
+1234
+01:22:25,700 --> 01:22:28,877
+are marching together
+to victory.
+
+1235
+01:22:28,921 --> 01:22:30,401
+What's your name?
+
+1236
+01:22:30,444 --> 01:22:32,533
+- Uh, Oiler, sir.
+- Oiler. Where you from, Oiler?
+
+1237
+01:22:32,577 --> 01:22:34,361
+I have full confidence in
+
+1238
+01:22:34,405 --> 01:22:38,844
+your courage, devotion to duty
+and skill in battle.
+
+1239
+01:22:44,067 --> 01:22:48,680
+We will accept nothing less
+than full victory.
+
+1240
+01:22:49,637 --> 01:22:51,596
+Good luck,
+
+1241
+01:22:51,639 --> 01:22:54,991
+and let us beseech the blessing
+of Almighty God
+
+1242
+01:22:55,034 --> 01:22:58,168
+upon this great
+and noble undertaking.
+
+1243
+01:23:27,762 --> 01:23:29,851
+Utah. Come in, Utah.
+
+1244
+01:23:31,810 --> 01:23:33,333
+Utah, come in.
+
+1245
+01:23:35,248 --> 01:23:37,033
+SHAEF main to Utah.
+
+1246
+01:23:47,521 --> 01:23:49,045
+Come in, Utah.
+
+1247
+01:23:51,569 --> 01:23:54,354
+Omaha Beach
+control, do you read?
+
+1248
+01:24:03,798 --> 01:24:05,800
+Utah, come in.
+
+1249
+01:24:07,802 --> 01:24:09,021
+Utah, do you read?
+
+1250
+01:24:22,643 --> 01:24:24,863
+Utah... hit by
+machine-gun fire. Casualties...
+
+1251
+01:24:24,906 --> 01:24:26,473
+Heavy incoming fire
+at Utah Beach.
+
+1252
+01:24:26,517 --> 01:24:28,127
+What about the other beaches?
+
+1253
+01:24:28,171 --> 01:24:29,520
+Serious
+casualties at Omaha Beach.
+
+1254
+01:24:29,563 --> 01:24:31,261
+How many casualties?
+
+1255
+01:24:31,304 --> 01:24:33,089
+Westerly winds
+causing course corrections.
+
+1256
+01:24:33,132 --> 01:24:34,568
+Westerly winds
+causing course corrections.
+
+1257
+01:24:34,612 --> 01:24:36,092
+Visibility two miles,
+
+1258
+01:24:36,135 --> 01:24:37,963
+ceiling falling to 1,500 feet.
+
+1259
+01:24:41,140 --> 01:24:42,663
+Landing craft
+swept off course at Utah.
+
+1260
+01:24:42,707 --> 01:24:44,012
+Visibility two miles.
+
+1261
+01:24:44,056 --> 01:24:46,102
+Ceiling falling to 1,500 feet.
+
+1262
+01:24:47,929 --> 01:24:49,627
+Omaha sky still overcast...
+
+1263
+01:24:49,670 --> 01:24:50,715
+unable to locate batteries
+
+1264
+01:24:50,758 --> 01:24:52,369
+lying on south beach.
+
+1265
+01:24:56,938 --> 01:24:58,592
+- Keep moving!
+- Keep pushing!
+
+1266
+01:24:58,636 --> 01:25:00,116
+Move! Move!
+
+1267
+01:25:02,944 --> 01:25:05,643
+Incoming! Take cover!
+
+1268
+01:25:05,686 --> 01:25:07,123
+Cannot
+unload due to heavy shellfire.
+
+1269
+01:25:07,166 --> 01:25:08,733
+L1 section lost in water.
+
+1270
+01:25:08,776 --> 01:25:10,300
+Second half moving forward.
+
+1271
+01:25:10,343 --> 01:25:12,171
+800 yards off the beach.
+
+1272
+01:25:12,215 --> 01:25:13,912
+Omaha winds 14 knots west.
+
+1273
+01:25:24,749 --> 01:25:26,838
+Taking heavy fire
+at Gold and Omaha.
+
+1274
+01:25:35,803 --> 01:25:37,196
+Many wounded at Dog Red,
+
+1275
+01:25:37,240 --> 01:25:38,502
+needing immediate evacuation.
+
+1276
+01:25:49,121 --> 01:25:50,731
+Cloud
+ceiling low, around 500 feet.
+
+1277
+01:25:50,775 --> 01:25:52,472
+Cloud ceiling
+low, around 500 feet.
+
+1278
+01:25:52,516 --> 01:25:54,300
+... find no targets
+of opportunity...
+
+1279
+01:25:54,344 --> 01:25:56,041
+Can find
+no targets of opportunity
+
+1280
+01:25:56,084 --> 01:25:57,651
+without endangering own landing.
+
+1281
+01:25:57,695 --> 01:26:00,350
+We can't see a bloody thing!
+
+1282
+01:26:06,834 --> 01:26:09,272
+Wind 18 knots, west, southwest.
+
+1283
+01:26:09,315 --> 01:26:10,838
+Wind 18 knots,
+west, southwest.
+
+1284
+01:26:10,882 --> 01:26:12,275
+Clouds 800 feet,
+beginning to rise.
+
+1285
+01:26:12,318 --> 01:26:13,841
+- You're good. You're good.
+- Am I gonna die?
+
+1286
+01:26:13,885 --> 01:26:15,756
+No, we'll get you home.
+You're good. You're good.
+
+1287
+01:26:15,800 --> 01:26:18,542
+Waves moderating
+at Utah, now two to three feet.
+
+1288
+01:26:18,585 --> 01:26:20,152
+Ceiling lifting to 1,500 feet.
+
+1289
+01:26:20,196 --> 01:26:21,588
+Clearer skies inland.
+
+1290
+01:26:21,632 --> 01:26:23,286
+Keep pushing!
+
+1291
+01:26:23,329 --> 01:26:26,158
+- I don't care! Go!
+
+1292
+01:26:38,823 --> 01:26:40,085
+Utah cloud ceiling clear.
+
+1293
+01:26:46,744 --> 01:26:49,747
+Move up!
+
+1294
+01:26:49,790 --> 01:26:52,097
+Two U.S. destroyers
+are within one...
+
+1295
+01:27:10,507 --> 01:27:12,335
+Move up!
+
+1296
+01:27:38,056 --> 01:27:39,579
+Yes?
+
+1297
+01:27:40,928 --> 01:27:41,973
+Mm-hmm.
+
+1298
+01:27:43,453 --> 01:27:44,454
+What?
+
+1299
+01:27:52,026 --> 01:27:53,376
+Thank you.
+
+1300
+01:28:04,169 --> 01:28:06,084
+Footholds established
+on all the beaches.
+
+1301
+01:28:08,260 --> 01:28:11,785
+Our men are ashore,
+with full air and naval support.
+
+1302
+01:29:37,044 --> 01:29:38,611
+Hello. Signals Department.
+
+1303
+01:29:38,655 --> 01:29:41,179
+Yes, St. Mary's Hospital
+in Clapham, please.
+
+1304
+01:29:41,222 --> 01:29:43,311
+I'm sorry, sir, but there are
+still no outgoing calls
+
+1305
+01:29:43,355 --> 01:29:45,357
+until security restrictions
+have been officially lifted.
+
+1306
+01:29:45,401 --> 01:29:47,228
+- I believe...
+
+1307
+01:29:59,632 --> 01:30:01,895
+I've arranged a car to take you
+straight to the hospital.
+
+1308
+01:30:01,939 --> 01:30:03,941
+Thank you very much.
+I appreciate that.
+
+1309
+01:30:14,691 --> 01:30:18,303
+Well, congratulations, Stagg.
+
+1310
+01:30:18,346 --> 01:30:20,218
+Congratulations to you, too.
+
+1311
+01:30:27,530 --> 01:30:28,879
+Good luck.
+
+1312
+01:30:37,801 --> 01:30:40,064
+Thank you so much
+for everything.
+
+1313
+01:30:40,107 --> 01:30:41,587
+Ah, don't be silly.
+
+1314
+01:30:41,631 --> 01:30:43,023
+I'm sorry I couldn't
+have done more.
+
+1315
+01:30:43,067 --> 01:30:44,198
+No, no, no.
+
+1316
+01:30:44,242 --> 01:30:46,505
+We were busy.
+
+1317
+01:31:36,903 --> 01:31:38,252
+Thank you.
+
+1318
+01:31:48,219 --> 01:31:50,874
+No, no. You can't.
+
+1319
+01:31:57,576 --> 01:31:59,143
+No! No!
+
+1320
+01:32:40,837 --> 01:32:42,229
+Hello, Jim.
+
+1321
+01:32:45,015 --> 01:32:46,494
+Hello, Liz.
+
+1322
+01:33:10,910 --> 01:33:12,129
+Are you all right?
+
+1323
+01:33:20,746 --> 01:33:22,313
+You okay?
+
+1324
+01:33:22,356 --> 01:33:23,619
+Yeah?
+
+1325
+01:33:34,586 --> 01:33:35,848
+Your son.
+
+1326
+01:33:36,936 --> 01:33:38,242
+Oh.
+
+1327
+01:34:13,669 --> 01:34:15,758
+Hello.
+
+1328
+01:34:15,801 --> 01:34:17,107
+Hello, beautiful.
+

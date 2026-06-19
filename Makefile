@@ -4,10 +4,48 @@ MAKEFLAGS+=-s
 BUILD_DIR:="$(PWD)/bin"
 EXECUTABLE_NAME:=subtitle-tools
 MAIN_PACKAGE:=./cmd/$(EXECUTABLE_NAME)
+FIX_CASES_DIR:=./internal/cli/testdata/fix/cases
 
 go-test:
 	@echo "Running tests..."
 	go test ./...
+
+# Runs fix CLI regression fixtures without updating expected outputs.
+go-test-fix-regression:
+	@echo "Running fix CLI regression fixtures..."
+	go test ./internal/cli -run TestFixCLI_RegressionCases
+
+# Lists available fix CLI regression cases.
+go-test-fix-cases:
+	@echo "Available fix CLI regression cases:"
+	@find "$(FIX_CASES_DIR)" -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort
+
+# Runs a single fix CLI regression case.
+# Usage: make go-test-fix-case CASE=strip-hi-safe-inplace
+# If CASE is empty and fzf is installed, an interactive selector is shown.
+go-test-fix-case:
+	@CASE_NAME="$(CASE)"; \
+	if [ -z "$$CASE_NAME" ]; then \
+		if command -v fzf >/dev/null 2>&1; then \
+			CASE_NAME="$$(find "$(FIX_CASES_DIR)" -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort | fzf --prompt='Fix case> ' --height=40% --reverse --border --exit-0)"; \
+		fi; \
+	fi; \
+	if [ -z "$$CASE_NAME" ]; then \
+		echo "CASE is required (e.g. CASE=strip-hi-safe-inplace)"; \
+		echo ""; \
+		echo "Available cases:"; \
+		find "$(FIX_CASES_DIR)" -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort; \
+		echo ""; \
+		echo "Tip: install fzf or pass CASE explicitly."; \
+		exit 1; \
+	fi; \
+	echo "Running fix CLI regression case: $$CASE_NAME"; \
+	go test ./internal/cli -run "TestFixCLI_RegressionCases/$$CASE_NAME$$"
+
+# Regenerates expected outputs for fix CLI regression fixtures.
+go-test-fix-update-expected:
+	@echo "Updating fix CLI regression expected fixtures..."
+	UPDATE_FIX_GOLDEN=1 go test ./internal/cli -run TestFixCLI_RegressionCases
 
 go-sum:
 	rm -f go.sum && \
@@ -40,7 +78,7 @@ build-all: build build-windows build-windows-arm64
 version:
 	@go run ./cmd/subtitle-tools --version
 
-.PHONY: go-test go-sum build build-windows build-windows-arm64 build-all release-tag
+.PHONY: go-test go-test-fix-regression go-test-fix-cases go-test-fix-case go-test-fix-update-expected go-sum build build-windows build-windows-arm64 build-all release-tag
 # Usage: make release-tag VERSION=1.2.3
 .PHONY: release-tag
 release-tag:
