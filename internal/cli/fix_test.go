@@ -1,6 +1,7 @@
 package cli
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"errors"
@@ -80,17 +81,13 @@ func TestFixCLI_RegressionCases(t *testing.T) {
 				return
 			}
 
-			equal, err := fs.FilesEqual(actualPath, expectedFixturePath)
-			if err != nil {
-				t.Fatalf("compare files: %v", err)
+			actualB, readActualErr := os.ReadFile(actualPath)
+			expectedB, readExpectedErr := os.ReadFile(expectedFixturePath)
+			if readActualErr != nil || readExpectedErr != nil {
+				t.Fatalf("failed to read files for comparison (actualErr=%v, expectedErr=%v)", readActualErr, readExpectedErr)
 			}
-			if !equal {
-				actualB, readActualErr := os.ReadFile(actualPath)
-				expectedB, readExpectedErr := os.ReadFile(expectedFixturePath)
-				if readActualErr != nil || readExpectedErr != nil {
-					t.Fatalf("output mismatch and failed to read files (actualErr=%v, expectedErr=%v)", readActualErr, readExpectedErr)
-				}
 
+			if !bytes.Equal(normalizeLineEndings(expectedB), normalizeLineEndings(actualB)) {
 				report := buildMismatchReport(expectedFixturePath, actualPath, expectedB, actualB)
 				t.Fatalf("output mismatch\n%s", report)
 			}
@@ -99,8 +96,8 @@ func TestFixCLI_RegressionCases(t *testing.T) {
 }
 
 func buildMismatchReport(expectedPath, actualPath string, expectedB, actualB []byte) string {
-	expectedLines := strings.Split(string(expectedB), "\n")
-	actualLines := strings.Split(string(actualB), "\n")
+	expectedLines := strings.Split(string(normalizeLineEndings(expectedB)), "\n")
+	actualLines := strings.Split(string(normalizeLineEndings(actualB)), "\n")
 
 	diffIdx := firstDifferentLine(expectedLines, actualLines)
 	if diffIdx < 0 {
@@ -120,6 +117,11 @@ func buildMismatchReport(expectedPath, actualPath string, expectedB, actualB []b
 	_, _ = fmt.Fprintf(&b, "expected (%s), showing lines %d-%d:\n%s\n", expectedPath, start+1, endExpected+1, formatLineWindow(expectedLines, start, diffIdx, endExpected))
 	_, _ = fmt.Fprintf(&b, "actual (%s), showing lines %d-%d:\n%s", actualPath, start+1, endActual+1, formatLineWindow(actualLines, start, diffIdx, endActual))
 	return b.String()
+}
+
+func normalizeLineEndings(b []byte) []byte {
+	// Normalize CRLF to LF so fixture checks remain stable across OS defaults.
+	return bytes.ReplaceAll(b, []byte("\r\n"), []byte("\n"))
 }
 
 func firstDifferentLine(expectedLines, actualLines []string) int {
